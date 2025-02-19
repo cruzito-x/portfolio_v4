@@ -1,15 +1,15 @@
 const About = () => {
   return (
     <div className="container p-5 h-100" id="about-me">
-      <div className="row">
-        <div className="col-lg-6">
+      <div className="row mt-5">
+        <div className="col-md-6 col-sm-12">
           <img
-            src="https://via.placeholder.com/300"
-            alt="profile"
-            className="about-image"
+            src="src/assets/img/me.png"
+            className="w-100 rounded shadow"
+            alt="David's Photo"
           />
         </div>
-        <div className="col-lg-6 col-sm-12">
+        <div className="col-md-6 col-sm-12">
           <div className="text-center">
             <h1 className="text-black">About Me</h1>
             <label className="fw-semibold dark-enphasis-text">

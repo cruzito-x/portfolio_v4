@@ -1,8 +1,8 @@
 const Contact = () => {
   return (
     <div className="container p-5" id="contact-me">
-      <div className="text-center">
-        <h1 className="text-black">Contact Me</h1>
+      <div className="text-black text-center mt-5">
+        <h1>Contact Me</h1>
         <label className="fw-semibold dark-enphasis-text">Say Hello ^^</label>
       </div>
       <div className="row align-items-center mt-3">
