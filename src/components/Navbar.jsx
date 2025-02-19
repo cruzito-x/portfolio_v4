@@ -22,7 +22,10 @@ const Navbar = () => {
           <img
             src="src/assets/img/logo.png"
             className="rounded-circle shadow"
-            alt=""
+            alt="David's logo"
+            style={{
+              width: "60px",
+            }}
           />
         </a>
         <div className="d-flex">

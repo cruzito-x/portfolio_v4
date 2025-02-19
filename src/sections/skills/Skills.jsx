@@ -1,4 +1,6 @@
 import "./styles/skills.css";
+import htmlIcon from "../../assets/icons/skills/html.svg";
+import cssIcon from "../../assets/icons/skills/css.svg";
 
 const Skills = () => {
   return (
@@ -12,15 +14,13 @@ const Skills = () => {
       <div className="row mt-5">
         <div className="col-md-2 col-sm-3 text-center">
           <>
-            <img src="../../assets/icons/skills/html.svg" alt="HTML logo" />{" "}
-            <br />
+            <img src={htmlIcon} alt="HTML logo" /> <br />
             <label className="html-text fw-semibold fs-6 mt-3">HTML</label>
           </>
         </div>
         <div className="col-md-2 col-sm-3 text-center">
           <>
-            <img src="../../assets/icons/skills/css.svg" alt="CSS logo" />{" "}
-            <br />
+            <img src={cssIcon} alt="CSS logo" /> <br />
             <label className="css-text fw-semibold fs-6 mt-3">CSS</label>
           </>
         </div>
