@@ -1,0 +1,51 @@
+img {
+  width: 75px;
+}
+
+.html-text {
+  color: var(--html-color);
+}
+
+.css-text {
+  color: var(--css-color);
+}
+
+.javascript-text {
+  color: var(--javascript-color);
+}
+
+.react-text {
+  color: var(--react-color);
+}
+
+.express-text {
+  color: var(--express-color);
+}
+
+.mysql-text {
+  color: var(--mysql-color);
+}
+
+.bootstrap-text {
+  color: var(--bootstrap-color);
+}
+
+.laravel-text {
+  color: var(--laravel-color);
+}
+
+.git-text {
+  color: var(--git-color);
+}
+
+.figma-text {
+  color: var(--figma-color);
+}
+
+.swagger-text {
+  color: var(--swagger-color);
+}
+
+.angular-text {
+  color: var(--angular-color);
+}

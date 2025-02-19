@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="container">
+    <div className="container p-5 h-100" id="about-me">
       <div className="row">
         <div className="col-lg-6">
           <img
@@ -11,15 +11,16 @@ const About = () => {
         </div>
         <div className="col-lg-6 col-sm-12">
           <div className="text-center">
-            <h1 className="about-heading">About Me</h1>
+            <h1 className="text-black">About Me</h1>
             <label className="fw-semibold dark-enphasis-text">
               {" "}
               Who&apos;s David?{" "}
             </label>
           </div>
-          <p className="mt-3">
+          <p className="text-black mt-3">
             I&apos;m currently 22 years old, I&apos;m a graduate student of
             <span className="fw-semibold enphasis-text">
+              {" "}
               Systems and Computer Engineering
             </span>
             , I have experience as a{" "}
@@ -35,7 +36,7 @@ const About = () => {
             .
           </p>
 
-          <p>
+          <p className="text-black">
             I&apos;m currently pursuing a pre-specialty in{" "}
             <span className="fw-semibold enphasis-text">
               Cybersecurity Engineering
@@ -47,7 +48,7 @@ const About = () => {
             .
           </p>
 
-          <p>
+          <p className="text-black">
             Beyond my professional life, I&apos;m also an{" "}
             <span className="fw-semibold enphasis-text">
               occasional cosplayer

@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import About from "./sections/about/About";
 import Contact from "./sections/contact/Contact";
 import Experience from "./sections/experience/Experience";
@@ -10,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
+      <Navbar />
       <Home />
       <About />
       <Experience />
