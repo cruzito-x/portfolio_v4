@@ -14,7 +14,7 @@ const About = () => {
             <h1 className="text-black">About Me</h1>
             <label className="fw-semibold dark-enphasis-text">
               {" "}
-              Who&apos;s David?{" "}
+              Who&apos;s David Cruz?{" "}
             </label>
           </div>
           <p className="text-black mt-3">

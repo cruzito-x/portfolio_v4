@@ -13,13 +13,13 @@ const Experience = () => {
         <div className="col-lg-6 col-sm-12">
           <div className="timeline">
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon">
+              <div className="icon cursor-pointer">
                 <img
                   src="src/assets/icons/dependencycheck.png"
                   alt="OWASP logo"
                 />
               </div>
-              <div className="timeline-content w-100">
+              <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
                   March 2025 - In Progress
                 </label>
@@ -28,13 +28,13 @@ const Experience = () => {
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon">
+              <div className="icon cursor-pointer">
                 <img
                   src="src/assets/icons/frontendmentor.png"
                   alt="Frontend Mentor logo"
                 />
               </div>
-              <div className="timeline-content w-100">
+              <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
                   April 2023 - June 2024
                 </label>
@@ -43,23 +43,23 @@ const Experience = () => {
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon">
+              <div className="icon cursor-pointer">
                 <img src="src/assets/icons/htmx.png" alt="HTMX logo" />
               </div>
-              <div className="timeline-content w-100">
+              <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">2020 - 2024</label>
                 <h3>Systems and Computer Engineering.</h3>
                 <p>Universidad Tecnológica de El Salvador. - El Salvador.</p>
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon">
+              <div className="icon cursor-pointer">
                 <img
                   src="src/assets/icons/pcgamingwiki.png"
                   alt="PC Gaming logo"
                 />
               </div>
-              <div className="timeline-content w-100">
+              <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
                   February 2019 - August 2019
                 </label>
