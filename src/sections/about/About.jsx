@@ -1,0 +1,66 @@
+const About = () => {
+  return (
+    <div className="container">
+      <div className="row">
+        <div className="col-lg-6">
+          <img
+            src="https://via.placeholder.com/300"
+            alt="profile"
+            className="about-image"
+          />
+        </div>
+        <div className="col-lg-6 col-sm-12">
+          <div className="text-center">
+            <h1 className="about-heading">About Me</h1>
+            <label className="fw-semibold dark-enphasis-text">
+              {" "}
+              Who&apos;s David?{" "}
+            </label>
+          </div>
+          <p className="mt-3">
+            I&apos;m currently 22 years old, I&apos;m a graduate student of
+            <span className="fw-semibold enphasis-text">
+              Systems and Computer Engineering
+            </span>
+            , I have experience as a{" "}
+            <span className="fw-semibold enphasis-text">Designer</span> and{" "}
+            <span className="fw-semibold enphasis-text">Software Engineer</span>{" "}
+            using various design tools such as Figma. As for development, I have
+            experience in web application development using technologies such as
+            JavaScript using React.js, Node.js and Express.js, Php using Laravel
+            and MySQL, SQL Server and PostgreSQL to{" "}
+            <span className="fw-semibold enphasis-text">
+              relational database development
+            </span>
+            .
+          </p>
+
+          <p>
+            I&apos;m currently pursuing a pre-specialty in{" "}
+            <span className="fw-semibold enphasis-text">
+              Cybersecurity Engineering
+            </span>{" "}
+            at the{" "}
+            <span className="fw-semibold enphasis-text">
+              Universidad Tecnológica de El Salvador
+            </span>
+            .
+          </p>
+
+          <p>
+            Beyond my professional life, I&apos;m also an{" "}
+            <span className="fw-semibold enphasis-text">
+              occasional cosplayer
+            </span>
+            , a creative passion that allows me to bring my favorite characters
+            to life through crafting and design. This hobby enhances my
+            creativity and problem-solving skills, which I also bring to my work
+            as an engineer.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
