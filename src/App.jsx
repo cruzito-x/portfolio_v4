@@ -2,7 +2,6 @@ import Navbar from "./components/Navbar";
 import About from "./sections/about/About";
 import Contact from "./sections/contact/Contact";
 import Experience from "./sections/experience/Experience";
-import Footer from "./sections/footer/Footer";
 import Home from "./sections/home/Home";
 import Projects from "./sections/projects/Projects";
 import Skills from "./sections/skills/Skills";
@@ -19,7 +18,6 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
     </>
   );
 }
