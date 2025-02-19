@@ -72,7 +72,7 @@ const Experience = () => {
         <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
           <img
             src="src/assets/img/stay-at-home.png"
-            className="w-100 ms-5 ps-5"
+            className="w-100"
             alt="Stay at Home"
           />
         </div>

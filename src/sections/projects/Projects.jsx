@@ -36,7 +36,7 @@ const Projects = () => {
 
       <div className="row mt-3 justify-content-center">
         {filteredProjects.map((project) => (
-          <div key={project.id} className="col-lg-3 col-md-5 col-sm-12 mb-4">
+          <div key={project.id} className="col-lg-3 col-md-6 col-sm-12 mb-4">
             <div className="card border-0 h-100">
               <img
                 src={project.image}

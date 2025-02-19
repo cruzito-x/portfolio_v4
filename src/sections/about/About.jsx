@@ -1,22 +1,22 @@
 const About = () => {
   return (
     <div className="container p-5 h-100" id="about-me">
-      <div className="row mt-5">
-        <div className="col-md-6 col-sm-12">
+      <div className="row mt-5 align-items-center">
+        <div className="text-black text-center">
+          <h1>About Me</h1>
+          <label className="fw-semibold dark-enphasis-text">
+            {" "}
+            Who&apos;s David Cruz?{" "}
+          </label>
+        </div>
+        <div className="col-lg-6 col-sm-12 mt-5">
           <img
             src="src/assets/img/me.png"
             className="w-100 rounded shadow"
             alt="David's Photo"
           />
         </div>
-        <div className="col-md-6 col-sm-12">
-          <div className="text-center">
-            <h1 className="text-black">About Me</h1>
-            <label className="fw-semibold dark-enphasis-text">
-              {" "}
-              Who&apos;s David Cruz?{" "}
-            </label>
-          </div>
+        <div className="col-lg-6 col-sm-12">
           <p className="text-black mt-3">
             I&apos;m currently 22 years old, I&apos;m a graduate student of
             <span className="fw-semibold enphasis-text">

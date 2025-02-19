@@ -1,4 +1,46 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2";
+
 const Contact = () => {
+  const [sendingEmail, setSendingEmail] = useState(false);
+  const formRef = useRef(null);
+
+  const sendEmail = (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(formRef.current);
+    const values = Object.fromEntries(formData.entries());
+
+    setSendingEmail(true);
+
+    emailjs
+      .send("service_zw3pu9r", "template_02xr7rq", values, "Wv5RQ-GtYRv-LL3O9")
+      .then(
+        () => {
+          Swal.fire({
+            title: "Success",
+            text: "Message sent successfully!",
+            icon: "success",
+            confirmButtonText: "Accept",
+            confirmButtonColor: "#267cec",
+          });
+          formRef.current.reset();
+          setSendingEmail(false);
+        },
+        (error) => {
+          Swal.fire({
+            title: "Error",
+            text: error.text,
+            icon: "error",
+            confirmButtonText: "Accept",
+            confirmButtonColor: "#267cec",
+          });
+          setSendingEmail(false);
+        }
+      );
+  };
+
   return (
     <div className="container p-5" id="contact-me">
       <div className="text-black text-center mt-5">
@@ -18,8 +60,8 @@ const Contact = () => {
             possible.
           </p>
         </div>
-        <div className="col-md-6 col-sm-12">
-          <form className="card p-5 mb-5">
+        <div className="col-lg-6 col-sm-12">
+          <form className="card p-5 mb-5" ref={formRef} onSubmit={sendEmail}>
             <label className="text-black text-center fs-3">
               Send Me a Message
             </label>
@@ -28,9 +70,10 @@ const Contact = () => {
               <input
                 type="text"
                 className="form-control text-black"
-                id="name"
+                name="username"
                 placeholder="John Doe"
                 required
+                disabled={sendingEmail}
               />
             </div>
             <div className="mb-3">
@@ -38,24 +81,30 @@ const Contact = () => {
               <input
                 type="email"
                 className="form-control text-black"
-                id="email"
+                name="email"
                 placeholder="youremail@mail.com"
                 required
+                disabled={sendingEmail}
               />
             </div>
             <div className="mb-3">
               <label className="form-label text-black">Message</label>
               <textarea
                 className="form-control text-black"
-                id="message"
+                name="message"
                 rows="5"
                 placeholder="Write your message"
                 style={{ resize: "none" }}
                 maxLength={255}
                 required
+                disabled={sendingEmail}
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              disabled={sendingEmail}
+            >
               Send Message
             </button>
           </form>
