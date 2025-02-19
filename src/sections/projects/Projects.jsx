@@ -50,7 +50,7 @@ const Projects = () => {
                   {project.techs.map((tech) => (
                     <span
                       key={tech.id}
-                      className="badge fw-normal me-2 mb-1 d-flex align-items-center"
+                      className="badge fw-normal me-1 mb-1 d-flex align-items-center"
                       style={{
                         border: `1px solid ${tech.color}`,
                         color: tech.color,
@@ -60,7 +60,7 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="mt-2">
+                <div className="mt-2 d-flex align-items-center">
                   {project.deploy_url && (
                     <a
                       href={project.deploy_url}
@@ -68,6 +68,7 @@ const Projects = () => {
                       rel="noopener noreferrer"
                       className="btn btn-sm btn-primary me-2"
                     >
+                      <i className="bx bx-rocket me-1"></i>
                       Deploy
                     </a>
                   )}
@@ -76,8 +77,9 @@ const Projects = () => {
                       href={project.source_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary"
+                      className="btn btn-sm btn-primary me-2"
                     >
+                      <i className="bx bxl-github me-1"></i>
                       Source Code
                     </a>
                   )}
@@ -86,8 +88,9 @@ const Projects = () => {
                       href={project.design_url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary ms-2"
+                      className="btn btn-sm btn-primary"
                     >
+                      <i className="bx bxl-figma"></i>
                       Design
                     </a>
                   )}

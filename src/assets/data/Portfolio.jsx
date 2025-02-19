@@ -98,6 +98,11 @@ const techData = {
     color: "var(--photoshop-color)",
     icon: <i className="bx bxl-droplet-half"></i>,
   },
+  swagger: {
+    name: "Swagger",
+    color: "var(--swagger-color)",
+    icon: <i className="bx bx-code-curly"></i>,
+  },
 };
 
 export const projectsData = [
@@ -340,6 +345,12 @@ export const projectsData = [
         icon: techData.mysql.icon,
         color: techData.mysql.color,
         name: techData.mysql.name,
+      },
+      {
+        id: 3,
+        icon: techData.swagger.icon,
+        color: techData.swagger.color,
+        name: techData.swagger.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/bank-collection-backend",
