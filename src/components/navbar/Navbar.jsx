@@ -1,8 +1,28 @@
+import { useState, useEffect } from "react";
 import cruzitoLogo from "../../assets/img/logo.png";
 
 const Navbar = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const scrollWindow = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", scrollWindow);
+    return () => window.removeEventListener("scroll", scrollWindow);
+  }, []);
+
   return (
-    <nav className="container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3">
+    <nav
+      className={`container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3 transition-all ${
+        isScrolled ? "shadow-sm" : ""
+      }`}
+    >
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -38,6 +58,7 @@ const Navbar = () => {
                 className="nav-link"
                 href="https://github.com/cruzito-x"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={cruzitoLogo}
