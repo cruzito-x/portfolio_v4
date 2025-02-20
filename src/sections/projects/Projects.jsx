@@ -71,7 +71,7 @@ const Projects = () => {
           {infiniteProjects.map((project, index) => (
             <div
               key={index}
-              className="card border-0 h-100 mx-2"
+              className="card border-0 h-100"
               style={{ minWidth: "300px", maxWidth: "300px" }}
             >
               <img
