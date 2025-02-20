@@ -2,7 +2,7 @@ import owaspLogo from "../../assets/icons/dependencycheck.png";
 import frontendIcon from "../../assets/icons/frontendmentor.png";
 import htmxLogo from "../../assets/icons/htmx.png";
 import pcLogo from "../../assets/icons/pcgamingwiki.png";
-import stayAtHomeImage from "../../assets/img/stay-at-home.png";
+import dataSecurityImage from "../../assets/img/data-security.png";
 import "./styles/experience.css";
 
 const Experience = () => {
@@ -66,7 +66,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
-          <img src={stayAtHomeImage} className="w-100" alt="Stay at Home" />
+          <img src={dataSecurityImage} className="w-100" alt="Data Security" />
         </div>
       </div>
     </div>
