@@ -45,7 +45,7 @@ const Contact = () => {
   return (
     <div className="container p-5 mb-5" id="contact-me">
       <div className="text-black text-center mt-5">
-        <h1>Contact Me</h1>
+        <h1 className="fw-semibold">Contact Me</h1>
         <label className="fw-semibold dark-enphasis-text">Say Hello ^^</label>
       </div>
       <div className="row align-items-center mt-3">
@@ -68,7 +68,7 @@ const Contact = () => {
                 type="text"
                 className="form-control text-black"
                 name="username"
-                placeholder="John Doe"
+                placeholder="Your Name"
                 required
                 disabled={sendingEmail}
               />
@@ -79,7 +79,7 @@ const Contact = () => {
                 type="email"
                 className="form-control text-black"
                 name="email"
-                placeholder="youremail@mail.com"
+                placeholder="youremailaddress@mail.com"
                 required
                 disabled={sendingEmail}
               />

@@ -5,7 +5,7 @@ const About = () => {
     <div className="container p-5 h-100" id="about-me">
       <div className="row mt-5 align-items-center">
         <div className="text-black text-center">
-          <h1>About Me</h1>
+          <h1 className="fw-semibold">About Me</h1>
           <label className="fw-semibold dark-enphasis-text">
             {" "}
             Who&apos;s David Cruz?{" "}

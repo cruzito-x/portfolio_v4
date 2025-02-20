@@ -6,16 +6,9 @@ const Home = () => {
     <div className="container h-100 mb-5 pb-5" id="home">
       <div className="row mt-5 pt-5">
         <div className="col-lg-6 col-sm-12">
-          <h1
-            className="text-black fw-bold"
-            style={{
-              fontSize: "5rem",
-            }}
-          >
-            David Cruz
-          </h1>
+          <h1 className="text-black fw-bold name">David Cruz</h1>
           <label className="fw-semibold dark-enphasis-text fs-5">
-            Software Engineer{" "}
+            Software Engineer
           </label>
           <p className="text-black mt-3 fs-6 mt-4">
             Graduated with a degree in Computer and Systems Engineering with a
@@ -37,9 +30,12 @@ const Home = () => {
               Download CV
             </a>
             <a href="#contact-me" className="btn btn-primary mt-2 ms-3">
-              <i className="bx bx-send me-2" style={{
-                rotate: "-30deg"
-              }}></i>
+              <i
+                className="bx bx-send me-2"
+                style={{
+                  rotate: "-30deg",
+                }}
+              ></i>
               Contact Me
             </a>
           </div>

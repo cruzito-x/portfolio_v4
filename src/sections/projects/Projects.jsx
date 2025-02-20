@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div className="container p-5 h-100" id="projects">
       <div className="text-black text-center mt-5">
-        <h1>Projects</h1>
+        <h1 className="fw-semibold">Projects</h1>
         <label className="fw-semibold dark-enphasis-text">
           Some of the Notable Projects I have Worked On
         </label>
