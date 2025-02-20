@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3 transition-all ${
+      className={`navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3 transition-all ${
         isScrolled ? "shadow-sm" : ""
       }`}
     >
-      <div className="container-fluid">
+      <div className="container h-100 container-fluid">
         <button
           className="navbar-toggler"
           type="button"
