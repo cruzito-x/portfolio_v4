@@ -53,7 +53,7 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="d-flex justify-content-center me-5 p-1">
+            <div className="d-flex justify-content-center me-5 p-2">
               <a
                 onClick={() => window.scrollTo(0, 0)}
                 className="cursor-pointer"
