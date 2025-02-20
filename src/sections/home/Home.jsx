@@ -14,6 +14,7 @@ const Home = () => {
                   href="https://instagram.com/_cruzito.x"
                   className="fs-3"
                   target="_blank"
+                  title="Instagram"
                 >
                   <i className="bx bxl-instagram"></i>
                 </a>
@@ -23,6 +24,7 @@ const Home = () => {
                   href="https://github.com/cruzito-x"
                   className="fs-3"
                   target="_blank"
+                  title="GitHub"
                 >
                   <i className="bx bxl-github"></i>
                 </a>
@@ -32,6 +34,7 @@ const Home = () => {
                   href="https://discord.com/users/644250041594150914"
                   className="fs-3"
                   target="_blank"
+                  title="Discord"
                 >
                   <i className="bx bxl-discord-alt"></i>
                 </a>
