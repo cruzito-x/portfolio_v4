@@ -7,19 +7,22 @@ const Home = () => {
     <div className="container h-100 mb-5 pb-5" id="home">
       <div className="row mt-5">
         <div className="col-lg-6 col-sm-12">
-          <h1 className="text-black fw-bold name">David Cruz</h1>
+          <h1 className="text-black fw-bold name">
+            David <span className="enphasis-text">Cruz</span>
+          </h1>
           <label className="fw-semibold dark-enphasis-text fs-5">
             Software Engineer
           </label>
           <p className="text-black mt-3 fs-6 mt-4">
-            Graduated with a degree in Computer and Systems Engineering with a
-            Pre major in Cybersecurity Engineering in progress, I have
-            experience in the area of web development with JavaScript-based
-            technologies such as React.js and Express.js, I also have knowledge
-            in both management and handling of relational databases and web
-            design using tools such as Figma. <br /> <br />
-            I&apos;m always looking to expand the horizons of my knowledge and
-            expand my capabilities.
+            I am a Graduate with a degree in Computer and Systems Engineering
+            and am In the Process of a major in Cybersecurity Engineering in
+            progress. <br /> I have experience in the area of web development
+            with JavaScript-based technologies such as Rea. I have experience in
+            the area of web development with JavaScript-based technologies such
+            as React.js and Express.js, I am also knowledgeable in the areas of
+            both management, handling of relational databases, and web design
+            using tools such as Figma. <br /> <br />I am always looking to
+            expand the horizons of my knowledge and work on my capabilities.
           </p>
           <div className="text-start mb-5">
             <a
