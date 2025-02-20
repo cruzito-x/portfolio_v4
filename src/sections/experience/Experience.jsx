@@ -15,8 +15,8 @@ const Experience = () => {
         </label>
       </div>
       <div className="row mt-5">
-        <div className="col-lg-6 col-sm-12">
-          <div className="timeline">
+        <div className="col-lg-6 col-sm-12 d-flex align-items-center">
+          <div className="timeline w-100 mb-5">
             <div className="timeline-item d-flex align-items-center">
               <div className="icon cursor-pointer">
                 <img src={owaspLogo} alt="OWASP logo" />

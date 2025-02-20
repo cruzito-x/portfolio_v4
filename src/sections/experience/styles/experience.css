@@ -50,6 +50,10 @@
   background-color: #0046aa;
 }
 
+.timeline-item:nth-child(4) {
+  margin-bottom: 0px;
+}
+
 .timeline-content {
   background: #1c1f2b;
   padding: 15px;
