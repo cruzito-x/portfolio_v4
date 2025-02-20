@@ -1,8 +1,9 @@
+import Lottie from "react-lottie";
 import owaspLogo from "../../assets/icons/dependencycheck.png";
 import frontendIcon from "../../assets/icons/frontendmentor.png";
 import htmxLogo from "../../assets/icons/htmx.png";
 import pcLogo from "../../assets/icons/pcgamingwiki.png";
-import dataSecurityImage from "../../assets/img/data-security.png";
+import dataSecurityLottie from "../../assets/img/lottie/data-security";
 import "./styles/experience.css";
 
 const Experience = () => {
@@ -66,7 +67,16 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
-          <img src={dataSecurityImage} className="w-100" alt="Data Security" />
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: dataSecurityLottie,
+              rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice",
+              },
+            }}
+          />
         </div>
       </div>
     </div>

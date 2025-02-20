@@ -1,4 +1,5 @@
-import coderImage from "../../assets/img/coder.png";
+import Lottie from "react-lottie";
+import coderLottie from "../../assets/img/lottie/coder";
 import curriculumVitae from "../../assets/docs/David Cruz - Currículum Vitae.pdf";
 import "./styles/home.css";
 
@@ -85,7 +86,16 @@ const Home = () => {
           </div>
         </div>
         <div className="col-lg-6 justify-content-center">
-          <img src={coderImage} className="w-100" alt="" />
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: coderLottie,
+              rendererSettings: {
+                preserveAspectRatio: "xMidYMid slice",
+              },
+            }}
+          />
         </div>
       </div>
     </div>
