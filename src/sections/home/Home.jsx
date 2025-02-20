@@ -12,7 +12,7 @@ const Home = () => {
               <li>
                 <a
                   href="https://instagram.com/_cruzito.x"
-                  className="fs-3"
+                  className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="Instagram"
                 >
@@ -22,7 +22,7 @@ const Home = () => {
               <li>
                 <a
                   href="https://github.com/cruzito-x"
-                  className="fs-3"
+                  className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="GitHub"
                 >
@@ -32,7 +32,7 @@ const Home = () => {
               <li>
                 <a
                   href="https://discord.com/users/644250041594150914"
-                  className="fs-3"
+                  className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="Discord"
                 >
@@ -43,7 +43,9 @@ const Home = () => {
           </div>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
-              David <span className="enphasis-text">Cruz</span>
+              Hi! I&apos;m
+              <br />
+              <span className="enphasis-text typing-effect">David Cruz</span>
             </h1>
             <label className="fw-semibold dark-enphasis-text fs-5">
               Software Engineer
