@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { projectsData, projects } from "../../assets/data/Portfolio";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
+  const carouselRef = useRef(null);
 
   const filteredProjects =
     selectedCategory === "all"
       ? projectsData
       : projectsData.filter((project) => project.category === selectedCategory);
+
+  useEffect(() => {
+    if (selectedCategory === "all" && carouselRef.current) {
+      const interval = setInterval(() => {
+        if (carouselRef.current) {
+          carouselRef.current.scrollLeft += 10;
+        }
+      }, 30);
+      return () => clearInterval(interval);
+    }
+  }, [selectedCategory]);
 
   return (
     <div className="container p-5 h-100" id="projects">
@@ -34,10 +46,23 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="row mt-3 justify-content-center">
-        {filteredProjects.map((project) => (
-          <div key={project.id} className="col-lg-3 col-md-6 col-sm-12 mb-4">
-            <div className="card border-0 h-100">
+      {selectedCategory === "all" ? (
+        <div
+          className="d-flex overflow-hidden mt-3"
+          style={{
+            scrollBehavior: "smooth",
+            whiteSpace: "nowrap",
+            display: "flex",
+            alignItems: "center",
+          }}
+          ref={carouselRef}
+        >
+          {filteredProjects.map((project) => (
+            <div
+              key={project.id}
+              className="card border-0 h-100 mx-2"
+              style={{ minWidth: "300px", maxWidth: "300px" }}
+            >
               <img
                 src={project.image}
                 alt={project.title}
@@ -45,7 +70,9 @@ const Projects = () => {
               />
               <div className="card-body">
                 <h5 className="card-title">{project.title}</h5>
-                <p className="card-text">{project.description}</p>
+                <p className="card-text" style={{ whiteSpace: "normal" }}>
+                  {project.description}
+                </p>
                 <div className="d-flex flex-wrap">
                   {project.techs.map((tech) => (
                     <span
@@ -60,46 +87,43 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-                <div className="mt-2 d-flex align-items-center">
-                  {project.deploy_url && (
-                    <a
-                      href={project.deploy_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary me-2"
-                    >
-                      <i className="bx bx-rocket me-1"></i>
-                      Deploy
-                    </a>
-                  )}
-                  {project.source_url && (
-                    <a
-                      href={project.source_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary me-2"
-                    >
-                      <i className="bx bxl-github me-1"></i>
-                      Source Code
-                    </a>
-                  )}
-                  {project.design_url && (
-                    <a
-                      href={project.design_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-sm btn-primary"
-                    >
-                      <i className="bx bxl-figma"></i>
-                      Design
-                    </a>
-                  )}
+              </div>
+            </div>
+          ))}
+        </div>
+      ) : (
+        <div className="row mt-3 justify-content-center">
+          {filteredProjects.map((project) => (
+            <div key={project.id} className="col-lg-3 col-md-6 col-sm-12 mb-4">
+              <div className="card border-0 h-100">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="card-img-top rounded mb-3"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">{project.title}</h5>
+                  <p className="card-text">{project.description}</p>
+                  <div className="d-flex flex-wrap">
+                    {project.techs.map((tech) => (
+                      <span
+                        key={tech.id}
+                        className="badge fw-normal me-1 mb-1 d-flex align-items-center"
+                        style={{
+                          border: `1px solid ${tech.color}`,
+                          color: tech.color,
+                        }}
+                      >
+                        {tech.icon} {tech.name}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
