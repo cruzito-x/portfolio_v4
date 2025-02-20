@@ -62,7 +62,6 @@ const Projects = () => {
         <div
           className="d-flex overflow-hidden mt-3"
           style={{
-            scrollBehavior: "smooth",
             whiteSpace: "nowrap",
             display: "flex",
             alignItems: "center",
