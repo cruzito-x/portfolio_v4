@@ -13,6 +13,18 @@ const Contact = () => {
     const formData = new FormData(formRef.current);
     const values = Object.fromEntries(formData.entries());
 
+    if (!values) {
+      Swal.fire({
+        title: "Error",
+        text: "Please, Fill the Form to Send a Message",
+        icon: "warning",
+        confirmButtonText: "Accept",
+        confirmButtonColor: "#267cec",
+      });
+
+      return;
+    }
+
     setSendingEmail(true);
 
     emailjs
