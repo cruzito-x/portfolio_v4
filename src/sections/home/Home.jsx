@@ -81,7 +81,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 d-flex justify-content-center">
+        <div className="col-lg-6 justify-content-center">
           <img src={coderImage} className="w-100" alt="" />
         </div>
       </div>

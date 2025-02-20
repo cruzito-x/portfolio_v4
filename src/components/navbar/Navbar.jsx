@@ -1,4 +1,4 @@
-import cruzitoLogo from "../assets/img/logo.png";
+import cruzitoLogo from "../../assets/img/logo.png";
 
 const Navbar = () => {
   return (
@@ -33,18 +33,20 @@ const Navbar = () => {
               </a>
             </div>
 
-            <a
-              className="nav-link mx-auto"
-              href="https://github.com/cruzito-x"
-              target="_blank"
-            >
-              <img
-                src={cruzitoLogo}
-                className="rounded-circle shadow mt-3 mb-3"
-                alt="cruzito's logo"
-                style={{ width: "60px" }}
-              />
-            </a>
+            <div className="d-flex justify-content-center me-5">
+              <a
+                className="nav-link"
+                href="https://github.com/cruzito-x"
+                target="_blank"
+              >
+                <img
+                  src={cruzitoLogo}
+                  className="rounded-circle shadow mt-2 mb-3"
+                  alt="cruzito's logo"
+                  style={{ width: "60px" }}
+                />
+              </a>
+            </div>
 
             <div className="d-flex flex-column flex-lg-row">
               <a className="nav-link text-center text-lg-end" href="#skills">
