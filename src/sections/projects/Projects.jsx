@@ -112,7 +112,7 @@ const Projects = () => {
                   alt={project.title}
                   className="card-img-top rounded mb-3"
                 />
-                <div className="card-body">
+                <div className="card-body ps-0 pe-0">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
                   <div className="d-flex flex-wrap">
