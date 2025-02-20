@@ -59,7 +59,7 @@ const Contact = () => {
         </div>
         <div className="col-lg-6 col-sm-12">
           <form className="card p-5 mb-5" ref={formRef} onSubmit={sendEmail}>
-            <label className="text-black text-center fs-3">
+            <label className="text-black fw-semibold text-center fs-3">
               Send Me a Message
             </label>
             <div className="mb-3">
