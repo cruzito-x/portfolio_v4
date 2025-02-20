@@ -53,7 +53,7 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="d-flex justify-content-center me-5">
+            <div className="d-flex justify-content-center me-5 p-1">
               <a
                 onClick={() => window.scrollTo(0, 0)}
                 className="cursor-pointer"
@@ -61,7 +61,7 @@ const Navbar = () => {
               >
                 <img
                   src={cruzitoLogo}
-                  className="rounded-circle shadow mt-2 mb-3"
+                  className="rounded-circle shadow"
                   alt="cruzito's logo"
                   style={{ width: "60px" }}
                 />
