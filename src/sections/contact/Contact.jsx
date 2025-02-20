@@ -62,7 +62,7 @@ const Contact = () => {
         <label className="fw-semibold dark-enphasis-text">Say Hello ^^</label>
       </div>
       <div className="row align-items-center mt-3">
-        <div className="col-lg-6 justify-content-center">
+        <div className="col-lg-6 justify-content-center lottie-container">
           <Lottie
             options={{
               loop: true,

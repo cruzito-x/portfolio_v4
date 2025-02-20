@@ -14,7 +14,7 @@
   --mysql-color: #005c89;
   --mongodb-color: #12a44e;
   --git-color: #ef503b;
-  --figma-color: #FF7363;
+  --figma-color: #ff7363;
   --swagger-color: #479f2b;
 }
 
@@ -47,4 +47,8 @@ h1 {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.lottie-container {
+  pointer-events: none !important;
 }

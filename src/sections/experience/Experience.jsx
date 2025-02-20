@@ -66,7 +66,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
+        <div className="col-lg-6 col-sm-12 d-flex justify-content-center lottie-container">
           <Lottie
             options={{
               loop: true,

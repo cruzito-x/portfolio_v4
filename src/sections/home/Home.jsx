@@ -85,7 +85,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 justify-content-center">
+        <div className="col-lg-6 justify-content-center lottie-container">
           <Lottie
             options={{
               loop: true,
