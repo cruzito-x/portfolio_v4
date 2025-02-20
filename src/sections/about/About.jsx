@@ -1,3 +1,5 @@
+import profilePhoto from "../../assets/img/me.png";
+
 const About = () => {
   return (
     <div className="container p-5 h-100" id="about-me">
@@ -11,7 +13,7 @@ const About = () => {
         </div>
         <div className="col-lg-6 col-sm-12 mt-5">
           <img
-            src="src/assets/img/me.png"
+            src={profilePhoto}
             className="w-100 rounded shadow"
             alt="David's Photo"
           />

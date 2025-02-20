@@ -1,3 +1,4 @@
+import coderImage from "../../assets/img/coder.png";
 import "./styles/home.css";
 
 const Home = () => {
@@ -40,7 +41,7 @@ const Home = () => {
           </div>
         </div>
         <div className="col-lg-6 d-flex justify-content-center">
-          <img src="src/assets/img/coder.png" className="w-100" alt="" />
+          <img src={coderImage} className="w-100" alt="" />
         </div>
       </div>
     </div>

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
+import workAtHomeImage from "../../assets/img/work-from-home.png";
 
 const Contact = () => {
   const [sendingEmail, setSendingEmail] = useState(false);
@@ -49,11 +50,7 @@ const Contact = () => {
       </div>
       <div className="row align-items-center mt-3">
         <div className="col-lg-6 justify-content-center">
-          <img
-            src="src/assets/img/work-from-home.png"
-            className="w-100"
-            alt="Contact Me Image"
-          />
+          <img src={workAtHomeImage} className="w-100" alt="Contact Me Image" />
           <p className="text-black mt-3">
             If you have any questions, need help, or just want to say hi, feel
             free to send me a message. I will get back to you as soon as

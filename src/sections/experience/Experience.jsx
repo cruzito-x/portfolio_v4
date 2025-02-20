@@ -1,3 +1,8 @@
+import owaspLogo from "../../assets/icons/dependencycheck.png";
+import frontendIcon from "../../assets/icons/frontendmentor.png";
+import htmxLogo from "../../assets/icons/htmx.png";
+import pcLogo from "../../assets/icons/pcgamingwiki.png";
+import stayAtHomeImage from "../../assets/img/stay-at-home.png";
 import "./styles/experience.css";
 
 const Experience = () => {
@@ -14,10 +19,7 @@ const Experience = () => {
           <div className="timeline">
             <div className="timeline-item d-flex align-items-center">
               <div className="icon cursor-pointer">
-                <img
-                  src="src/assets/icons/dependencycheck.png"
-                  alt="OWASP logo"
-                />
+                <img src={owaspLogo} alt="OWASP logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
@@ -29,10 +31,7 @@ const Experience = () => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon cursor-pointer">
-                <img
-                  src="src/assets/icons/frontendmentor.png"
-                  alt="Frontend Mentor logo"
-                />
+                <img src={frontendIcon} alt="Frontend Mentor logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
@@ -44,7 +43,7 @@ const Experience = () => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon cursor-pointer">
-                <img src="src/assets/icons/htmx.png" alt="HTMX logo" />
+                <img src={htmxLogo} alt="HTMX logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">2020 - 2024</label>
@@ -54,10 +53,7 @@ const Experience = () => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon cursor-pointer">
-                <img
-                  src="src/assets/icons/pcgamingwiki.png"
-                  alt="PC Gaming logo"
-                />
+                <img src={pcLogo} alt="PC Gaming logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
@@ -70,11 +66,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="col-lg-6 col-sm-12 d-flex justify-content-center">
-          <img
-            src="src/assets/img/stay-at-home.png"
-            className="w-100"
-            alt="Stay at Home"
-          />
+          <img src={stayAtHomeImage} className="w-100" alt="Stay at Home" />
         </div>
       </div>
     </div>

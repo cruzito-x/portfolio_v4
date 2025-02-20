@@ -1,3 +1,5 @@
+import cruzitoLogo from "../assets/img/logo.png";
+
 const Navbar = () => {
   return (
     <nav className="container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-5 pe-5">
@@ -20,9 +22,9 @@ const Navbar = () => {
           target="_blank"
         >
           <img
-            src="src/assets/img/logo.png"
+            src={cruzitoLogo}
             className="rounded-circle shadow"
-            alt="David's logo"
+            alt="cruzito's logo"
             style={{
               width: "60px",
             }}
