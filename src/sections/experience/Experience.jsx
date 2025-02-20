@@ -72,9 +72,6 @@ const Experience = () => {
               loop: true,
               autoplay: true,
               animationData: dataSecurityLottie,
-              rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice",
-              },
             }}
           />
         </div>

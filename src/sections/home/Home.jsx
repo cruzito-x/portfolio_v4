@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="container h-100 mb-5 ps-5 pe-5 pb-5">
       <div className="row mt-5 mb-5">
-        <div className="d-flex col-lg-6 col-sm-12">
+        <div className="d-flex col-lg-6 col-sm-12 p-0">
           <div className="me-3 mt-3">
             <ul style={{ listStyle: "none" }}>
               <li>
@@ -67,13 +67,13 @@ const Home = () => {
             <div className="text-start mb-5">
               <a
                 href={curriculumVitae}
-                className="btn btn-primary mt-2"
+                className="btn btn-primary mt-2 me-3"
                 target="_blank"
               >
                 <i className="bx bx-download me-2"></i>
                 Download CV
               </a>
-              <a href="#contact-me" className="btn btn-primary mt-2 ms-3">
+              <a href="#contact-me" className="btn btn-primary mt-2">
                 <i
                   className="bx bx-send me-2"
                   style={{
@@ -91,9 +91,6 @@ const Home = () => {
               loop: true,
               autoplay: true,
               animationData: coderLottie,
-              rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice",
-              },
             }}
           />
         </div>

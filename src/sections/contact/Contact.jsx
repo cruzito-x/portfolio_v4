@@ -68,9 +68,6 @@ const Contact = () => {
               loop: true,
               autoplay: true,
               animationData: coffeeLottie,
-              rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice",
-              },
             }}
           />
           <p className="text-black mt-3">
