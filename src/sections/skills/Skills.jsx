@@ -21,20 +21,20 @@ const Skills = () => {
           Skills I Utilize to Effectively Complete Tasks
         </label>
       </div>
-      <div className="row mt-5">
-        <div className="col-md-2 col-sm-3 text-center">
+      <div className="row mt-5 mb-3">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={htmlIcon} alt="HTML logo" /> <br />
             <label className="html-text fw-semibold fs-6 mt-3">HTML</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={cssIcon} alt="CSS logo" /> <br />
             <label className="css-text fw-semibold fs-6 mt-3">CSS</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={javaScriptIcon} alt="JavaScript logo" /> <br />
             <label className="javascript-text fw-semibold fs-6 mt-3">
@@ -42,7 +42,7 @@ const Skills = () => {
             </label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={bootstrapIcon} alt="Bootstrap logo" /> <br />
             <label className="bootstrap-text fw-semibold fs-6 mt-3">
@@ -50,13 +50,13 @@ const Skills = () => {
             </label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={reactIcon} alt="React.js logo" /> <br />
             <label className="react-text fw-semibold fs-6 mt-3">React.js</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={angularLogo} alt="Angular logo" /> <br />
             <label className="angular-text fw-semibold fs-6 mt-3">
@@ -65,8 +65,8 @@ const Skills = () => {
           </>
         </div>
       </div>
-      <div className="row mt-5">
-        <div className="col-md-2 col-sm-3 text-center">
+      <div className="row mb-5">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={expressLogo} alt="Express.js logo" /> <br />
             <label className="express-text fw-semibold fs-6 mt-3">
@@ -74,7 +74,7 @@ const Skills = () => {
             </label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={laravelLogo} alt="Laravel logo" /> <br />
             <label className="laravel-text fw-semibold fs-6 mt-3">
@@ -82,25 +82,25 @@ const Skills = () => {
             </label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={mysqlLogo} alt="MySQL logo" /> <br />
             <label className="mysql-text fw-semibold fs-6 mt-3">MySQL</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={gitLogo} className="rounded" alt="Git logo" /> <br />
             <label className="git-text fw-semibold fs-6 mt-3">Git</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={figmaLogo} alt="Figma logo" /> <br />
             <label className="figma-text fw-semibold fs-6 mt-3">Figma</label>
           </>
         </div>
-        <div className="col-md-2 col-sm-3 text-center">
+        <div className="col-4 col-md-2 text-center">
           <>
             <img src={swaggerLogo} alt="Swagger logo" /> <br />
             <label className="swagger-text fw-semibold fs-6 mt-3">
