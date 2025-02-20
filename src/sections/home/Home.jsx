@@ -1,4 +1,5 @@
 import coderImage from "../../assets/img/coder.png";
+import curriculumVitae from "../../assets/docs/David Cruz - Currículum Vitae.pdf";
 import "./styles/home.css";
 
 const Home = () => {
@@ -22,7 +23,7 @@ const Home = () => {
           </p>
           <div className="text-start mb-5">
             <a
-              href="src/assets/docs/David Cruz - Currículum Vitae.pdf"
+              href={curriculumVitae}
               className="btn btn-primary mt-2"
               target="_blank"
             >
