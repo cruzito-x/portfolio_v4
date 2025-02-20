@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3 transition-all ${
+      className={`navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black ps-3 pe-3 transition-all ${
         isScrolled ? "shadow-sm" : ""
       }`}
     >
@@ -55,10 +55,9 @@ const Navbar = () => {
 
             <div className="d-flex justify-content-center me-5">
               <a
-                className="nav-link"
-                href="https://github.com/cruzito-x"
-                target="_blank"
-                rel="noopener noreferrer"
+                onClick={() => window.scrollTo(0, 0)}
+                className="cursor-pointer"
+                href="#"
               >
                 <img
                   src={cruzitoLogo}

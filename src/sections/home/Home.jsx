@@ -4,8 +4,8 @@ import "./styles/home.css";
 
 const Home = () => {
   return (
-    <div className="container h-100 mb-5 ps-5 pe-5 pb-5" id="home">
-      <div className="row mt-5">
+    <div className="container h-100 mb-5 ps-5 pe-5 pb-5">
+      <div className="row mt-5 mb-5">
         <div className="d-flex col-lg-6 col-sm-12">
           <div className="me-3 mt-3">
             <ul style={{ listStyle: "none" }}>
@@ -15,6 +15,7 @@ const Home = () => {
                   className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="Instagram"
+                  rel="noopener noreferrer"
                 >
                   <i className="bx bxl-instagram"></i>
                 </a>
@@ -25,6 +26,7 @@ const Home = () => {
                   className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="GitHub"
+                  rel="noopener noreferrer"
                 >
                   <i className="bx bxl-github"></i>
                 </a>
@@ -35,6 +37,7 @@ const Home = () => {
                   className="fs-3 dark-enphasis-text"
                   target="_blank"
                   title="Discord"
+                  rel="noopener noreferrer"
                 >
                   <i className="bx bxl-discord-alt"></i>
                 </a>
@@ -45,22 +48,20 @@ const Home = () => {
             <h1 className="text-black fw-bold name">
               Hi! I&apos;m
               <br />
-              <span className="enphasis-text typing-effect">David Cruz</span>
+              <span className="enphasis-text">David Cruz</span>
             </h1>
             <label className="fw-semibold dark-enphasis-text fs-5">
               Software Engineer
             </label>
             <p className="text-black mt-3 fs-6 mt-4">
               I am a Graduate with a degree in Computer and Systems Engineering
-              and am In the Process of a major in Cybersecurity Engineering in
-              progress. <br /> I have experience in the area of web development
-              with JavaScript-based technologies such as Rea. I have experience
-              in the area of web development with JavaScript-based technologies
-              such as React.js and Express.js, I am also knowledgeable in the
-              areas of both management, handling of relational databases, and
-              web design using tools such as Figma. <br /> <br />I am always
-              looking to expand the horizons of my knowledge and work on my
-              capabilities.
+              and am In the Process of a pre-major in Cybersecurity Engineering.{" "}
+              <br /> I have experience in the area of web development with
+              JavaScript-based technologies such as React.js and Express.js, I
+              am also knowledgeable in the areas of both management, handling of
+              relational databases, and web design using tools such as Figma.{" "}
+              <br /> <br />I am always looking to expand the horizons of my
+              knowledge and work on my capabilities.
             </p>
             <div className="text-start mb-5">
               <a
