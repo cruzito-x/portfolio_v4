@@ -10,13 +10,25 @@ const Projects = () => {
       ? projectsData
       : projectsData.filter((project) => project.category === selectedCategory);
 
+  const infiniteProjects = [...filteredProjects, ...filteredProjects];
+
   useEffect(() => {
     if (selectedCategory === "all" && carouselRef.current) {
+      const carousel = carouselRef.current;
+      let scrollAmount = 0;
+
       const interval = setInterval(() => {
-        if (carouselRef.current) {
-          carouselRef.current.scrollLeft += 10;
+        if (carousel) {
+          carousel.scrollLeft += 2;
+          scrollAmount += 2;
+
+          if (scrollAmount >= carousel.scrollWidth / 2) {
+            carousel.scrollLeft = 0;
+            scrollAmount = 0;
+          }
         }
       }, 30);
+
       return () => clearInterval(interval);
     }
   }, [selectedCategory]);
@@ -57,9 +69,9 @@ const Projects = () => {
           }}
           ref={carouselRef}
         >
-          {filteredProjects.map((project) => (
+          {infiniteProjects.map((project, index) => (
             <div
-              key={project.id}
+              key={index}
               className="card border-0 h-100 mx-2"
               style={{ minWidth: "300px", maxWidth: "300px" }}
             >
@@ -117,6 +129,41 @@ const Projects = () => {
                         {tech.icon} {tech.name}
                       </span>
                     ))}
+                  </div>
+                  <div className="mt-2 d-flex align-items-center">
+                    {project.deploy_url && (
+                      <a
+                        href={project.deploy_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary me-2"
+                      >
+                        <i className="bx bx-rocket me-1"></i>
+                        Deploy
+                      </a>
+                    )}
+                    {project.source_url && (
+                      <a
+                        href={project.source_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary me-2"
+                      >
+                        <i className="bx bxl-github me-1"></i>
+                        Source Code
+                      </a>
+                    )}
+                    {project.design_url && (
+                      <a
+                        href={project.design_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary"
+                      >
+                        <i className="bx bxl-figma"></i>
+                        Design
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
