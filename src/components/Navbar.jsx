@@ -2,44 +2,61 @@ import cruzitoLogo from "../assets/img/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-5 pe-5">
+    <nav className="container h-100 navbar navbar-expand-lg d-flex align-items-center sticky-top bg-white text-black mt-3 ps-3 pe-3">
       <div className="container-fluid">
-        <div className="d-flex">
-          <div className="w-50">
-            <a className="nav-link" href="#about-me">
-              About me
-            </a>
-          </div>
-          <div className="w-50 ms-5">
-            <a className="nav-link" href="#experience">
-              Experience
-            </a>
-          </div>
-        </div>
-        <a
-          className="nav-link mx-auto"
-          href="https://github.com/cruzito-x"
-          target="_blank"
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <img
-            src={cruzitoLogo}
-            className="rounded-circle shadow"
-            alt="cruzito's logo"
-            style={{
-              width: "60px",
-            }}
-          />
-        </a>
-        <div className="d-flex">
-          <div className="w-50">
-            <a className="nav-link" href="#skills">
-              Skills
+          <span className="navbar-toggler-icon"></span>
+        </button>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-center">
+            <div className="d-flex flex-column flex-lg-row">
+              <a
+                className="nav-link text-center text-lg-start"
+                href="#about-me"
+              >
+                About me
+              </a>
+              <a
+                className="nav-link text-center text-lg-start ms-lg-5"
+                href="#experience"
+              >
+                Experience
+              </a>
+            </div>
+
+            <a
+              className="nav-link mx-auto"
+              href="https://github.com/cruzito-x"
+              target="_blank"
+            >
+              <img
+                src={cruzitoLogo}
+                className="rounded-circle shadow mt-3 mb-3"
+                alt="cruzito's logo"
+                style={{ width: "60px" }}
+              />
             </a>
-          </div>
-          <div className="w-50 ms-5">
-            <a className="nav-link" href="#projects">
-              Projects
-            </a>
+
+            <div className="d-flex flex-column flex-lg-row">
+              <a className="nav-link text-center text-lg-end" href="#skills">
+                Skills
+              </a>
+              <a
+                className="nav-link text-center text-lg-end ms-lg-5"
+                href="#projects"
+              >
+                Projects
+              </a>
+            </div>
           </div>
         </div>
       </div>

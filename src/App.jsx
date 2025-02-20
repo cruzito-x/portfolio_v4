@@ -7,6 +7,7 @@ import Projects from "./sections/projects/Projects";
 import Skills from "./sections/skills/Skills";
 import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 function App() {
   return (
