@@ -27,15 +27,19 @@ const Home = () => {
             I&apos;m always looking to expand the horizons of my knowledge and
             expand my capabilities.
           </p>
-          <div className="text-center">
+          <div className="text-start">
             <a
               href="src/assets/docs/David Cruz - Currículum Vitae.pdf"
               className="btn btn-primary mt-2"
               target="_blank"
             >
+              <i className="bx bx-download me-2"></i>
               Download CV
             </a>
             <a href="#contact-me" className="btn btn-primary mt-2 ms-3">
+              <i className="bx bx-send me-2" style={{
+                rotate: "-30deg"
+              }}></i>
               Contact Me
             </a>
           </div>
