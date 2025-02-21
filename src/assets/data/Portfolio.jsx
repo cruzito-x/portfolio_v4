@@ -10,6 +10,7 @@ import Work11 from "../pictures/Backend/work1.png";
 import Work12 from "../pictures/Backend/work2.png";
 import Work9 from "../pictures/Designs/work1.png";
 import Work10 from "../pictures/Designs/work2.png";
+import Work13 from "../pictures/Designs/work3.png";
 
 /* =================== TECHS ICONS =================== */
 
@@ -438,6 +439,25 @@ export const projectsData = [
     ],
     design_url:
       "https://www.figma.com/design/g039NhW9ZAy8NcF2knXqZk/MindMap?m=auto&t=HpVDzN4iSlcsV6dT-6",
+  },
+  {
+    id: 13,
+    image: Work13,
+    title: "VS Marketplace Extension",
+    description:
+      "Clean and professional design, oriented to a pleasant UX with a user-friendly UI, ideal for data visualization.",
+    category: categories.design.name,
+    category_color: categories.design.color,
+    techs: [
+      {
+        id: 1,
+        icon: techData.figma.icon,
+        color: techData.figma.color,
+        name: techData.figma.name,
+      },
+    ],
+    design_url:
+      "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
   },
 ];
 
