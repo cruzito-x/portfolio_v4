@@ -356,9 +356,9 @@ export const projectsData = [
   {
     id: 9,
     image: Work11,
-    title: "API to Bookstore Sales System",
+    title: "Bookstore Sales System API",
     description:
-      "Secure endpoints, with a system for storing and returning images to and from the front-end.",
+      "Endpoints, with a system for storing images in the server and returning this to the front-end.",
     category: categories.backend.name,
     category_color: categories.backend.color,
     techs: [
@@ -380,9 +380,9 @@ export const projectsData = [
   {
     id: 10,
     image: Work12,
-    title: "API to Bank Collection System",
+    title: "Bank Collection System API",
     description:
-      "Secure endpoints for collection management, prioritizing data security and integrity.",
+      "Endpoints for the management of banking transactions, prioritizing security and data integrity.",
     category: categories.backend.name,
     category_color: categories.backend.color,
     techs: [
