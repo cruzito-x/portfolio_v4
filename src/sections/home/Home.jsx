@@ -5,8 +5,13 @@ import "./styles/home.css";
 
 const Home = () => {
   return (
-    <div className="container h-100 mb-5 ps-5 pe-5 pb-5">
-      <div className="row mt-5 mb-5">
+    <div
+      className="container h-100 mb-5 ps-5 pe-5"
+      style={{
+        minHeight: "100vh",
+      }}
+    >
+      <div className="row mt-5 pt-5">
         <div className="d-flex col-lg-6 col-sm-12 p-0">
           <div className="me-3 mt-3">
             <ul style={{ listStyle: "none" }}>

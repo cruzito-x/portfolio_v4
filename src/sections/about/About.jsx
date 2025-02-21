@@ -2,8 +2,8 @@ import profilePhoto from "../../assets/img/me.png";
 
 const About = () => {
   return (
-    <div className="container p-5 h-100" id="about-me">
-      <div className="row mt-5 align-items-center">
+    <div className="container ps-5 pe-5 pb-5 h-100" id="about-me">
+      <div className="row align-items-center">
         <div className="text-black text-center">
           <h1 className="fw-semibold">About Me</h1>
           <label className="fw-semibold dark-enphasis-text">
