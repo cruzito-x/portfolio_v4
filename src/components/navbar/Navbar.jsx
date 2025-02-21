@@ -5,19 +5,21 @@ import "./styles/navbar.css";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const scrollWindow = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", scrollWindow);
     return () => window.removeEventListener("scroll", scrollWindow);
   }, []);
+
+  const navLinkClick = (link) => {
+    setActiveLink(link);
+    setMenuOpen(false);
+  };
 
   return (
     <nav
@@ -29,21 +31,19 @@ const Navbar = () => {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-expanded={menuOpen}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarNav">
           <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-center">
             <div className="d-flex flex-column flex-lg-row">
               <a
                 href="#about"
-                onClick={() => setActiveLink("#about")}
+                onClick={() => navLinkClick("#about")}
                 className={`nav-link text-lg-start ${
                   activeLink === "#about" ? "nav_link active_link" : "nav_link"
                 }`}
@@ -52,11 +52,9 @@ const Navbar = () => {
               </a>
               <a
                 href="#experience"
-                onClick={() => setActiveLink("#experience")}
+                onClick={() => navLinkClick("#experience")}
                 className={`nav-link text-lg-start ms-lg-5 ${
-                  activeLink === "#experience"
-                    ? "nav_link active_link"
-                    : "nav_link"
+                  activeLink === "#experience" ? "nav_link active_link" : "nav_link"
                 }`}
               >
                 Experience
@@ -67,7 +65,7 @@ const Navbar = () => {
               <a
                 onClick={() => {
                   window.scrollTo(0, 0);
-                  setActiveLink("#home");
+                  navLinkClick("#home");
                 }}
                 className={`cursor-pointer ${
                   activeLink === "#home" ? "nav_link active_link" : "nav_link"
@@ -86,7 +84,7 @@ const Navbar = () => {
             <div className="d-flex flex-column flex-lg-row">
               <a
                 href="#skills"
-                onClick={() => setActiveLink("#skills")}
+                onClick={() => navLinkClick("#skills")}
                 className={`nav-link text-lg-end ${
                   activeLink === "#skills" ? "nav_link active_link" : "nav_link"
                 }`}
@@ -95,11 +93,9 @@ const Navbar = () => {
               </a>
               <a
                 href="#projects"
-                onClick={() => setActiveLink("#projects")}
+                onClick={() => navLinkClick("#projects")}
                 className={`nav-link text-lg-end ms-lg-5 ${
-                  activeLink === "#projects"
-                    ? "nav_link active_link"
-                    : "nav_link"
+                  activeLink === "#projects" ? "nav_link active_link" : "nav_link"
                 }`}
               >
                 Projects
