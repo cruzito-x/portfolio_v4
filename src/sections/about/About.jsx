@@ -32,10 +32,8 @@ const About = () => {
             I have experience in web application development using
             JavaScript-based technologies such as React.js, Node.js and
             Express.js, and Php-based such as Laravel, I also handle various
-            database engines such as MySQL, SQL Server and PostgreSQL for
-            <span className="fw-semibold enphasis-text">
-              development
-            </span> and{" "}
+            database engines such as MySQL, SQL Server and PostgreSQL for{" "}
+            <span className="fw-semibold enphasis-text">development</span> and{" "}
             <span className="fw-semibold enphasis-text">management</span> of{" "}
             <span className="fw-semibold enphasis-text">
               relational database
