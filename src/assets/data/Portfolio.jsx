@@ -239,7 +239,7 @@ export const projectsData = [
     image: Work5,
     title: "Chat App",
     description:
-      "Real-time asynchronous chat application with real-time notification services.",
+      "Real-time asynchronous chat app with file upload and notification services and customizables users profiles.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
