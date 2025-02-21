@@ -237,32 +237,35 @@ export const projectsData = [
   {
     id: 5,
     image: Work5,
-    title: "Chat App",
+    title: "VS Marketplace Extension",
     description:
-      "Real-time asynchronous chat app with file upload and notification services and customizables users profiles.",
+      "Extension for Azure DevOps in charge of performing security analysis on the projects to which it was applied.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
-        icon: techData.react.icon,
-        color: techData.react.color,
-        name: techData.react.name,
+        icon: techData.html.icon,
+        color: techData.html.color,
+        name: techData.html.name,
       },
       {
         id: 2,
-        icon: techData.node.icon,
-        color: techData.node.color,
-        name: techData.node.name,
+        icon: techData.css.icon,
+        color: techData.css.color,
+        name: techData.css.name,
       },
       {
-        id: 3,
-        icon: techData.mongodb.icon,
-        color: techData.mongodb.color,
-        name: techData.mongodb.name,
+        id: 2,
+        icon: techData.javascript.icon,
+        color: techData.javascript.color,
+        name: techData.javascript.name,
       },
     ],
-    source_url: "https://github.com/cruzito-x/splice",
+    extension_url:
+      "https://marketplace.visualstudio.com/items?itemName=CodeEyeSolutions.CodeEyeSolutions",
+    design_url:
+      "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
   },
   {
     id: 6,

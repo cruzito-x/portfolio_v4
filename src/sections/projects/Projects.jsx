@@ -165,6 +165,17 @@ const Projects = () => {
                         Source Code
                       </a>
                     )}
+                    {project.extension_url && (
+                      <a
+                        href={project.source_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-sm btn-primary me-2"
+                      >
+                        <i className="bx bxl-microsoft me-1"></i>
+                        Extension Source
+                      </a>
+                    )}
                     {project.design_url && (
                       <a
                         href={project.design_url}
