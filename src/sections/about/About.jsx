@@ -6,7 +6,7 @@ const About = () => {
       <div className="row mt-5 align-items-center">
         <div className="text-black text-center">
           <h1 className="fw-semibold">About Me</h1>
-          <label className="fw-semibold dark-enphasis-text">
+          <label className="fw-semibold enphasis-text-dark">
             {" "}
             Who&apos;s David Cruz?{" "}
           </label>
@@ -20,26 +20,31 @@ const About = () => {
         </div>
         <div className="col-lg-6 col-sm-12">
           <p className="text-black mt-3">
-            I&apos;m currently 22 years old, I&apos;m a graduate student of
+            I am currently 22 years old, I am a graduate student of
             <span className="fw-semibold enphasis-text">
               {" "}
               Systems and Computer Engineering
             </span>
-            , I have experience as a{" "}
-            <span className="fw-semibold enphasis-text">Designer</span> and{" "}
+            , I have experience as{" "}
+            <span className="fw-semibold enphasis-text">Web Designer</span>{" "}
+            using design tools such as Figma and as{" "}
             <span className="fw-semibold enphasis-text">Software Engineer</span>{" "}
-            using various design tools such as Figma. As for development, I have
-            experience in web application development using technologies such as
-            JavaScript using React.js, Node.js and Express.js, Php using Laravel
-            and MySQL, SQL Server and PostgreSQL to{" "}
+            I have experience in web application development using
+            JavaScript-based technologies such as React.js, Node.js and
+            Express.js, and Php-based such as Laravel, I also handle various
+            database engines such as MySQL, SQL Server and PostgreSQL for
             <span className="fw-semibold enphasis-text">
-              relational database development
+              development
+            </span> and{" "}
+            <span className="fw-semibold enphasis-text">management</span> of{" "}
+            <span className="fw-semibold enphasis-text">
+              relational database
             </span>
             .
           </p>
 
           <p className="text-black">
-            I&apos;m currently pursuing a pre-specialty in{" "}
+            I am currently pursuing a pre-specialty in{" "}
             <span className="fw-semibold enphasis-text">
               Cybersecurity Engineering
             </span>{" "}
@@ -51,7 +56,7 @@ const About = () => {
           </p>
 
           <p className="text-black">
-            Beyond my professional life, I&apos;m also an{" "}
+            Beyond my professional life, I am also an{" "}
             <span className="fw-semibold enphasis-text">
               occasional cosplayer
             </span>

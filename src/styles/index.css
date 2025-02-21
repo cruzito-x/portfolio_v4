@@ -41,8 +41,28 @@ h1 {
   color: #007bff;
 }
 
-.dark-enphasis-text {
+.enphasis-text-dark {
   color: #003166;
+}
+
+.btn-primary {
+  color: #ffffff !important;
+  background-color: #007bff !important;
+}
+
+.btn-primary:hover {
+  color: #ffffff !important;
+  background-color: #006bdd !important;
+}
+
+.btn-primary-dark {
+  color: #ffffff !important;
+  background-color: #003166 !important;
+}
+
+.btn-primary-dark:hover {
+  color: #ffffff !important;
+  background-color: #00244b !important;
 }
 
 .cursor-pointer {

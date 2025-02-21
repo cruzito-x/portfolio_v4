@@ -11,7 +11,7 @@ const Experience = () => {
     <div className="container p-5 h-100" id="experience">
       <div className="text-black text-center mt-5">
         <h1 className="fw-semibold">Experience & Education</h1>
-        <label className="fw-semibold dark-enphasis-text">
+        <label className="fw-semibold enphasis-text-dark">
           Companies I Have Worked With & My Education
         </label>
       </div>

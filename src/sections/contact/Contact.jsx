@@ -56,10 +56,10 @@ const Contact = () => {
   };
 
   return (
-    <div className="container p-5 mb-5" id="contact-me">
+    <div className="container pt-5 ps-5 pe-5" id="contact">
       <div className="text-black text-center mt-5">
         <h1 className="fw-semibold">Contact Me</h1>
-        <label className="fw-semibold dark-enphasis-text">Say Hello ^^</label>
+        <label className="fw-semibold enphasis-text-dark">Say Hello ^^</label>
       </div>
       <div className="row align-items-center mt-3">
         <div className="col-lg-6 justify-content-center lottie-container">
