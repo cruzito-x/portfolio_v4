@@ -239,24 +239,30 @@ export const projectsData = [
     image: Work5,
     title: "VS Marketplace Extension",
     description:
-      "Extension for Azure DevOps in charge of performing security analysis on the projects to which it was applied.",
+      "Extension for Azure DevOps in charge of performing code analysis and vuln detection.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
+        icon: techData.figma.icon,
+        color: techData.figma.color,
+        name: techData.figma.name,
+      },
+      {
+        id: 2,
         icon: techData.html.icon,
         color: techData.html.color,
         name: techData.html.name,
       },
       {
-        id: 2,
+        id: 3,
         icon: techData.css.icon,
         color: techData.css.color,
         name: techData.css.name,
       },
       {
-        id: 2,
+        id: 4,
         icon: techData.javascript.icon,
         color: techData.javascript.color,
         name: techData.javascript.name,
