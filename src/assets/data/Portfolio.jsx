@@ -245,12 +245,6 @@ export const projectsData = [
     category_color: categories.frontend.color,
     techs: [
       {
-        id: 1,
-        icon: techData.figma.icon,
-        color: techData.figma.color,
-        name: techData.figma.name,
-      },
-      {
         id: 2,
         icon: techData.html.icon,
         color: techData.html.color,
