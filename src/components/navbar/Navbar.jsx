@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import cruzitoLogo from "../../assets/img/logo.png";
+import "./styles/navbar.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeLink, setActiveLink] = useState("#home");
 
   useEffect(() => {
     const scrollWindow = () => {
@@ -40,23 +42,36 @@ const Navbar = () => {
           <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-center">
             <div className="d-flex flex-column flex-lg-row">
               <a
-                className="nav-link text-center text-lg-start"
-                href="#about-me"
+                href="#about"
+                onClick={() => setActiveLink("#about")}
+                className={`nav-link text-lg-start ${
+                  activeLink === "#about" ? "nav_link active_link" : "nav_link"
+                }`}
               >
-                About me
+                About
               </a>
               <a
-                className="nav-link text-center text-lg-start ms-lg-5"
                 href="#experience"
+                onClick={() => setActiveLink("#experience")}
+                className={`nav-link text-lg-start ms-lg-5 ${
+                  activeLink === "#experience"
+                    ? "nav_link active_link"
+                    : "nav_link"
+                }`}
               >
                 Experience
               </a>
             </div>
 
-            <div className="d-flex justify-content-center me-5 p-2">
+            <div className="d-flex justify-content-center p-2">
               <a
-                onClick={() => window.scrollTo(0, 0)}
-                className="cursor-pointer"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  setActiveLink("#home");
+                }}
+                className={`cursor-pointer ${
+                  activeLink === "#home" ? "nav_link active_link" : "nav_link"
+                }`}
                 href="#"
               >
                 <img
@@ -69,12 +84,23 @@ const Navbar = () => {
             </div>
 
             <div className="d-flex flex-column flex-lg-row">
-              <a className="nav-link text-center text-lg-end" href="#skills">
+              <a
+                href="#skills"
+                onClick={() => setActiveLink("#skills")}
+                className={`nav-link text-lg-end ${
+                  activeLink === "#skills" ? "nav_link active_link" : "nav_link"
+                }`}
+              >
                 Skills
               </a>
               <a
-                className="nav-link text-center text-lg-end ms-lg-5"
                 href="#projects"
+                onClick={() => setActiveLink("#projects")}
+                className={`nav-link text-lg-end ms-lg-5 ${
+                  activeLink === "#projects"
+                    ? "nav_link active_link"
+                    : "nav_link"
+                }`}
               >
                 Projects
               </a>

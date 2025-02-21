@@ -155,7 +155,7 @@ export const projectsData = [
     image: Work2,
     title: "Weather Visualizer",
     description:
-      "Web application that uses OpenWeatherAPI to obtain detailed weather data for a specific site.",
+      "Web application that uses OpenWeather API to obtain weather data from a specific location.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -186,7 +186,7 @@ export const projectsData = [
     image: Work3,
     title: "Color Scales Generator",
     description:
-      "Web color scale tool based on a color name or its hex as a base, ideal for designers and developers.",
+      "Color scale web tool based on a color name or its hex, ideal for designers and developers.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -211,7 +211,7 @@ export const projectsData = [
     image: Work4,
     title: "Translator",
     description:
-      "Web application with implementation of MyMemory API for instant translations in several languages.",
+      "Web application that makes use of MyMemory API for instant translations in several languages.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -272,7 +272,7 @@ export const projectsData = [
     image: Work6,
     title: "Bookstore Sales System",
     description:
-      "Web CRM for the management of sales, inventory and invoicing per sale of a bookstore.",
+      "Web CRM for sales and inventory management, invoicing and reporting of a bookstore.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -300,9 +300,9 @@ export const projectsData = [
   {
     id: 7,
     image: Work7,
-    title: "Tech Store E-commerce App",
+    title: "E-commerce App",
     description:
-      "E-commerce web platform for sales and inventory management of electronic products.",
+      "E-commerce web platform for sales and inventory management for a technology products store.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -332,7 +332,7 @@ export const projectsData = [
     image: Work8,
     title: "Bank Collection System",
     description:
-      "Web system based on role-based authentication for payments and transactions.",
+      "Web system based on role-based auth for the payment of services and banking transactions.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [

@@ -2,7 +2,7 @@ import profilePhoto from "../../assets/img/me.png";
 
 const About = () => {
   return (
-    <div className="container p-5 h-100" id="about-me">
+    <div className="container p-5 h-100" id="about">
       <div className="row mt-5 align-items-center">
         <div className="text-black text-center">
           <h1 className="fw-semibold">About Me</h1>

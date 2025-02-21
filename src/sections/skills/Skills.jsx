@@ -1,15 +1,15 @@
-import htmlIcon from "../../assets/icons/skills/html.svg";
-import cssIcon from "../../assets/icons/skills/css.svg";
-import javaScriptIcon from "../../assets/icons/skills/javascript.svg";
-import bootstrapIcon from "../../assets/icons/skills/bootstrap.svg";
-import reactIcon from "../../assets/icons/skills/react.svg";
-import angularLogo from "../../assets/icons/skills/angular.svg";
-import expressLogo from "../../assets/icons/skills/node.svg";
-import laravelLogo from "../../assets/icons/skills/laravel.svg";
-import mysqlLogo from "../../assets/icons/skills/mysql.svg";
-import gitLogo from "../../assets/icons/skills/git.svg";
-import figmaLogo from "../../assets/icons/skills/figma.svg";
-import swaggerLogo from "../../assets/icons/skills/swagger.svg";
+import htmlIcon from "../../assets/icons/svg/html.svg";
+import cssIcon from "../../assets/icons/svg/css.svg";
+import javaScriptIcon from "../../assets/icons/svg/javascript.svg";
+import bootstrapIcon from "../../assets/icons/svg/bootstrap.svg";
+import reactIcon from "../../assets/icons/svg/react.svg";
+import angularLogo from "../../assets/icons/svg/angular.svg";
+import expressLogo from "../../assets/icons/svg/node.svg";
+import laravelLogo from "../../assets/icons/svg/laravel.svg";
+import mysqlLogo from "../../assets/icons/svg/mysql.svg";
+import gitLogo from "../../assets/icons/svg/git.svg";
+import figmaLogo from "../../assets/icons/svg/figma.svg";
+import swaggerLogo from "../../assets/icons/svg/swagger.svg";
 import "./styles/skills.css";
 
 const Skills = () => {
