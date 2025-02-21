@@ -56,7 +56,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container pt-5 ps-5 pe-5" id="contact">
+    <div className="container p-5 h-100" id="contact">
       <div className="text-black text-center mt-5">
         <h1 className="fw-semibold">Contact Me</h1>
         <label className="fw-semibold enphasis-text-dark">Say Hello ^^</label>
@@ -77,7 +77,7 @@ const Contact = () => {
           </p>
         </div>
         <div className="col-lg-6 col-sm-12">
-          <form className="card p-5 mb-5" ref={formRef} onSubmit={sendEmail}>
+          <form className="card p-5" ref={formRef} onSubmit={sendEmail}>
             <label className="text-black fw-semibold text-center fs-3">
               Send Me a Message
             </label>
