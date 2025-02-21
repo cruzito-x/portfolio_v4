@@ -240,7 +240,7 @@ export const projectsData = [
     image: Work5,
     title: "VS Marketplace Extension",
     description:
-      "Extension for Azure DevOps in charge of performing code analysis and vuln detection.",
+      "Azure DevOps extension to perform source code analysis and vulnerability detection.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -338,8 +338,6 @@ export const projectsData = [
         name: techData.antd.name,
       },
     ],
-    design_url:
-      "https://www.figma.com/design/hXXlAzpKeJPQuWwxnEtOsj/Sistema-de-Cobros-Bancarios?node-id=0-1&t=sLsDbT1sYUHkRYIp-1",
     source_url: "https://github.com/cruzito-x/bank-collection-frontend",
   },
   {
@@ -401,7 +399,7 @@ export const projectsData = [
     image: Work9,
     title: "Vulnerabilities Dashboard",
     description:
-      "Clean, clear and professional design, ideal for the purpose of vulnerability management.",
+      "Clean, clear and professional design, ideal for the purpose of vulnerabilities management.",
     category: categories.design.name,
     category_color: categories.design.color,
     techs: [
