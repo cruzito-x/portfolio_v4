@@ -56,7 +56,7 @@ const techData = {
   },
   antd: {
     name: "Ant Design",
-    color: "var(--react-color)",
+    color: "var(--ant-design-color)",
     icon: <i className="bx bxl-react"></i>,
   },
   angular: {
@@ -109,18 +109,15 @@ const techData = {
 const categories = {
   frontend: {
     name: "Frontend",
-    color: "var(--css-color)",
-    icon: <i className="bx bxl-react"></i>,
+    color: "var(--html-color)",
   },
   backend: {
     name: "Backend",
     color: "var(--express-color)",
-    icon: <i className="bx bxl-nodejs"></i>,
   },
   design: {
     name: "Design",
     color: "var(--figma-color)",
-    icon: <i className="bx bxl-figma"></i>,
   },
 };
 
@@ -281,18 +278,6 @@ export const projectsData = [
         icon: techData.antd.icon,
         color: techData.antd.color,
         name: techData.antd.name,
-      },
-      {
-        id: 3,
-        icon: techData.express.icon,
-        color: techData.express.color,
-        name: techData.express.name,
-      },
-      {
-        id: 4,
-        icon: techData.mysql.icon,
-        color: techData.mysql.color,
-        name: techData.mysql.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/library",
