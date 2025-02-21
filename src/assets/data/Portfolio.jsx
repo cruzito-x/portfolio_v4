@@ -6,9 +6,10 @@ import Work5 from "../pictures/Frontend/work5.png";
 import Work6 from "../pictures/Frontend/work6.png";
 import Work7 from "../pictures/Frontend/work7.png";
 import Work8 from "../pictures/Frontend/work8.png";
+import Work11 from "../pictures/Backend/work1.png";
+import Work12 from "../pictures/Backend/work2.png";
 import Work9 from "../pictures/Designs/work1.png";
 import Work10 from "../pictures/Designs/work2.png";
-import Work11 from "../pictures/Backend/work1.png";
 
 /* =================== TECHS ICONS =================== */
 
@@ -355,6 +356,30 @@ export const projectsData = [
   {
     id: 9,
     image: Work11,
+    title: "API to Bookstore Sales System",
+    description:
+      "Secure endpoints, with a system for storing and returning images to and from the front-end.",
+    category: categories.backend.name,
+    category_color: categories.backend.color,
+    techs: [
+      {
+        id: 1,
+        icon: techData.express.icon,
+        color: techData.express.color,
+        name: techData.express.name,
+      },
+      {
+        id: 2,
+        icon: techData.mysql.icon,
+        color: techData.mysql.color,
+        name: techData.mysql.name,
+      },
+    ],
+    source_url: "https://github.com/cruzito-x/library-backend",
+  },
+  {
+    id: 10,
+    image: Work12,
     title: "API to Bank Collection System",
     description:
       "Secure endpoints for collection management, prioritizing data security and integrity.",
@@ -383,7 +408,7 @@ export const projectsData = [
     source_url: "https://github.com/cruzito-x/bank-collection-backend",
   },
   {
-    id: 10,
+    id: 11,
     image: Work9,
     title: "Vulnerabilities Dashboard",
     description:
@@ -402,7 +427,7 @@ export const projectsData = [
       "https://www.figma.com/design/3mJfa7medrPycTS5RTTefq/Untitled?t=DLPrFoleZ6yIKa2a-1",
   },
   {
-    id: 11,
+    id: 12,
     image: Work10,
     title: "App for Neurodivergent People",
     description:
