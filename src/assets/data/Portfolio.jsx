@@ -130,7 +130,7 @@ export const projectsData = [
     image: Work1,
     title: "Movies & Series Finder",
     description:
-      "Web platform with OMDBAPI integration for detailed information on series and/or movies.",
+      "Web platform with OMDBAPI integration for detailed information on series and movies.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -155,7 +155,7 @@ export const projectsData = [
     image: Work2,
     title: "Weather Visualizer",
     description:
-      "Web application that uses OpenWeather API to obtain weather data from a specific location.",
+      "Web app that uses OpenWeather API to obtain weather data from a specific location.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -211,7 +211,7 @@ export const projectsData = [
     image: Work4,
     title: "Translator",
     description:
-      "Web application that makes use of MyMemory API for instant translations in several languages.",
+      "Web app that makes use of MyMemory API for instant translations in several languages.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -240,9 +240,9 @@ export const projectsData = [
   {
     id: 5,
     image: Work5,
-    title: "Chat Application",
+    title: "Chat App",
     description:
-      "Real-time chat application with UX optimization and real-time notification services.",
+      "Real-time asynchronous chat application with real-time notification services.",
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
