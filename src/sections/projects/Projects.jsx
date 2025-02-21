@@ -2,18 +2,18 @@ import { useState, useRef, useEffect } from "react";
 import { projectsData, projects } from "../../assets/data/Portfolio";
 
 const Projects = () => {
-  const [selectedCategory, setSelectedCategory] = useState("all");
+  const [selectedCategory, setSelectedCategory] = useState("All");
   const carouselRef = useRef(null);
 
   const filteredProjects =
-    selectedCategory === "all"
+    selectedCategory === "All"
       ? projectsData
       : projectsData.filter((project) => project.category === selectedCategory);
 
   const infiniteProjects = [...filteredProjects, ...filteredProjects];
 
   useEffect(() => {
-    if (selectedCategory === "all" && carouselRef.current) {
+    if (selectedCategory === "All" && carouselRef.current) {
       const carousel = carouselRef.current;
       let scrollAmount = 0;
 
@@ -58,7 +58,7 @@ const Projects = () => {
         ))}
       </div>
 
-      {selectedCategory === "all" ? (
+      {selectedCategory === "All" ? (
         <div
           className="d-flex overflow-hidden mt-3"
           style={{
@@ -77,10 +77,23 @@ const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="card-img-top rounded mb-3"
+                className="card-img-top rounded"
               />
               <div className="card-body ps-0 pe-0">
-                <h5 className="card-title">{project.title}</h5>
+                <h5 className="card-title">
+                  {project.title}
+                  <br />
+                  <span
+                    className="badge fw-normal w-auto"
+                    style={{
+                      fontSize: "11px",
+                      border: `1px solid ${project.category_color}`,
+                      color: project.category_color,
+                    }}
+                  >
+                    {project.category}
+                  </span>
+                </h5>
                 <p className="card-text" style={{ whiteSpace: "normal" }}>
                   {project.description}
                 </p>
@@ -110,7 +123,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="card-img-top rounded mb-3"
+                  className="card-img-top rounded"
                 />
                 <div className="card-body ps-0 pe-0">
                   <h5 className="card-title">{project.title}</h5>

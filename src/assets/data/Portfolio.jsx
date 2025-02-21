@@ -105,6 +105,24 @@ const techData = {
   },
 };
 
+const categories = {
+  frontend: {
+    name: "Frontend",
+    color: "var(--css-color)",
+    icon: <i className="bx bxl-react"></i>,
+  },
+  backend: {
+    name: "Backend",
+    color: "var(--express-color)",
+    icon: <i className="bx bxl-nodejs"></i>,
+  },
+  design: {
+    name: "Design",
+    color: "var(--figma-color)",
+    icon: <i className="bx bxl-figma"></i>,
+  },
+};
+
 export const projectsData = [
   {
     id: 1,
@@ -112,7 +130,8 @@ export const projectsData = [
     title: "Movies & Series Finder",
     description:
       "Web platform with OMDBAPI integration for detailed information on series and/or movies.",
-    category: "frontend",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -136,7 +155,8 @@ export const projectsData = [
     title: "Weather Visualizer",
     description:
       "Web application that uses OpenWeatherAPI to obtain detailed weather data for a specific site.",
-    category: "frontend",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -165,8 +185,9 @@ export const projectsData = [
     image: Work3,
     title: "Color Scales Generator",
     description:
-      "Web color scale tool based on a base color, ideal for designers and developers.",
-    category: "frontend",
+      "Web color scale tool based on a color name or its hex as a base, ideal for designers and developers.",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -189,8 +210,9 @@ export const projectsData = [
     image: Work4,
     title: "Translator",
     description:
-      "Web application with MyMemory API implementation for instant translations.",
-    category: "frontend",
+      "Web application with implementation of MyMemory API for instant translations in several languages.",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -220,7 +242,8 @@ export const projectsData = [
     title: "Chat Application",
     description:
       "Real-time chat application with UX optimization and real-time notification services.",
-    category: "frontend",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -249,7 +272,8 @@ export const projectsData = [
     title: "Bookstore Sales System",
     description:
       "Web CRM for the management of sales, inventory and invoicing per sale of a bookstore.",
-    category: "frontend",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -277,8 +301,9 @@ export const projectsData = [
     image: Work7,
     title: "Tech Store E-commerce App",
     description:
-      "E-commerce web platform for the management of electronic products sales.",
-    category: "frontend",
+      "E-commerce web platform for sales and inventory management of electronic products.",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -307,7 +332,8 @@ export const projectsData = [
     title: "Bank Collection System",
     description:
       "Web system based on role-based authentication for payments and transactions.",
-    category: "frontend",
+    category: categories.frontend.name,
+    category_color: categories.frontend.color,
     techs: [
       {
         id: 1,
@@ -332,7 +358,8 @@ export const projectsData = [
     title: "API to Bank Collection System",
     description:
       "Secure endpoints for collection management, prioritizing data security and integrity.",
-    category: "backend",
+    category: categories.backend.name,
+    category_color: categories.backend.color,
     techs: [
       {
         id: 1,
@@ -358,10 +385,11 @@ export const projectsData = [
   {
     id: 10,
     image: Work9,
-    title: "Dashboard to Visualization of Vulnerabilities Data",
+    title: "Vulnerabilities Dashboard",
     description:
       "Clean, clear and professional design, ideal for the purpose of vulnerability management.",
-    category: "design",
+    category: categories.design.name,
+    category_color: categories.design.color,
     techs: [
       {
         id: 1,
@@ -379,7 +407,8 @@ export const projectsData = [
     title: "App for Neurodivergent People",
     description:
       "Inclusive, intuitive and accessible design for the target audience, prioritizing UX for user comfort.",
-    category: "design",
+    category: categories.design.name,
+    category_color: categories.design.color,
     techs: [
       {
         id: 1,
@@ -395,15 +424,15 @@ export const projectsData = [
 
 export const projects = [
   {
-    name: "all",
+    name: "All",
   },
   {
-    name: "frontend",
+    name: "Frontend",
   },
   {
-    name: "backend",
+    name: "Backend",
   },
   {
-    name: "design",
+    name: "Design",
   },
 ];
