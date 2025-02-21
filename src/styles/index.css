@@ -19,15 +19,15 @@
   --swagger-color: #6c9b00;
 }
 
+::-webkit-scrollbar {
+  width: 0px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Outfit";
-}
-
-::-webkit-scrollbar {
-  width: 0px;
 }
 
 body {
