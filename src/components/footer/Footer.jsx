@@ -14,7 +14,7 @@ const Footer = () => {
               🪐
             </a>{" "}
             <br />
-            &copy; {new Date().getFullYear()} David Cruz - All rights reserved.
+            &copy; {new Date().getFullYear()} David Cruz. All rights reserved.
           </label>
         </div>
       </div>
