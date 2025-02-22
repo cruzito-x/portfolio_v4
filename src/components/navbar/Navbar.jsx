@@ -80,16 +80,6 @@ const Navbar = ({ lang }) => {
         }`}
       >
         <div className="container h-100">
-          <button
-            className="navbar-toggler"
-            type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-expanded={menuOpen}
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
           <div
             className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
             id="navbarNav"
@@ -184,15 +174,19 @@ const Navbar = ({ lang }) => {
         </button>
 
         {menuOpen && (
-          <div className="position-fixed top-100 start-50 translate-middle w-100 h-50 bg-white d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
+          <div className="position-fixed top-100 start-50 translate-middle w-100 h-50 bg-white text-black d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
             <div className="container text-center">
               <div className="row row-cols-3 g-3">
                 {navItems.map((item) => (
                   <div className="col" key={item.id}>
                     <a
                       href={item.id}
-                      className="d-flex flex-column align-items-center text-dark text-decoration-none"
-                      onClick={() => setMenuOpen(false)}
+                      className={`d-flex flex-column align-items-center text-decoration-none ${
+                        activeLink === item.id
+                          ? "nav_link active_link"
+                          : "nav_link"
+                      }`}
+                      onClick={() => selectedLink(item.id)}
                     >
                       {item.icon}
                       <span className="mt-2">{item.label}</span>
