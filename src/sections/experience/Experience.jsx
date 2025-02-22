@@ -23,7 +23,12 @@ const Experience = ({ lang }) => {
                 <img src={owaspLogo} alt="OWASP logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
-                <label className="fw-semibold text-white">
+                <label
+                  className="fw-semibold text-white"
+                  style={{
+                    fontSize: "13px",
+                  }}
+                >
                   {lang.preespeciality_time?.text}
                 </label>
                 <h3>{lang.preespeciality_title?.text}</h3>
@@ -35,7 +40,12 @@ const Experience = ({ lang }) => {
                 <img src={frontendIcon} alt="Frontend Mentor logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
-                <label className="fw-semibold text-white">
+                <label
+                  className="fw-semibold text-white"
+                  style={{
+                    fontSize: "13px",
+                  }}
+                >
                   {lang.codeEye_time?.text}
                 </label>
                 <h3>{lang.codeEye_job?.text}</h3>
@@ -47,7 +57,14 @@ const Experience = ({ lang }) => {
                 <img src={htmxLogo} alt="HTMX logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
-                <label className="fw-semibold text-white">2020 - 2024</label>
+                <label
+                  className="fw-semibold text-white"
+                  style={{
+                    fontSize: "13px",
+                  }}
+                >
+                  2020 - 2024
+                </label>
                 <h3>{lang.about_description_title?.text}.</h3>
                 <p>{lang.university?.text}. - El Salvador.</p>
               </div>
@@ -57,7 +74,12 @@ const Experience = ({ lang }) => {
                 <img src={pcLogo} alt="PC Gaming logo" />
               </div>
               <div className="timeline-content w-100 cursor-pointer">
-                <label className="fw-semibold text-white">
+                <label
+                  className="fw-semibold text-white"
+                  style={{
+                    fontSize: "13px",
+                  }}
+                >
                   {lang.mutual_fund_time?.text}
                 </label>
                 <h3>{lang.mutual_fund_job?.text}</h3>
