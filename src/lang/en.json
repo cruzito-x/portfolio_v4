@@ -161,7 +161,7 @@
       "text": "VS Marketplace Extension"
     },
     "iris_extension_description": {
-      "text": "Extension for Azure DevOps to perform source code analysis and vulnerability detection."
+      "text": "Extension for Azure DevOps to perform source code analysis and vulnerability detection in it."
     },
     "bookstore_sales_system_title": {
       "text": "Bookstore Sales System"
@@ -179,7 +179,7 @@
       "text": "Bank Collection System"
     },
     "bank_collection_system_description": {
-      "text": "Web system based on role-based auth for the payment of services and banking transactions."
+      "text": "Web system based on role-based authentication for payment of services and banking transactions."
     },
     "bookstore_sales_system_api_title": {
       "text": "Bookstore Sales System API"
