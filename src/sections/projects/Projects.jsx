@@ -2,23 +2,26 @@ import { useState, useRef, useEffect } from "react";
 import { getProjectsData, getFilters } from "../../assets/data/Portfolio";
 
 const Projects = ({ lang }) => {
+  const [selectedCategory, setSelectedCategory] = useState(lang.all?.text);
+  const carouselRef = useRef(null);
   const projectsData = getProjectsData(lang);
   const filters = getFilters(lang);
-  const [selectedCategory, setSelectedCategory] = useState("All");
-  const carouselRef = useRef(null);
+
+  useEffect(() => {
+    if (lang.all?.text) {
+      setSelectedCategory(lang.all.text);
+    }
+  }, [lang.all?.text]);
 
   const filteredProjects =
-    selectedCategory === "All" || selectedCategory === "Todos"
+    selectedCategory === lang.all?.text
       ? projectsData
       : projectsData.filter((project) => project.category === selectedCategory);
 
   const infiniteProjects = [...filteredProjects, ...filteredProjects];
 
   useEffect(() => {
-    if (
-      (selectedCategory === "All" || selectedCategory === "Todos") &&
-      carouselRef.current
-    ) {
+    if (selectedCategory === lang.all?.text && carouselRef.current) {
       const carousel = carouselRef.current;
       let scrollAmount = 0;
 
@@ -63,7 +66,7 @@ const Projects = ({ lang }) => {
         ))}
       </div>
 
-      {selectedCategory === "All" || selectedCategory === "Todos" ? (
+      {selectedCategory === lang.all?.text ? (
         <div
           className="d-flex overflow-hidden mt-3"
           style={{
