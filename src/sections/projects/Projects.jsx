@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { projectsData, projects } from "../../assets/data/Portfolio";
+import { projectsData, filters } from "../../assets/data/Portfolio";
 
 const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -43,7 +43,7 @@ const Projects = () => {
       </div>
 
       <div className="d-flex justify-content-center align-items-center mt-5">
-        {projects.map((category) => (
+        {filters.map((category) => (
           <label
             key={category.name}
             className={`text-primary text-decoration-none cursor-pointer mx-2 ${

@@ -1,20 +1,55 @@
-import Work1 from "../pictures/Frontend/work1.png";
-import Work2 from "../pictures/Frontend/work2.png";
-import Work3 from "../pictures/Frontend/work3.png";
-import Work4 from "../pictures/Frontend/work4.png";
-import Work5 from "../pictures/Frontend/work5.png";
-import Work6 from "../pictures/Frontend/work6.png";
-import Work7 from "../pictures/Frontend/work7.png";
-import Work8 from "../pictures/Frontend/work8.png";
-import Work11 from "../pictures/Backend/work1.png";
-import Work12 from "../pictures/Backend/work2.png";
-import Work9 from "../pictures/Designs/work1.png";
-import Work10 from "../pictures/Designs/work2.png";
-import Work13 from "../pictures/Designs/work3.png";
+import moviesFinder from "../pictures/Frontend/work1.png";
+import weatherVisualizer from "../pictures/Frontend/work2.png";
+import colorScalesGenerator from "../pictures/Frontend/work3.png";
+import translator from "../pictures/Frontend/work4.png";
+import vsMarketplaceExtension from "../pictures/Frontend/work5.png";
+import bookStoreSalesSystem from "../pictures/Frontend/work6.png";
+import eCommerce from "../pictures/Frontend/work7.png";
+import bankCollectionSystem from "../pictures/Frontend/work8.png";
+import bookStoreSalesAPI from "../pictures/Backend/work1.png";
+import bankCollectionAPI from "../pictures/Backend/work2.png";
+import dashboard from "../pictures/Designs/work1.png";
+import neuroDivergentMobileApp from "../pictures/Designs/work2.png";
+import irisCodeScanner from "../pictures/Designs/work3.png";
 
-/* =================== TECHS ICONS =================== */
+/* =================== FILTERS =================== */
 
-const techData = {
+export const filters = [
+  {
+    name: "All",
+  },
+  {
+    name: "Frontend",
+  },
+  {
+    name: "Backend",
+  },
+  {
+    name: "Design",
+  },
+];
+
+/* =================== CATEGORIES =================== */
+
+const categories = {
+  frontend: {
+    name: "Frontend",
+    color: "var(--html-color)",
+  },
+  backend: {
+    name: "Backend",
+    color: "var(--express-color)",
+  },
+  design: {
+    name: "Design",
+    color: "var(--figma-color)",
+  },
+};
+
+
+/* =================== TECHS STACK =================== */
+
+const techStack = {
   html: {
     name: "HTML",
     color: "var(--html-color)",
@@ -107,25 +142,12 @@ const techData = {
   },
 };
 
-const categories = {
-  frontend: {
-    name: "Frontend",
-    color: "var(--html-color)",
-  },
-  backend: {
-    name: "Backend",
-    color: "var(--express-color)",
-  },
-  design: {
-    name: "Design",
-    color: "var(--figma-color)",
-  },
-};
+/* =================== PROJECTS =================== */
 
 export const projectsData = [
   {
     id: 1,
-    image: Work1,
+    image: moviesFinder,
     title: "Movies & Series Finder",
     description:
       "Web platform with OMDBAPI integration for detailed information on series and movies.",
@@ -134,15 +156,15 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.bootstrap.icon,
-        color: techData.bootstrap.color,
-        name: techData.bootstrap.name,
+        icon: techStack.bootstrap.icon,
+        color: techStack.bootstrap.color,
+        name: techStack.bootstrap.name,
       },
       {
         id: 2,
-        icon: techData.react.icon,
-        color: techData.react.color,
-        name: techData.react.name,
+        icon: techStack.react.icon,
+        color: techStack.react.color,
+        name: techStack.react.name,
       },
     ],
     deploy_url: "https://movies-app-cruzito-exe.vercel.app",
@@ -150,7 +172,7 @@ export const projectsData = [
   },
   {
     id: 2,
-    image: Work2,
+    image: weatherVisualizer,
     title: "Weather Visualizer",
     description:
       "Web app that uses OpenWeather API to obtain weather data from a specific location.",
@@ -159,21 +181,21 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.html.icon,
-        color: techData.html.color,
-        name: techData.html.name,
+        icon: techStack.html.icon,
+        color: techStack.html.color,
+        name: techStack.html.name,
       },
       {
         id: 2,
-        icon: techData.css.icon,
-        color: techData.css.color,
-        name: techData.css.name,
+        icon: techStack.css.icon,
+        color: techStack.css.color,
+        name: techStack.css.name,
       },
       {
         id: 3,
-        icon: techData.jQuery.icon,
-        color: techData.jQuery.color,
-        name: techData.jQuery.name,
+        icon: techStack.jQuery.icon,
+        color: techStack.jQuery.color,
+        name: techStack.jQuery.name,
       },
     ],
     deploy_url: "https://weather-app-v2-one.vercel.app",
@@ -181,7 +203,7 @@ export const projectsData = [
   },
   {
     id: 3,
-    image: Work3,
+    image: colorScalesGenerator,
     title: "Color Scales Generator",
     description:
       "Color scale web tool based on a color name or its hex, ideal for designers and developers.",
@@ -190,15 +212,15 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.bootstrap.icon,
-        color: techData.bootstrap.color,
-        name: techData.bootstrap.name,
+        icon: techStack.bootstrap.icon,
+        color: techStack.bootstrap.color,
+        name: techStack.bootstrap.name,
       },
       {
         id: 2,
-        icon: techData.react.icon,
-        color: techData.react.color,
-        name: techData.react.name,
+        icon: techStack.react.icon,
+        color: techStack.react.color,
+        name: techStack.react.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/color-palette-generator_app",
@@ -206,7 +228,7 @@ export const projectsData = [
   },
   {
     id: 4,
-    image: Work4,
+    image: translator,
     title: "Translator",
     description:
       "Web app that makes use of MyMemory API for instant translations in several languages.",
@@ -215,21 +237,21 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.html.icon,
-        color: techData.html.color,
-        name: techData.html.name,
+        icon: techStack.html.icon,
+        color: techStack.html.color,
+        name: techStack.html.name,
       },
       {
         id: 2,
-        icon: techData.css.icon,
-        color: techData.css.color,
-        name: techData.css.name,
+        icon: techStack.css.icon,
+        color: techStack.css.color,
+        name: techStack.css.name,
       },
       {
         id: 3,
-        icon: techData.javascript.icon,
-        color: techData.javascript.color,
-        name: techData.javascript.name,
+        icon: techStack.javascript.icon,
+        color: techStack.javascript.color,
+        name: techStack.javascript.name,
       },
     ],
     deploy_url: "https://translator-app-cruzito-exe.vercel.app",
@@ -237,7 +259,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    image: Work5,
+    image: vsMarketplaceExtension,
     title: "VS Marketplace Extension",
     description:
       "Azure DevOps extension to perform source code analysis and vulnerability detection.",
@@ -246,21 +268,21 @@ export const projectsData = [
     techs: [
       {
         id: 2,
-        icon: techData.html.icon,
-        color: techData.html.color,
-        name: techData.html.name,
+        icon: techStack.html.icon,
+        color: techStack.html.color,
+        name: techStack.html.name,
       },
       {
         id: 3,
-        icon: techData.css.icon,
-        color: techData.css.color,
-        name: techData.css.name,
+        icon: techStack.css.icon,
+        color: techStack.css.color,
+        name: techStack.css.name,
       },
       {
         id: 4,
-        icon: techData.javascript.icon,
-        color: techData.javascript.color,
-        name: techData.javascript.name,
+        icon: techStack.javascript.icon,
+        color: techStack.javascript.color,
+        name: techStack.javascript.name,
       },
     ],
     extension_url:
@@ -270,7 +292,7 @@ export const projectsData = [
   },
   {
     id: 6,
-    image: Work6,
+    image: bookStoreSalesSystem,
     title: "Bookstore Sales System",
     description:
       "Web CRM for sales and inventory management, invoicing and reporting of a bookstore.",
@@ -279,16 +301,16 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.antd.icon,
-        color: techData.antd.color,
-        name: techData.antd.name,
+        icon: techStack.antd.icon,
+        color: techStack.antd.color,
+        name: techStack.antd.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/library",
   },
   {
     id: 7,
-    image: Work7,
+    image: eCommerce,
     title: "E-commerce App",
     description:
       "E-commerce web platform for sales and inventory management for a technology products store.",
@@ -297,28 +319,28 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.angular.icon,
-        color: techData.angular.color,
-        name: techData.angular.name,
+        icon: techStack.angular.icon,
+        color: techStack.angular.color,
+        name: techStack.angular.name,
       },
       {
         id: 2,
-        icon: techData.express.icon,
-        color: techData.express.color,
-        name: techData.express.name,
+        icon: techStack.express.icon,
+        color: techStack.express.color,
+        name: techStack.express.name,
       },
       {
         id: 3,
-        icon: techData.mongodb.icon,
-        color: techData.mongodb.color,
-        name: techData.mongodb.name,
+        icon: techStack.mongodb.icon,
+        color: techStack.mongodb.color,
+        name: techStack.mongodb.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/mean-project",
   },
   {
     id: 8,
-    image: Work8,
+    image: bankCollectionSystem,
     title: "Bank Collection System",
     description:
       "Web system based on role-based auth for the payment of services and banking transactions.",
@@ -327,22 +349,22 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.bootstrap.icon,
-        color: techData.bootstrap.color,
-        name: techData.bootstrap.name,
+        icon: techStack.bootstrap.icon,
+        color: techStack.bootstrap.color,
+        name: techStack.bootstrap.name,
       },
       {
         id: 2,
-        icon: techData.antd.icon,
-        color: techData.antd.color,
-        name: techData.antd.name,
+        icon: techStack.antd.icon,
+        color: techStack.antd.color,
+        name: techStack.antd.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/bank-collection-frontend",
   },
   {
     id: 9,
-    image: Work11,
+    image: bookStoreSalesAPI,
     title: "Bookstore Sales System API",
     description:
       "Endpoints, with a system for storing images in the server and returning this to the front-end.",
@@ -351,22 +373,22 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.express.icon,
-        color: techData.express.color,
-        name: techData.express.name,
+        icon: techStack.express.icon,
+        color: techStack.express.color,
+        name: techStack.express.name,
       },
       {
         id: 2,
-        icon: techData.mysql.icon,
-        color: techData.mysql.color,
-        name: techData.mysql.name,
+        icon: techStack.mysql.icon,
+        color: techStack.mysql.color,
+        name: techStack.mysql.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/library-backend",
   },
   {
     id: 10,
-    image: Work12,
+    image: bankCollectionAPI,
     title: "Bank Collection System API",
     description:
       "Endpoints for the management of banking transactions, prioritizing security and data integrity.",
@@ -375,28 +397,28 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.express.icon,
-        color: techData.express.color,
-        name: techData.express.name,
+        icon: techStack.express.icon,
+        color: techStack.express.color,
+        name: techStack.express.name,
       },
       {
         id: 2,
-        icon: techData.mysql.icon,
-        color: techData.mysql.color,
-        name: techData.mysql.name,
+        icon: techStack.mysql.icon,
+        color: techStack.mysql.color,
+        name: techStack.mysql.name,
       },
       {
         id: 3,
-        icon: techData.swagger.icon,
-        color: techData.swagger.color,
-        name: techData.swagger.name,
+        icon: techStack.swagger.icon,
+        color: techStack.swagger.color,
+        name: techStack.swagger.name,
       },
     ],
     source_url: "https://github.com/cruzito-x/bank-collection-backend",
   },
   {
     id: 11,
-    image: Work9,
+    image: dashboard,
     title: "Vulnerabilities Dashboard",
     description:
       "Clean, clear and professional design, ideal for the purpose of vulnerabilities management.",
@@ -405,9 +427,9 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.figma.icon,
-        color: techData.figma.color,
-        name: techData.figma.name,
+        icon: techStack.figma.icon,
+        color: techStack.figma.color,
+        name: techStack.figma.name,
       },
     ],
     design_url:
@@ -415,7 +437,7 @@ export const projectsData = [
   },
   {
     id: 12,
-    image: Work10,
+    image: neuroDivergentMobileApp,
     title: "App for Neurodivergent People",
     description:
       "Inclusive, intuitive and accessible design for the target audience, prioritizing UX for user comfort.",
@@ -424,9 +446,9 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.figma.icon,
-        color: techData.figma.color,
-        name: techData.figma.name,
+        icon: techStack.figma.icon,
+        color: techStack.figma.color,
+        name: techStack.figma.name,
       },
     ],
     design_url:
@@ -434,7 +456,7 @@ export const projectsData = [
   },
   {
     id: 13,
-    image: Work13,
+    image: irisCodeScanner,
     title: "VS Marketplace Extension",
     description:
       "Clean and professional design, oriented to a pleasant UX with a user-friendly UI, ideal for data visualization.",
@@ -443,27 +465,12 @@ export const projectsData = [
     techs: [
       {
         id: 1,
-        icon: techData.figma.icon,
-        color: techData.figma.color,
-        name: techData.figma.name,
+        icon: techStack.figma.icon,
+        color: techStack.figma.color,
+        name: techStack.figma.name,
       },
     ],
     design_url:
       "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
-  },
-];
-
-export const projects = [
-  {
-    name: "All",
-  },
-  {
-    name: "Frontend",
-  },
-  {
-    name: "Backend",
-  },
-  {
-    name: "Design",
   },
 ];
