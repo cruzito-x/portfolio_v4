@@ -176,7 +176,7 @@ const Navbar = ({ lang }) => {
         }}
       >
         <button
-          className="position-fixed bottom-0 end-0 m-1 btn btn-white rounded"
+          className="position-fixed bottom-0 end-0 m-1 border-0 btn btn-white rounded"
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ width: "50px", height: "50px", zIndex: 2 }}
         >
