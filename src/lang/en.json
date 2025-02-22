@@ -86,7 +86,7 @@
       "text": "Experience & Education"
     },
     "experience_subtitle": {
-      "text": "Companies I Have Worked With & My Education"
+      "text": "Companies I have Worked with & My education"
     },
     "preespeciality_time": {
       "text": "2025 - In Progress"
@@ -111,6 +111,9 @@
     },
     "skills_subtitle": {
       "text": "Skills I use to perform tasks effectively"
+    },
+    "projects_subtitle": {
+      "text": "Some of the most outstanding projects I have worked on"
     }
   }
 }

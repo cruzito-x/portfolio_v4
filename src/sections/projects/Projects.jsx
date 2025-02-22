@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { projectsData, filters } from "../../assets/data/Portfolio";
 
-const Projects = () => {
+const Projects = ({ lang }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const carouselRef = useRef(null);
 
@@ -36,9 +36,9 @@ const Projects = () => {
   return (
     <div className="container p-5 h-100" id="projects">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">Projects</h1>
+        <h1 className="fw-semibold">{lang.projects?.text}</h1>
         <label className="fw-semibold enphasis-text-dark">
-          Some of the Notable Projects I have Worked On
+          {lang.projects_subtitle?.text}
         </label>
       </div>
 
