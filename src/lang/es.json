@@ -26,6 +26,61 @@
     },
     "contact": {
       "text": "Contáctame"
+    },
+    "about_subtitle": {
+      "text": "¿Quién es David Cruz?"
+    },
+    "about_description": {
+      "text": "Actualmente tengo 22 años, Soy estudiante egresado de "
+    },
+    "about_description_title": {
+      "text": "Ingeniería en Sistemas y Computación"
+    },
+    "about_experience_backfill": {
+      "text": ", tengo experiencia como "
+    },
+    "about_secondary_title": {
+      "text": "Diseñador Web "
+    },
+    "about_web_designer_title": {
+      "text": "utilizando herramientas de diseño como Figma y como "
+    },
+    "about_experience_description_backfill": {
+      "text": " tengo experiencia en el desarrollo de aplicaciones web utilizando tecnologías basadas en JavaScript como com React.js, Node.js y Express.js, y tecnologías basadas en Php como Laravel, también manejo diversos motores de bases de datos como MySQL, SQL Server y PostgreSQL para "
+    },
+    "development": {
+      "text": "desarrollo"
+    },
+    "and": { "text": " y " },
+    "management": {
+      "text": "administración"
+    },
+    "of": {
+      "text": " de "
+    },
+    "relational_databases": {
+      "text": "bases de datos relacionales"
+    },
+    "currently_preespeciality": {
+      "text": "Actualmente cursando una preespecialización en "
+    },
+    "cybersecurity_especiality": {
+      "text": "Ingeniería de Ciberseguridad"
+    },
+    "at_the": {
+      "text": " en la "
+    },
+    "university": {
+      "text": "Universidad Tecnológica de El Salvador"
+    },
+    "cosplayer_text": {
+      "text": "Más allá de mi vida profesional, también soy "
+    },
+    "cosplayer_title": {
+      "text": "cosplayer ocasional"
+    },
+    "cosplay_description": {
+      "text": ", una pasión creativa que me permite dar vida a mis personajes favoritos a través de la artesanía y el diseño. Esta afición potencia mi creatividad y mi capacidad para resolver problemas, algo que también aporta a mi trabajo como ingeniero."
     }
   }
 }

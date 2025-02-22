@@ -26,6 +26,61 @@
     },
     "contact": {
       "text": "Contact Me"
+    },
+    "about_subtitle": {
+      "text": "Who's David Cruz?"
+    },
+    "about_description": {
+      "text": "I am currently 22 years old, I am a graduate student of "
+    },
+    "about_description_title": {
+      "text": "Systems and Computer Engineering"
+    },
+    "about_experience_backfill": {
+      "text": ", I have experience as "
+    },
+    "about_secondary_title": {
+      "text": "Web Designer "
+    },
+    "about_web_designer_title": {
+      "text": "using design tools such as Figma and as "
+    },
+    "about_experience_description_backfill": {
+      "text": "I have experience in web application development using JavaScript-based technologies such as React.js, Node.js and Express.js and Php-based technologies such as Laravel, I also handle various database engines such as MySQL, SQL Server and PostgreSQL for "
+    },
+    "development": {
+      "text": "development"
+    },
+    "and": { "text": " and " },
+    "management": {
+      "text": "management"
+    },
+    "of": {
+      "text": "of"
+    },
+    "relational_databases": {
+      "text": "relational databases"
+    },
+    "currently_preespeciality": {
+      "text": "I am currently pursuing a pre-specialty in "
+    },
+    "cybersecurity_especiality": {
+      "text": "Cybersecurity Engineering"
+    },
+    "at_the": {
+      "text": " at the "
+    },
+    "university": {
+      "text": "Technological University of El Salvador"
+    },
+    "cosplayer_text": {
+      "text": "Beyond my professional life, I am also an occasional cosplayer "
+    },
+    "cosplayer_title": {
+      "text": "occasional cosplayer"
+    },
+    "cosplay_description": {
+      "text": ", a creative passion that allows me to bring my favorite characters to life through crafting and design. This hobby enhances my creativity and problem-solving skills, which something that also contributes to my work as an engineer."
     }
   }
 }
