@@ -88,7 +88,7 @@ const Projects = ({ lang }) => {
                 className="card-img-top rounded"
               />
               <div className="card-body ps-0 pe-0">
-                <h5 className="card-title">
+                <h5 className="card-title text-black">
                   {project.title}
                   <br />
                   <span
@@ -102,7 +102,10 @@ const Projects = ({ lang }) => {
                     {project.category}
                   </span>
                 </h5>
-                <p className="card-text" style={{ whiteSpace: "normal" }}>
+                <p
+                  className="card-text text-black"
+                  style={{ whiteSpace: "normal" }}
+                >
                   {project.description}
                 </p>
                 <div className="d-flex flex-wrap">
@@ -134,8 +137,8 @@ const Projects = ({ lang }) => {
                   className="card-img-top rounded"
                 />
                 <div className="card-body ps-0 pe-0">
-                  <h5 className="card-title">{project.title}</h5>
-                  <p className="card-text">{project.description}</p>
+                  <h5 className="card-title text-black">{project.title}</h5>
+                  <p className="card-text text-black">{project.description}</p>
                   <div className="d-flex flex-wrap">
                     {project.techs.map((tech) => (
                       <span
