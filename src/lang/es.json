@@ -137,7 +137,7 @@
       "text": "Buscador de Películas & Series"
     },
     "movies_finder_description": {
-      "text": "Plataforma web con integración OMDBAPI para obtener información detallada sobre series y películas."
+      "text": "Plataforma web con integración de OMDBAPI para obtener información detallada sobre series y películas."
     },
     "weather_visualizer_title": {
       "text": "Visualizador Meteorológico"
@@ -149,7 +149,7 @@
       "text": "Generador de Escalas de Color"
     },
     "color_scales_generator_description": {
-      "text": "Herramienta web de escala de color basada en el nombre de un color o su hexadecimal, ideal para diseñadores y desarrolladores."
+      "text": "Herramienta web para crear escalas de colores a partir de un nombre o código hexadecimal, ideal para diseñadores y desarrolladores."
     },
     "translator_title": {
       "text": "Traductor"
