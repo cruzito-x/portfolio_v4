@@ -81,6 +81,33 @@
     },
     "cosplay_description": {
       "text": ", a creative passion that allows me to bring my favorite characters to life through crafting and design. This hobby enhances my creativity and problem-solving skills, which something that also contributes to my work as an engineer."
+    },
+    "experience_title": {
+      "text": "Experience & Education"
+    },
+    "experience_subtitle": {
+      "text": "Companies I Have Worked With & My Education"
+    },
+    "preespeciality_time": {
+      "text": "March 2025 - In Progress"
+    },
+    "preespeciality_title": {
+      "text": "Cybersecurity Engineering Pre-especiality."
+    },
+    "codeEye_time": {
+      "text": "April 2023 - June 2024"
+    },
+    "codeEye_job": {
+      "text": "Junior Software Developer."
+    },
+    "mutual_fund_time": {
+      "text": "February 2019 - August 2019"
+    },
+    "mutual_fund_job": {
+      "text": "Technical Support Assistant."
+    },
+    "mutual_fund": {
+      "text": "Mutual Fund for MINED Employees."
     }
   }
 }

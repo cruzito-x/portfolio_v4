@@ -6,13 +6,13 @@ import pcLogo from "../../assets/icons/pcgamingwiki.png";
 import dataSecurityLottie from "../../assets/img/lottie/data-security";
 import "./styles/experience.css";
 
-const Experience = () => {
+const Experience = ({ lang }) => {
   return (
     <div className="container p-5 h-100" id="experience">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">Experience & Education</h1>
+        <h1 className="fw-semibold">{lang.experience_title?.text}</h1>
         <label className="fw-semibold enphasis-text-dark">
-          Companies I Have Worked With & My Education
+          {lang.experience_subtitle?.text}
         </label>
       </div>
       <div className="row mt-5">
@@ -24,10 +24,10 @@ const Experience = () => {
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
-                  March 2025 - In Progress
+                  {lang.preespeciality_time?.text}
                 </label>
-                <h3>Cybersecurity Engineering Pre-especiality.</h3>
-                <p>Universidad Tecnológica de El Salvador. - El Salvador.</p>
+                <h3>{lang.preespeciality_title?.text}</h3>
+                <p>{lang.university?.text}. - El Salvador.</p>
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
@@ -36,9 +36,9 @@ const Experience = () => {
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
-                  April 2023 - June 2024
+                  {lang.codeEye_time?.text}
                 </label>
-                <h3>Junior Software Developer.</h3>
+                <h3>{lang.codeEye_job?.text}</h3>
                 <p>CodeEye Inc. - Canadá / El Salvador.</p>
               </div>
             </div>
@@ -48,8 +48,8 @@ const Experience = () => {
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">2020 - 2024</label>
-                <h3>Systems and Computer Engineering.</h3>
-                <p>Universidad Tecnológica de El Salvador. - El Salvador.</p>
+                <h3>{lang.about_description_title?.text}.</h3>
+                <p>{lang.university?.text}. - El Salvador.</p>
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
@@ -58,10 +58,10 @@ const Experience = () => {
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
-                  February 2019 - August 2019
+                  {lang.mutual_fund_time?.text}
                 </label>
-                <h3>Technical Support Assistant</h3>
-                <p>Caja Mutual de los Empleados del MINED. - El Salvador.</p>
+                <h3>{lang.mutual_fund_job?.text}</h3>
+                <p>{lang.mutual_fund?.text} - El Salvador.</p>
               </div>
             </div>
           </div>

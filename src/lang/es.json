@@ -81,6 +81,33 @@
     },
     "cosplay_description": {
       "text": ", una pasión creativa que me permite dar vida a mis personajes favoritos a través de la artesanía y el diseño. Esta afición potencia mi creatividad y mi capacidad para resolver problemas, algo que también aporta a mi trabajo como ingeniero."
+    },
+    "experience_title": {
+      "text": "Experiencia & Educación"
+    },
+    "experience_subtitle": {
+      "text": "Empresas con las que he Trabajado & Mi Formación"
+    },
+    "preespeciality_time": {
+      "text": "Marzo 2025 - En Curso"
+    },
+    "preespeciality_title": {
+      "text": "Pre-especialidad en Ingeniería de Ciberseguridad"
+    },
+    "codeEye_time": {
+      "text": "Abril 2023 - Junio 2024"
+    },
+    "codeEye_job": {
+      "text": "Desarrollador de Software Junior."
+    },
+    "mutual_fund_time": {
+      "text": "Febrero 2019 - Agosto 2019"
+    },
+    "mutual_fund_job": {
+      "text": "Asistente de Soporte Técnico."
+    },
+    "mutual_fund": {
+      "text": "Caja Mutual de los Empleados del MINED."
     }
   }
 }
