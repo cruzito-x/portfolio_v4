@@ -207,6 +207,37 @@
     },
     "iris_vs_marketplace_extension_description": {
       "text": "Clean and professional design, oriented to a pleasant UX with a user-friendly UI, ideal for data visualization."
+    },
+    "contact_subtitle": {
+      "text": "Say Hello ^^"
+    },
+    "contact_text": {
+      "text": "If you have any questions, need help, or just want to say hi, feel free to send me a message. I will get back to you as soon as possible ^^"
+    },
+    "send_me_a_message": {
+      "text": "Send Me a Message"
+    },
+
+    "name": {
+      "text": "Name"
+    },
+    "name_placeholder": {
+      "text": "Your name"
+    },
+    "email": {
+      "text": "E-mail"
+    },
+    "email_placeholder": {
+      "text": "youremailaddress@mail.com"
+    },
+    "message": {
+      "text": "Message"
+    },
+    "message_placeholder": {
+      "text": "Write your message"
+    },
+    "send_message": {
+      "text": "Send Message"
     }
   }
 }

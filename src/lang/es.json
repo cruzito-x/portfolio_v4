@@ -207,6 +207,36 @@
     },
     "iris_vs_marketplace_extension_description": {
       "text": "Diseño limpio y profesional, orientado a una UX agradable con una UI amigable, ideal para la visualización de datos."
+    },
+    "contact_subtitle": {
+      "text": "Di Hola ^^"
+    },
+    "contact_text": {
+      "text": "Si tienes alguna pregunta, necesitas ayuda o simplemente quieres saludarme, no dudes en enviarme un mensaje. Me pondré en contacto contigo lo antes posible ^^"
+    },
+    "send_me_a_message": {
+      "text": "Envíame un Mensaje"
+    },
+    "name": {
+      "text": "Nombre"
+    },
+    "name_placeholder": {
+      "text": "Tu nombre"
+    },
+    "email": {
+      "text": "Correo Electrónico"
+    },
+    "email_placeholder": {
+      "text": "tudirecciondecorreo@correo.com"
+    },
+    "message": {
+      "text": "Mensaje"
+    },
+    "message_placeholder": {
+      "text": "Escribe tu mensaje"
+    },
+    "send_message": {
+      "text": "Enviar Mensaje"
     }
   }
 }

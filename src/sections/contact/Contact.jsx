@@ -4,7 +4,7 @@ import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import coffeeLottie from "../../assets/img/lottie/coffee";
 
-const Contact = () => {
+const Contact = ({ lang }) => {
   const [sendingEmail, setSendingEmail] = useState(false);
   const formRef = useRef(null);
 
@@ -58,8 +58,10 @@ const Contact = () => {
   return (
     <div className="container p-5 h-100" id="contact">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">Contact Me</h1>
-        <label className="fw-semibold enphasis-text-dark">Say Hello ^^</label>
+        <h1 className="fw-semibold">{lang.contact?.text}</h1>
+        <label className="fw-semibold enphasis-text-dark">
+          {lang.contact_subtitle?.text}
+        </label>
       </div>
       <div className="row align-items-center mt-3">
         <div className="col-lg-6 justify-content-center lottie-container">
@@ -70,46 +72,42 @@ const Contact = () => {
               animationData: coffeeLottie,
             }}
           />
-          <p className="text-black mt-3">
-            If you have any questions, need help, or just want to say hi, feel
-            free to send me a message. I will get back to you as soon as
-            possible.
-          </p>
+          <p className="text-black mt-3">{lang.contact_text?.text}</p>
         </div>
         <div className="col-lg-6 col-sm-12">
           <form className="card p-5" ref={formRef} onSubmit={sendEmail}>
             <label className="text-black fw-semibold text-center fs-3">
-              Send Me a Message
+              {lang.send_me_a_message?.text}
             </label>
             <div className="mb-3">
-              <label className="form-label text-black">Name</label>
+              <label className="form-label text-black">{lang.name?.text}</label>
               <input
                 type="text"
                 className="form-control text-black"
                 name="username"
-                placeholder="Your Name"
+                placeholder={lang.name_placeholder?.text}
                 required
                 disabled={sendingEmail}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label text-black">Email</label>
+              <label className="form-label text-black">{lang.email?.text}</label>
               <input
                 type="email"
                 className="form-control text-black"
                 name="email"
-                placeholder="youremailaddress@mail.com"
+                placeholder={lang.email_placeholder?.text}
                 required
                 disabled={sendingEmail}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label text-black">Message</label>
+              <label className="form-label text-black">{lang.message?.text}</label>
               <textarea
                 className="form-control text-black"
                 name="message"
                 rows="5"
-                placeholder="Write your message"
+                placeholder={lang.message_placeholder?.text}
                 style={{ resize: "none" }}
                 maxLength={255}
                 required
@@ -121,7 +119,7 @@ const Contact = () => {
               className="btn btn-primary"
               disabled={sendingEmail}
             >
-              Send Message
+              {lang.send_message?.text}
             </button>
           </form>
         </div>
