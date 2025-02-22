@@ -176,7 +176,7 @@ const Navbar = ({ lang }) => {
         }}
       >
         <button
-          className="position-fixed bottom-0 end-0 m-3 btn btn-light rounded shadow"
+          className="position-fixed bottom-0 end-0 m-1 btn btn-white rounded"
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ width: "50px", height: "50px", zIndex: 2 }}
         >
@@ -184,7 +184,7 @@ const Navbar = ({ lang }) => {
         </button>
 
         {menuOpen && (
-          <div className="position-fixed top-100 start-50 translate-middle w-100 h-75 bg-white d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
+          <div className="position-fixed top-100 start-50 translate-middle w-100 h-50 bg-white d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
             <div className="container text-center">
               <div className="row row-cols-3 g-3">
                 {navItems.map((item) => (
