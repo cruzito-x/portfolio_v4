@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import cruzitoLogo from "../../assets/img/logo.png";
 import "./styles/navbar.css";
-import MobileNavbar from "./MobileNavbar";
 
 const Navbar = ({ lang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -17,14 +16,64 @@ const Navbar = ({ lang }) => {
     return () => window.removeEventListener("scroll", scrollWindow);
   }, []);
 
-  const navLinkClick = (link) => {
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const selectedLink = (link) => {
     setActiveLink(link);
     setMenuOpen(false);
   };
 
+  const navItems = [
+    {
+      id: "#home",
+      label: lang.home?.text,
+      icon: <i className="bx bx-home-alt-2"></i>,
+    },
+    {
+      id: "#about",
+      label: lang.about?.text,
+      icon: <i className="bx bx-planet"></i>,
+    },
+    {
+      id: "#skills",
+      label: lang.skills?.text,
+      icon: <i className="bx bx-code"></i>,
+    },
+    {
+      id: "#experience",
+      label: lang.experience?.text,
+      icon: <i className="bx bx-laptop"></i>,
+    },
+    {
+      id: "#projects",
+      label: lang.projects?.text,
+      icon: <i className="bx bx-image"></i>,
+    },
+    {
+      id: "#contact",
+      label: lang.contact?.text,
+      icon: (
+        <i
+          className="bx bx-send"
+          style={{
+            rotate: "-30deg",
+          }}
+        ></i>
+      ),
+    },
+  ];
+
   return (
     <>
-      {/* Navbar solo visible en pantallas md o más grandes */}
       <nav
         className={`navbar navbar-expand-lg d-none d-md-flex align-items-center sticky-top bg-white text-black ps-3 pe-3 transition-all ${
           isScrolled ? "shadow-sm" : ""
@@ -49,7 +98,7 @@ const Navbar = ({ lang }) => {
               <div className="d-flex flex-column flex-lg-row">
                 <a
                   href="#about"
-                  onClick={() => navLinkClick("#about")}
+                  onClick={() => selectedLink("#about")}
                   className={`nav-link text-lg-start ${
                     activeLink === "#about"
                       ? "nav_link active_link"
@@ -60,7 +109,7 @@ const Navbar = ({ lang }) => {
                 </a>
                 <a
                   href="#experience"
-                  onClick={() => navLinkClick("#experience")}
+                  onClick={() => selectedLink("#experience")}
                   className={`nav-link text-lg-start ms-lg-5 ${
                     activeLink === "#experience"
                       ? "nav_link active_link"
@@ -75,7 +124,7 @@ const Navbar = ({ lang }) => {
                 <a
                   onClick={() => {
                     window.scrollTo(0, 0);
-                    navLinkClick("#home");
+                    selectedLink("#home");
                   }}
                   className={`cursor-pointer ${
                     activeLink === "#home" ? "nav_link active_link" : "nav_link"
@@ -94,7 +143,7 @@ const Navbar = ({ lang }) => {
               <div className="d-flex flex-column flex-lg-row">
                 <a
                   href="#skills"
-                  onClick={() => navLinkClick("#skills")}
+                  onClick={() => selectedLink("#skills")}
                   className={`nav-link text-lg-end ${
                     activeLink === "#skills"
                       ? "nav_link active_link"
@@ -105,7 +154,7 @@ const Navbar = ({ lang }) => {
                 </a>
                 <a
                   href="#projects"
-                  onClick={() => navLinkClick("#projects")}
+                  onClick={() => selectedLink("#projects")}
                   className={`nav-link text-lg-end ms-lg-5 ${
                     activeLink === "#projects"
                       ? "nav_link active_link"
@@ -120,7 +169,41 @@ const Navbar = ({ lang }) => {
         </div>
       </nav>
 
-      <MobileNavbar lang={lang} />
+      <div
+        className="position-relative d-md-none"
+        style={{
+          zIndex: 1,
+        }}
+      >
+        <button
+          className="position-fixed bottom-0 end-0 m-3 btn btn-light rounded shadow"
+          onClick={() => setMenuOpen(!menuOpen)}
+          style={{ width: "50px", height: "50px", zIndex: 2 }}
+        >
+          <i className={`bx ${menuOpen ? "bx-x" : "bx bx-cube-alt"}`}></i>
+        </button>
+
+        {menuOpen && (
+          <div className="position-fixed top-100 start-50 translate-middle w-100 h-75 bg-white d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
+            <div className="container text-center">
+              <div className="row row-cols-3 g-3">
+                {navItems.map((item) => (
+                  <div className="col" key={item.id}>
+                    <a
+                      href={item.id}
+                      className="d-flex flex-column align-items-center text-dark text-decoration-none"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {item.icon}
+                      <span className="mt-2">{item.label}</span>
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
     </>
   );
 };
