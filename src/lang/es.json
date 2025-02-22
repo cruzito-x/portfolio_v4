@@ -1,0 +1,16 @@
+{
+  "es": {
+    "about": {
+      "title": "Sobre Mi"
+    },
+    "experience": {
+      "title": "Experiencia"
+    },
+    "skills": {
+      "title": "Habilidades"
+    },
+    "projects": {
+      "title": "Proyectos"
+    }
+  }
+}

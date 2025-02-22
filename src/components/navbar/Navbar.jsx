@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import cruzitoLogo from "../../assets/img/logo.png";
 import "./styles/navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ lang, content }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -38,7 +38,10 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        <div className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${menuOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
           <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-center">
             <div className="d-flex flex-column flex-lg-row">
               <a
@@ -48,16 +51,18 @@ const Navbar = () => {
                   activeLink === "#about" ? "nav_link active_link" : "nav_link"
                 }`}
               >
-                About
+                {content.about?.title}
               </a>
               <a
                 href="#experience"
                 onClick={() => navLinkClick("#experience")}
                 className={`nav-link text-lg-start ms-lg-5 ${
-                  activeLink === "#experience" ? "nav_link active_link" : "nav_link"
+                  activeLink === "#experience"
+                    ? "nav_link active_link"
+                    : "nav_link"
                 }`}
               >
-                Experience
+                {content.experience?.title}
               </a>
             </div>
 
@@ -89,16 +94,18 @@ const Navbar = () => {
                   activeLink === "#skills" ? "nav_link active_link" : "nav_link"
                 }`}
               >
-                Skills
+                {content.skills?.title}
               </a>
               <a
                 href="#projects"
                 onClick={() => navLinkClick("#projects")}
                 className={`nav-link text-lg-end ms-lg-5 ${
-                  activeLink === "#projects" ? "nav_link active_link" : "nav_link"
+                  activeLink === "#projects"
+                    ? "nav_link active_link"
+                    : "nav_link"
                 }`}
               >
-                Projects
+                {content.projects?.title}
               </a>
             </div>
           </div>
