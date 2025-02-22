@@ -14,9 +14,9 @@ import irisCodeScanner from "../pictures/Designs/work3.png";
 
 /* =================== FILTERS =================== */
 
-export const filters = [
+export const getFilters = (lang) => [
   {
-    name: "All",
+    name: lang.all?.text,
   },
   {
     name: "Frontend",
@@ -25,7 +25,7 @@ export const filters = [
     name: "Backend",
   },
   {
-    name: "Design",
+    name: lang.design?.text,
   },
 ];
 
@@ -45,7 +45,6 @@ const categories = {
     color: "var(--figma-color)",
   },
 };
-
 
 /* =================== TECHS STACK =================== */
 
@@ -144,13 +143,12 @@ const techStack = {
 
 /* =================== PROJECTS =================== */
 
-export const projectsData = [
+export const getProjectsData = (lang) => [
   {
     id: 1,
     image: moviesFinder,
-    title: "Movies & Series Finder",
-    description:
-      "Web platform with OMDBAPI integration for detailed information on series and movies.",
+    title: lang.movies_finder_title?.text,
+    description: lang.movies_finder_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -173,9 +171,8 @@ export const projectsData = [
   {
     id: 2,
     image: weatherVisualizer,
-    title: "Weather Visualizer",
-    description:
-      "Web app that uses OpenWeather API to obtain weather data from a specific location.",
+    title: lang.weather_visualizer_title?.text,
+    description: lang.weather_visualizer_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -204,9 +201,8 @@ export const projectsData = [
   {
     id: 3,
     image: colorScalesGenerator,
-    title: "Color Scales Generator",
-    description:
-      "Color scale web tool based on a color name or its hex, ideal for designers and developers.",
+    title: lang.color_scales_generator_title?.text,
+    description: lang.color_scales_generator_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -229,9 +225,8 @@ export const projectsData = [
   {
     id: 4,
     image: translator,
-    title: "Translator",
-    description:
-      "Web app that makes use of MyMemory API for instant translations in several languages.",
+    title: lang.translator_title?.text,
+    description: lang.translator_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -260,9 +255,8 @@ export const projectsData = [
   {
     id: 5,
     image: vsMarketplaceExtension,
-    title: "VS Marketplace Extension",
-    description:
-      "Azure DevOps extension to perform source code analysis and vulnerability detection.",
+    title: lang.iris_extension_title?.text,
+    description: lang.iris_extension_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -293,9 +287,8 @@ export const projectsData = [
   {
     id: 6,
     image: bookStoreSalesSystem,
-    title: "Bookstore Sales System",
-    description:
-      "Web CRM for sales and inventory management, invoicing and reporting of a bookstore.",
+    title: lang.bookstore_sales_system_title?.text,
+    description: lang.bookstore_sales_system_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -311,9 +304,8 @@ export const projectsData = [
   {
     id: 7,
     image: eCommerce,
-    title: "E-commerce App",
-    description:
-      "E-commerce web platform for sales and inventory management for a technology products store.",
+    title: lang.e_commerce_title?.text,
+    description: lang.e_commerce_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -341,9 +333,8 @@ export const projectsData = [
   {
     id: 8,
     image: bankCollectionSystem,
-    title: "Bank Collection System",
-    description:
-      "Web system based on role-based auth for the payment of services and banking transactions.",
+    title: lang.bank_collection_system_title?.text,
+    description: lang.bank_collection_system_description?.text,
     category: categories.frontend.name,
     category_color: categories.frontend.color,
     techs: [
@@ -365,9 +356,8 @@ export const projectsData = [
   {
     id: 9,
     image: bookStoreSalesAPI,
-    title: "Bookstore Sales System API",
-    description:
-      "Endpoints, with a system for storing images in the server and returning this to the front-end.",
+    title: lang.bookstore_sales_system_api_title?.text,
+    description: lang.bookstore_sales_system_api_description?.text,
     category: categories.backend.name,
     category_color: categories.backend.color,
     techs: [
@@ -389,9 +379,8 @@ export const projectsData = [
   {
     id: 10,
     image: bankCollectionAPI,
-    title: "Bank Collection System API",
-    description:
-      "Endpoints for the management of banking transactions, prioritizing security and data integrity.",
+    title: lang.bank_collection_system_api_title?.text,
+    description: lang.bank_collection_system_api_description?.text,
     category: categories.backend.name,
     category_color: categories.backend.color,
     techs: [
@@ -419,9 +408,8 @@ export const projectsData = [
   {
     id: 11,
     image: dashboard,
-    title: "Vulnerabilities Dashboard",
-    description:
-      "Clean, clear and professional design, ideal for the purpose of vulnerabilities management.",
+    title: lang.vulnerabilities_dashboard_title?.text,
+    description: lang.vulnerabilities_dashboard_description?.text,
     category: categories.design.name,
     category_color: categories.design.color,
     techs: [
@@ -438,9 +426,8 @@ export const projectsData = [
   {
     id: 12,
     image: neuroDivergentMobileApp,
-    title: "App for Neurodivergent People",
-    description:
-      "Inclusive, intuitive and accessible design for the target audience, prioritizing UX for user comfort.",
+    title: lang.neurodivergent_people_mobile_app_title?.text,
+    description: lang.neurodivergent_people_mobile_app_description?.text,
     category: categories.design.name,
     category_color: categories.design.color,
     techs: [
@@ -457,9 +444,8 @@ export const projectsData = [
   {
     id: 13,
     image: irisCodeScanner,
-    title: "VS Marketplace Extension",
-    description:
-      "Clean and professional design, oriented to a pleasant UX with a user-friendly UI, ideal for data visualization.",
+    title: lang.vs_marketplace_extension_title?.text,
+    description: lang.vs_marketplace_extension_description?.text,
     category: categories.design.name,
     category_color: categories.design.color,
     techs: [
