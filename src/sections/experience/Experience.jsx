@@ -24,9 +24,9 @@ const Experience = ({ lang }) => {
               </div>
               <div className="timeline-content w-100 cursor-pointer">
                 <label className="fw-semibold text-white">
-                  {lang.preespeciality_time?.text}
+                  {lang.pre_specialty_time?.text}
                 </label>
-                <h3>{lang.preespeciality_title?.text}</h3>
+                <h3>{lang.pre_specialty_title?.text}</h3>
                 <p>{lang.university?.text}. - El Salvador.</p>
               </div>
             </div>

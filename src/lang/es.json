@@ -22,7 +22,7 @@
       "text": "Ingeniero de Software"
     },
     "description": {
-      "text": "Soy Egresado de la Carrera de Ingeniería en Sistemas y Computación y estoy en proceso de pre-especialización en Ingeniería de Ciberseguridad.\nTengo experiencia en el área de desarrollo web con tecnologías basadas en JavaScript como React.js y Express.js, también tengo conocimientos en el área de gestión y manejo de bases de datos relacionales al igual que en el área de diseño web utilizando herramientas como Figma.\n\nSiempre busco ampliar los horizontes de mis conocimientos y trabajar en mis capacidades."
+      "text": "Soy egresado de la carrera de Ingeniería en Sistemas y Computación y estoy en proceso de pre-especialización en Ingeniería de Ciberseguridad.\nTengo experiencia en el área de desarrollo web con tecnologías basadas en JavaScript como React.js y Express.js, también tengo conocimientos en el área de gestión y manejo de bases de datos relacionales al igual que en el área de diseño web utilizando herramientas como Figma.\n\nSiempre busco ampliar los horizontes de mis conocimientos y trabajar en mis capacidades."
     },
     "download": {
       "text": "Descargar CV"
@@ -34,7 +34,7 @@
       "text": "¿Quién es David Cruz?"
     },
     "about_description": {
-      "text": "Actualmente tengo 22 años, Soy estudiante egresado de "
+      "text": "Actualmente tengo 22 años, soy estudiante egresado de "
     },
     "about_description_title": {
       "text": "Ingeniería en Sistemas y Computación"
@@ -49,7 +49,7 @@
       "text": "utilizando herramientas de diseño como Figma y como "
     },
     "about_experience_description_backfill": {
-      "text": " tengo experiencia en desarrollo de aplicaciones web utilizando tecnologías basadas en JavaScript como React.js, Node.js y Express.js, y tecnologías basadas en Php como Laravel, también manejo diversos motores de bases de datos como MySQL, SQL Server y PostgreSQL para el "
+      "text": " tengo experiencia en desarrollo de aplicaciones web utilizando tecnologías basadas en JavaScript como React.js, Node.js y Express.js y con tecnologías basadas en Php como Laravel, también manejo diversos motores de bases de datos como MySQL, SQL Server y PostgreSQL para el "
     },
     "development": {
       "text": "desarrollo"
@@ -64,7 +64,7 @@
     "relational_databases": {
       "text": "bases de datos relacionales"
     },
-    "currently_preespeciality": {
+    "currently_pre_specialty": {
       "text": "Actualmente estoy cursando una pre-especialidad en "
     },
     "cybersecurity_especiality": {
@@ -83,18 +83,18 @@
       "text": "cosplayer ocasional"
     },
     "cosplay_description": {
-      "text": ", una pasión creativa que me permite dar vida a mis personajes favoritos a través de la artesanía y el diseño. Esta afición potencia mi creatividad y mi capacidad para resolver problemas, algo que también aporta a mi trabajo como ingeniero."
+      "text": ", una pasión creativa que me permite dar vida a mis personajes favoritos a través del arte y el diseño. Esta afición potencia mi creatividad y mi capacidad para resolver problemas, algo que también aporta a mi trabajo como ingeniero."
     },
     "experience_title": {
       "text": "Experiencia & Educación"
     },
     "experience_subtitle": {
-      "text": "Empresas con las que he Trabajado & Mi formación"
+      "text": "Empresas con las que he Trabajado & Mi educación"
     },
-    "preespeciality_time": {
+    "pre_specialty_time": {
       "text": "2025 - En Curso"
     },
-    "preespeciality_title": {
+    "pre_specialty_title": {
       "text": "Pre-especialidad en Ingeniería de Ciberseguridad."
     },
     "codeEye_time": {
@@ -143,7 +143,7 @@
       "text": "Visualizador Meteorológico"
     },
     "weather_visualizer_description": {
-      "text": "Aplicación web que utiliza la API de OpenWeather para obtener datos meteorológicos de una ubicación específica."
+      "text": "Aplicación web que utiliza OpenWeather API para obtener datos meteorológicos de una ubicación específica."
     },
     "color_scales_generator_title": {
       "text": "Generador de Escalas de Color"
@@ -155,13 +155,13 @@
       "text": "Traductor"
     },
     "translator_description": {
-      "text": "Aplicación web que utiliza la API MyMemory para realizar traducciones instantáneas en varios idiomas."
+      "text": "Aplicación web que utiliza MyMemory API para realizar traducciones instantáneas en varios idiomas."
     },
     "iris_extension_title": {
-      "text": "Extension de VS Marketplace"
+      "text": "Extensión de VS Marketplace"
     },
     "iris_extension_description": {
-      "text": "Extensión Azure DevOps para realizar análisis de código fuente y detección de vulnerabilidades."
+      "text": "Extensión para Azure DevOps para realizar análisis de código fuente y detección de vulnerabilidades."
     },
     "bookstore_sales_system_title": {
       "text": "Sistema de Ventas de Librería"
@@ -173,7 +173,7 @@
       "text": "App de Comercio Electrónico"
     },
     "e_commerce_description": {
-      "text": "Plataforma web de comercio electrónico para la gestión de ventas e inventarios de una tienda de productos tecnológicos."
+      "text": "Plataforma web de comercio electrónico para gestión de ventas e inventarios de una tienda de productos tecnológicos."
     },
     "bank_collection_system_title": {
       "text": "Sistema de Cobros Bancarios"
@@ -197,7 +197,7 @@
       "text": "Panel de vulnerabilidades"
     },
     "vulnerabilities_dashboard_description": {
-      "text": "Diseño limpio, claro y profesional, ideal para la gestión de vulnerabilidades."
+      "text": "Diseño limpio, claro y profesional, ideal para la gestión de espacios de trabajo y vulnerabilidades."
     },
     "neurodivergent_people_mobile_app_title": {
       "text": "App para Personas Neurodivergentes"
@@ -206,7 +206,7 @@
       "text": "Diseño inclusivo, intuitivo y accesible para el público objetivo, priorizando la UX para la comodidad del usuario."
     },
     "vs_marketplace_extension_title": {
-      "text": "Extension de VS Marketplace"
+      "text": "Extensión de VS Marketplace"
     },
     "vs_marketplace_extension_description": {
       "text": "Diseño limpio y profesional, orientado a una UX agradable con una UI amigable, ideal para la visualización de datos."

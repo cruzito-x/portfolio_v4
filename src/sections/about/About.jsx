@@ -47,7 +47,7 @@ const About = ({ lang }) => {
           </p>
 
           <p className="text-black">
-            {lang.currently_preespeciality?.text}
+            {lang.currently_pre_specialty?.text}
             <span className="fw-semibold enphasis-text">
               {lang.cybersecurity_especiality?.text}
             </span>
