@@ -151,7 +151,7 @@ const Projects = ({ lang }) => {
                         className="btn btn-sm btn-primary me-2"
                       >
                         <i className="bx bx-rocket me-1"></i>
-                        Deploy
+                        {lang.deploy?.text}
                       </a>
                     )}
                     {project.source_url && (
@@ -162,7 +162,7 @@ const Projects = ({ lang }) => {
                         className="btn btn-sm btn-primary me-2"
                       >
                         <i className="bx bxl-github me-1"></i>
-                        Source Code
+                        {lang.source_code?.text}
                       </a>
                     )}
                     {project.extension_url && (
@@ -173,7 +173,7 @@ const Projects = ({ lang }) => {
                         className="btn btn-sm btn-primary me-2"
                       >
                         <i className="bx bxl-microsoft me-1"></i>
-                        Extension Source
+                        {lang.extension_source?.text}
                       </a>
                     )}
                     {project.design_url && (
@@ -184,7 +184,7 @@ const Projects = ({ lang }) => {
                         className="btn btn-sm btn-primary"
                       >
                         <i className="bx bxl-figma"></i>
-                        Design
+                        {lang.design?.text}
                       </a>
                     )}
                   </div>
