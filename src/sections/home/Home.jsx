@@ -2,6 +2,7 @@ import Lottie from "react-lottie";
 import coderLottie from "../../assets/img/lottie/coder";
 import curriculumVitae from "../../assets/docs/David Cruz - Currículum Vitae.pdf";
 import "./styles/home.css";
+import React from "react";
 
 const Home = ({ lang }) => {
   return (
@@ -60,7 +61,12 @@ const Home = ({ lang }) => {
               {lang.title?.text}
             </label>
             <p className="text-black mt-3 fs-6 mt-4">
-              {lang.description?.text}
+              {lang.description?.text.split("\n").map((line, index) => (
+                <React.Fragment key={index}>
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
             </p>
             <div className="text-start mb-5">
               <a
