@@ -3,7 +3,7 @@ import coderLottie from "../../assets/img/lottie/coder";
 import curriculumVitae from "../../assets/docs/David Cruz - Currículum Vitae.pdf";
 import "./styles/home.css";
 
-const Home = () => {
+const Home = ({ lang }) => {
   return (
     <div
       className="container h-100 mb-5 ps-5 pe-5"
@@ -52,22 +52,15 @@ const Home = () => {
           </div>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
-              Hi! I&apos;m
+              {lang.greeting?.text}
               <br />
               <span className="enphasis-text">David Cruz</span>
             </h1>
             <label className="fw-semibold enphasis-text-dark fs-5">
-              Software Engineer
+              {lang.title?.text}
             </label>
             <p className="text-black mt-3 fs-6 mt-4">
-              I am a Graduate with a degree in Computer and Systems Engineering
-              and am In the Process of a pre-especiality in Cybersecurity
-              Engineering. <br /> I have experience in the area of web
-              development with JavaScript-based technologies such as React.js
-              and Express.js, I am also knowledgeable in the areas of both
-              management, handling of relational databases, and web design using
-              tools such as Figma. <br /> <br />I am always looking to expand
-              the horizons of my knowledge and work on my capabilities.
+              {lang.description?.text}
             </p>
             <div className="text-start mb-5">
               <a
@@ -76,7 +69,7 @@ const Home = () => {
                 target="_blank"
               >
                 <i className="bx bx-download me-2"></i>
-                Download CV
+                {lang.download?.text}
               </a>
               <a href="#contact" className="btn btn-primary-dark mt-2">
                 <i
@@ -85,7 +78,7 @@ const Home = () => {
                     rotate: "-30deg",
                   }}
                 ></i>
-                Contact Me
+                {lang.contact?.text}
               </a>
             </div>
           </div>

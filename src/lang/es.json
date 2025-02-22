@@ -1,16 +1,31 @@
 {
   "es": {
     "about": {
-      "title": "Sobre Mi"
+      "text": "Sobre Mi"
     },
     "experience": {
-      "title": "Experiencia"
+      "text": "Experiencia"
     },
     "skills": {
-      "title": "Habilidades"
+      "text": "Habilidades"
     },
     "projects": {
-      "title": "Proyectos"
+      "text": "Proyectos"
+    },
+    "greeting": {
+      "text": "¡Hola! Soy"
+    },
+    "title": {
+      "text": "Ingeniero de Software"
+    },
+    "description": {
+      "text": "Soy Egresado de la Carrera de Ingeniería en Sistemas y Computación y estoy En Proceso de preespecialización en Ingeniería de Ciberseguridad.\nTengo experiencia en el área de desarrollo web con tecnologías basadas en JavaScript como React.js y Express.js, también tengo conocimientos en las áreas tanto de gestión, manejo de bases de datos relacionales y diseño web utilizando herramientas como Figma.\nSiempre busco ampliar los horizontes de mis conocimientos y trabajar en mis capacidades."
+    },
+    "download": {
+      "text": "Descargar CV"
+    },
+    "contact": {
+      "text": "Contáctame"
     }
   }
 }

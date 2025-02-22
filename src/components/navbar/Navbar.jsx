@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import cruzitoLogo from "../../assets/img/logo.png";
 import "./styles/navbar.css";
 
-const Navbar = ({ lang, content }) => {
+const Navbar = ({ lang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState("#home");
   const [menuOpen, setMenuOpen] = useState(false);
@@ -51,7 +51,7 @@ const Navbar = ({ lang, content }) => {
                   activeLink === "#about" ? "nav_link active_link" : "nav_link"
                 }`}
               >
-                {content.about?.title}
+                {lang.about?.text}
               </a>
               <a
                 href="#experience"
@@ -62,7 +62,7 @@ const Navbar = ({ lang, content }) => {
                     : "nav_link"
                 }`}
               >
-                {content.experience?.title}
+                {lang.experience?.text}
               </a>
             </div>
 
@@ -94,7 +94,7 @@ const Navbar = ({ lang, content }) => {
                   activeLink === "#skills" ? "nav_link active_link" : "nav_link"
                 }`}
               >
-                {content.skills?.title}
+                {lang.skills?.text}
               </a>
               <a
                 href="#projects"
@@ -105,7 +105,7 @@ const Navbar = ({ lang, content }) => {
                     : "nav_link"
                 }`}
               >
-                {content.projects?.title}
+                {lang.projects?.text}
               </a>
             </div>
           </div>

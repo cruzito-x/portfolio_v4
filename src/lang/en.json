@@ -1,16 +1,31 @@
 {
   "en": {
     "about": {
-      "title": "About"
+      "text": "About Me"
     },
     "experience": {
-      "title": "Experience"
+      "text": "Experience"
     },
     "skills": {
-      "title": "Skills"
+      "text": "Skills"
     },
     "projects": {
-      "title": "Projects"
+      "text": "Projects"
+    },
+    "greeting": {
+      "text": "Hi! I'm"
+    },
+    "title": {
+      "text": "Software Engineer"
+    },
+    "description": {
+      "text": "I am a Systems and Computer Engineering graduate and I am in the process of pre-specialization in Cybersecurity Engineering.\nI have experience in the area of web development with JavaScript based technologies such as React.js and Express.js, I also have knowledge in the areas of both management, relational database management and web design using tools like Figma.\nI am always looking to expand the horizons of my knowledge and work on my capabilities."
+    },
+    "download": {
+      "text": "Download CV"
+    },
+    "contact": {
+      "text": "Contact Me"
     }
   }
 }

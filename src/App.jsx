@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import en from "./lang/en.json";
+import es from "./lang/es.json";
 import Footer from "./components/footer/Footer";
 import Navbar from "./components/navbar/Navbar";
 import About from "./sections/about/About";
@@ -7,40 +9,38 @@ import Experience from "./sections/experience/Experience";
 import Home from "./sections/home/Home";
 import Projects from "./sections/projects/Projects";
 import Skills from "./sections/skills/Skills";
-import "./styles/index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
-import en_translation from "./lang/en.json";
-import es_translation from "./lang/es.json";
+import "./styles/index.css";
 
 function App() {
   const [language, setLanguage] = useState("en");
   const [content, setContent] = useState({});
 
   useEffect(() => {
-    const userLang = navigator.language || navigator.userLanguage; // Detecta el idioma
-    const language = userLang.includes("es") ? "es" : "en"; // Si el idioma es español (es) usa "es", si no "en"
+    const userLang = navigator.language || navigator.userLanguage;
+    const language = userLang.includes("es") ? "es" : "en";
     setLanguage(language);
   }, []);
 
   useEffect(() => {
     if (language === "en") {
-      setContent(en_translation.en);
+      setContent(en.en);
     } else if (language === "es") {
-      setContent(es_translation.es);
+      setContent(es.es);
     }
   }, [language]);
 
   return (
     <>
-      <Navbar lang={language} content={content} />
-      <Home />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Contact />
-      <Footer />
+      <Navbar lang={content} />
+      <Home lang={content} />
+      <About lang={content} />
+      <Experience lang={content} />
+      <Skills lang={content} />
+      <Projects lang={content} />
+      <Contact lang={content} />
+      <Footer lang={content} />
     </>
   );
 }
