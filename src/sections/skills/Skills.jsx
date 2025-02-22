@@ -12,13 +12,13 @@ import figmaLogo from "../../assets/icons/svg/figma.svg";
 import swaggerLogo from "../../assets/icons/svg/swagger.svg";
 import "./styles/skills.css";
 
-const Skills = () => {
+const Skills = ({ lang }) => {
   return (
     <div className="container p-5 h-100" id="skills">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">Skills</h1>
+        <h1 className="fw-semibold">{lang.skills?.text}</h1>
         <label className="fw-semibold enphasis-text-dark">
-          Skills I Utilize to Effectively Complete Tasks
+          {lang.skills_subtitle?.text}
         </label>
       </div>
       <div className="row mt-5 mb-3">

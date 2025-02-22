@@ -89,7 +89,7 @@
       "text": "Companies I Have Worked With & My Education"
     },
     "preespeciality_time": {
-      "text": "March 2025 - In Progress"
+      "text": "2025 - In Progress"
     },
     "preespeciality_title": {
       "text": "Cybersecurity Engineering Pre-especiality."
@@ -108,6 +108,9 @@
     },
     "mutual_fund": {
       "text": "Mutual Fund for MINED Employees."
+    },
+    "skills_subtitle": {
+      "text": "Skills I use to perform tasks effectively"
     }
   }
 }

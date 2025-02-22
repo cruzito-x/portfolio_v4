@@ -86,10 +86,10 @@
       "text": "Experiencia & Educación"
     },
     "experience_subtitle": {
-      "text": "Empresas con las que he Trabajado & Mi Formación"
+      "text": "Empresas con las que he Trabajado & Mi formación"
     },
     "preespeciality_time": {
-      "text": "Marzo 2025 - En Curso"
+      "text": "2025 - En Curso"
     },
     "preespeciality_title": {
       "text": "Pre-especialidad en Ingeniería de Ciberseguridad"
@@ -108,6 +108,9 @@
     },
     "mutual_fund": {
       "text": "Caja Mutual de los Empleados del MINED."
+    },
+    "skills_subtitle": {
+      "text": "Habilidades que utilizo para realizar tareas eficazmente"
     }
   }
 }
