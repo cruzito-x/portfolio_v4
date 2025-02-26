@@ -1,8 +1,8 @@
 import Lottie from "react-lottie";
-import owaspLogo from "../../assets/icons/dependencycheck.png";
-import frontendIcon from "../../assets/icons/frontendmentor.png";
-import htmxLogo from "../../assets/icons/htmx.png";
-import pcLogo from "../../assets/icons/pcgamingwiki.png";
+import owaspLogo from "../../assets/img/icons/dependencycheck.png";
+import frontendIcon from "../../assets/img/icons/frontendmentor.png";
+import htmxLogo from "../../assets/img/icons/htmx.png";
+import pcLogo from "../../assets/img/icons/pcgamingwiki.png";
 import dataSecurityLottie from "../../assets/img/lottie/data-security";
 import "./styles/experience.css";
 

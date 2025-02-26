@@ -1,15 +1,15 @@
-import htmlIcon from "../../assets/icons/svg/html.svg";
-import cssIcon from "../../assets/icons/svg/css.svg";
-import javaScriptIcon from "../../assets/icons/svg/javascript.svg";
-import bootstrapIcon from "../../assets/icons/svg/bootstrap.svg";
-import reactIcon from "../../assets/icons/svg/react.svg";
-import angularLogo from "../../assets/icons/svg/angular.svg";
-import expressLogo from "../../assets/icons/svg/node.svg";
-import laravelLogo from "../../assets/icons/svg/laravel.svg";
-import mysqlLogo from "../../assets/icons/svg/mysql.svg";
-import gitLogo from "../../assets/icons/svg/git.svg";
-import figmaLogo from "../../assets/icons/svg/figma.svg";
-import swaggerLogo from "../../assets/icons/svg/swagger.svg";
+import htmlIcon from "../../assets/img/svg/html.svg";
+import cssIcon from "../../assets/img/svg/css.svg";
+import javaScriptIcon from "../../assets/img/svg/javascript.svg";
+import bootstrapIcon from "../../assets/img/svg/bootstrap.svg";
+import reactIcon from "../../assets/img/svg/react.svg";
+import angularLogo from "../../assets/img/svg/angular.svg";
+import expressLogo from "../../assets/img/svg/express.svg";
+import laravelLogo from "../../assets/img/svg/laravel.svg";
+import mysqlLogo from "../../assets/img/svg/mysql.svg";
+import gitLogo from "../../assets/img/svg/git.svg";
+import figmaLogo from "../../assets/img/svg/figma.svg";
+import swaggerLogo from "../../assets/img/svg/swagger.svg";
 import "./styles/skills.css";
 
 const Skills = ({ lang }) => {
@@ -26,12 +26,22 @@ const Skills = ({ lang }) => {
           <>
             <img src={htmlIcon} alt="HTML logo" /> <br />
             <label className="html-text fw-semibold fs-6 mt-3">HTML</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Intermediate{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={cssIcon} alt="CSS logo" /> <br />
             <label className="css-text fw-semibold fs-6 mt-3">CSS</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Intermediate{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 mb-3 text-center">
@@ -39,6 +49,11 @@ const Skills = ({ lang }) => {
             <img src={javaScriptIcon} alt="JavaScript logo" /> <br />
             <label className="javascript-text fw-semibold fs-6 mt-3">
               JavaScript
+            </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
             </label>
           </>
         </div>
@@ -48,12 +63,22 @@ const Skills = ({ lang }) => {
             <label className="bootstrap-text fw-semibold fs-6 mt-3">
               Bootstrap
             </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Intermediate{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 text-center">
           <>
             <img src={reactIcon} alt="React.js logo" /> <br />
             <label className="react-text fw-semibold fs-6 mt-3">React.js</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 text-center">
@@ -61,6 +86,11 @@ const Skills = ({ lang }) => {
             <img src={angularLogo} alt="Angular logo" /> <br />
             <label className="angular-text fw-semibold fs-6 mt-3">
               Angular
+            </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
             </label>
           </>
         </div>
@@ -72,6 +102,11 @@ const Skills = ({ lang }) => {
             <label className="express-text fw-semibold fs-6 mt-3">
               Express.js
             </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 mb-3 text-center">
@@ -80,24 +115,44 @@ const Skills = ({ lang }) => {
             <label className="laravel-text fw-semibold fs-6 mt-3">
               Laravel
             </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 mb-3 text-center">
           <>
             <img src={mysqlLogo} alt="MySQL logo" /> <br />
             <label className="mysql-text fw-semibold fs-6 mt-3">MySQL</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 text-center">
           <>
             <img src={gitLogo} className="rounded" alt="Git logo" /> <br />
             <label className="git-text fw-semibold fs-6 mt-3">Git</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Intermediate{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 text-center">
           <>
             <img src={figmaLogo} alt="Figma logo" /> <br />
             <label className="figma-text fw-semibold fs-6 mt-3">Figma</label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
+            </label>
           </>
         </div>
         <div className="col-4 col-md-2 text-center">
@@ -105,6 +160,11 @@ const Skills = ({ lang }) => {
             <img src={swaggerLogo} alt="Swagger logo" /> <br />
             <label className="swagger-text fw-semibold fs-6 mt-3">
               Swagger
+            </label>
+            <br />
+            <label className="fw-normal text-secondary skill-subtitle">
+              {" "}
+              Junior{" "}
             </label>
           </>
         </div>

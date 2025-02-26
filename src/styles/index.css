@@ -10,7 +10,8 @@
   --react-color: #08d8fe;
   --ant-design-color: #2f95e0;
   --angular-color: #c3012e;
-  --express-color: #8dc84a;
+  --node-color: #8dc84a;
+  --express-color: #212020;
   --laravel-color: #f61e0e;
   --mysql-color: #005c89;
   --mongodb-color: #12a44e;
@@ -72,4 +73,8 @@ h1 {
 
 .lottie-container {
   pointer-events: none !important;
+}
+
+.skill-subtitle {
+  font-size: 13px;
 }
