@@ -115,6 +115,12 @@
     "skills_subtitle": {
       "text": "Skills I use to perform tasks effectively"
     },
+    "junior": {
+      "text": "Junior"
+    },
+    "intermediate": {
+      "text": "Intermediate"
+    },
     "projects_subtitle": {
       "text": "Some of the most outstanding projects I have worked on"
     },

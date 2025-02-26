@@ -28,8 +28,7 @@ const Skills = ({ lang }) => {
             <label className="html-text fw-semibold fs-6 mt-3">HTML</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Intermediate{" "}
+              {lang.intermediate?.text}
             </label>
           </>
         </div>
@@ -39,8 +38,7 @@ const Skills = ({ lang }) => {
             <label className="css-text fw-semibold fs-6 mt-3">CSS</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Intermediate{" "}
+              {lang.intermediate?.text}
             </label>
           </>
         </div>
@@ -52,8 +50,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -65,8 +62,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Intermediate{" "}
+              {lang.intermediate?.text}
             </label>
           </>
         </div>
@@ -76,8 +72,7 @@ const Skills = ({ lang }) => {
             <label className="react-text fw-semibold fs-6 mt-3">React.js</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -89,8 +84,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -104,8 +98,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -117,8 +110,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -128,8 +120,7 @@ const Skills = ({ lang }) => {
             <label className="mysql-text fw-semibold fs-6 mt-3">MySQL</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -139,8 +130,7 @@ const Skills = ({ lang }) => {
             <label className="git-text fw-semibold fs-6 mt-3">Git</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Intermediate{" "}
+              {lang.intermediate?.text}
             </label>
           </>
         </div>
@@ -150,8 +140,7 @@ const Skills = ({ lang }) => {
             <label className="figma-text fw-semibold fs-6 mt-3">Figma</label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
@@ -163,8 +152,7 @@ const Skills = ({ lang }) => {
             </label>
             <br />
             <label className="fw-normal text-secondary skill-subtitle">
-              {" "}
-              Junior{" "}
+              {lang.junior?.text}
             </label>
           </>
         </div>
