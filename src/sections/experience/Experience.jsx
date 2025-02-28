@@ -39,7 +39,7 @@ const Experience = ({ lang }) => {
                   {lang.codeEye_time?.text}
                 </label>
                 <h3>{lang.codeEye_job?.text}</h3>
-                <p>CodeEye Inc. - Canadá / El Salvador.</p>
+                <p>CodeEye Solutions Inc. - Canadá / El Salvador.</p>
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
