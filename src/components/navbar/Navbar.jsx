@@ -34,7 +34,7 @@ const Navbar = ({ lang }) => {
 
   const navItems = [
     {
-      id: "#home",
+      id: "#",
       label: lang.home?.text,
       icon: <i className="bx bx-home-alt-2"></i>,
     },

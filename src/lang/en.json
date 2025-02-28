@@ -226,7 +226,6 @@
     "send_me_a_message": {
       "text": "Send Me a Message"
     },
-
     "name": {
       "text": "Name"
     },
@@ -247,6 +246,15 @@
     },
     "send_message": {
       "text": "Send Message"
+    },
+    "fill_all_fields": {
+      "text": "Please, Fill the form to send a message"
+    },
+    "success_text": {
+      "text": "Message sent!"
+    },
+    "success_accept": {
+      "text": "Accept"
     }
   }
 }

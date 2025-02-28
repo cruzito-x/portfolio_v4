@@ -246,6 +246,15 @@
     },
     "send_message": {
       "text": "Enviar Mensaje"
+    },
+    "fill_all_fields": {
+      "text": "Por Favor, Rellene el formulario para enviar un mensaje"
+    },
+    "success_text": {
+      "text": "¡Mensaje enviado!"
+    },
+    "success_accept": {
+      "text": "Aceptar"
     }
   }
 }

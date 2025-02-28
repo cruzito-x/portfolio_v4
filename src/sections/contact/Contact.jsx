@@ -17,10 +17,10 @@ const Contact = ({ lang }) => {
     if (!values) {
       Swal.fire({
         title: "Error",
-        text: "Please, Fill the Form to Send a Message",
+        text: lang.fill_all_fields?.text,
         icon: "warning",
-        confirmButtonText: "Accept",
-        confirmButtonColor: "#267cec",
+        confirmButtonText: lang.success_accept?.text,
+        confirmButtonColor: "#007bff",
       });
 
       return;
@@ -33,23 +33,22 @@ const Contact = ({ lang }) => {
       .then(
         () => {
           Swal.fire({
-            title: "Success",
-            text: "Message sent successfully!",
+            text: lang.success_text?.text,
             icon: "success",
-            confirmButtonText: "Accept",
-            confirmButtonColor: "#267cec",
+            confirmButtonText: lang.success_accept?.text,
+            confirmButtonColor: "#007bff",
           });
           formRef.current.reset();
           setSendingEmail(false);
         },
         (error) => {
           Swal.fire({
-            title: "Error",
             text: error.text,
             icon: "error",
-            confirmButtonText: "Accept",
-            confirmButtonColor: "#267cec",
+            confirmButtonText: lang.success_accept?.text,
+            confirmButtonColor: "#007bff",
           });
+
           setSendingEmail(false);
         }
       );
@@ -91,7 +90,9 @@ const Contact = ({ lang }) => {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label text-black">{lang.email?.text}</label>
+              <label className="form-label text-black">
+                {lang.email?.text}
+              </label>
               <input
                 type="email"
                 className="form-control text-black"
@@ -102,7 +103,9 @@ const Contact = ({ lang }) => {
               />
             </div>
             <div className="mb-3">
-              <label className="form-label text-black">{lang.message?.text}</label>
+              <label className="form-label text-black">
+                {lang.message?.text}
+              </label>
               <textarea
                 className="form-control text-black"
                 name="message"

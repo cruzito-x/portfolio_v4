@@ -40,6 +40,17 @@ const Home = ({ lang }) => {
               </li>
               <li>
                 <a
+                  href="https://www.linkedin.com/in/cruzsv"
+                  className="fs-3 enphasis-text-dark"
+                  target="_blank"
+                  title="LinkedIn"
+                  rel="noopener noreferrer"
+                >
+                  <i className='bx bxl-linkedin'></i>
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://discord.com/users/644250041594150914"
                   className="fs-3 enphasis-text-dark"
                   target="_blank"

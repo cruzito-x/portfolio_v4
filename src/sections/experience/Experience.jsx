@@ -19,10 +19,10 @@ const Experience = ({ lang }) => {
         <div className="col-lg-6 col-sm-12 d-flex align-items-center">
           <div className="timeline w-100 mb-5">
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon cursor-pointer">
+              <div className="icon">
                 <img src={owaspLogo} alt="OWASP logo" />
               </div>
-              <div className="timeline-content w-100 cursor-pointer">
+              <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
                   {lang.pre_specialty_time?.text}
                 </label>
@@ -31,10 +31,10 @@ const Experience = ({ lang }) => {
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon cursor-pointer">
+              <div className="icon">
                 <img src={frontendIcon} alt="Frontend Mentor logo" />
               </div>
-              <div className="timeline-content w-100 cursor-pointer">
+              <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
                   {lang.codeEye_time?.text}
                 </label>
@@ -43,20 +43,20 @@ const Experience = ({ lang }) => {
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon cursor-pointer">
+              <div className="icon">
                 <img src={htmxLogo} alt="HTMX logo" />
               </div>
-              <div className="timeline-content w-100 cursor-pointer">
+              <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">2020 - 2024</label>
                 <h3>{lang.about_description_title?.text}.</h3>
                 <p>{lang.university?.text}. - El Salvador.</p>
               </div>
             </div>
             <div className="timeline-item d-flex align-items-center">
-              <div className="icon cursor-pointer">
+              <div className="icon">
                 <img src={pcLogo} alt="PC Gaming logo" />
               </div>
-              <div className="timeline-content w-100 cursor-pointer">
+              <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
                   {lang.mutual_fund_time?.text}
                 </label>
