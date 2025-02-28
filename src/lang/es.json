@@ -143,7 +143,7 @@
       "text": "Buscador de Películas & Series"
     },
     "movies_finder_description": {
-      "text": "Plataforma web con integración de OMDBAPI para obtener información detallada sobre series y películas."
+      "text": "Plataforma web con integración de la API de OMDb para obtener información detallada sobre series y películas."
     },
     "weather_visualizer_title": {
       "text": "Visualizador Meteorológico"
@@ -191,7 +191,7 @@
       "text": "API del Sistema de Ventas de Librería"
     },
     "bookstore_sales_system_api_description": {
-      "text": "Endpoints, con un sistema para almacenar imágenes en el servidor y devolverlas al front-end."
+      "text": "Conjunto de endpoints con un sistema para almacenar imágenes en el servidor y devolverlas al front-end."
     },
     "bank_collection_system_api_title": {
       "text": "API del Sistema de Cobros Bancarios"
