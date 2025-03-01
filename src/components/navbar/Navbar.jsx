@@ -44,18 +44,18 @@ const Navbar = ({ lang }) => {
       icon: <i className="bx bx-planet"></i>,
     },
     {
-      id: "#skills",
-      label: lang.skills?.text,
-      icon: <i className="bx bx-code"></i>,
-    },
-    {
       id: "#experience",
       label: lang.experience?.text,
       icon: <i className="bx bx-laptop"></i>,
     },
     {
-      id: "#projects",
-      label: lang.projects?.text,
+      id: "#skills",
+      label: lang.skills?.text,
+      icon: <i className="bx bx-code"></i>,
+    },
+    {
+      id: "#portfolio",
+      label: lang.portfolio?.text,
       icon: <i className="bx bx-image"></i>,
     },
     {
@@ -143,15 +143,15 @@ const Navbar = ({ lang }) => {
                   {lang.skills?.text}
                 </a>
                 <a
-                  href="#projects"
-                  onClick={() => selectedLink("#projects")}
+                  href="#portfolio"
+                  onClick={() => selectedLink("#portfolio")}
                   className={`nav-link text-lg-end ms-lg-5 ${
-                    activeLink === "#projects"
+                    activeLink === "#portfolio"
                       ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
-                  {lang.projects?.text}
+                  {lang.portfolio?.text}
                 </a>
               </div>
             </div>
@@ -166,7 +166,7 @@ const Navbar = ({ lang }) => {
         }}
       >
         <button
-          className="position-fixed bottom-0 end-0 m-1 border-0 btn btn-white rounded"
+          className={`position-fixed bottom-0 end-0 m-2 border-0 bg-white rounded ${!menuOpen ? "shadow" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ width: "50px", height: "50px", zIndex: 2 }}
         >
@@ -174,7 +174,9 @@ const Navbar = ({ lang }) => {
         </button>
 
         {menuOpen && (
-          <div className="position-fixed top-100 start-50 translate-middle w-100 h-50 bg-white text-black d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top">
+          <div className="position-fixed top-100 start-50 translate-middle w-100 bg-white text-black d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top" style={{
+            height: "400px"
+          }}>
             <div className="container text-center">
               <div className="row row-cols-3 g-3">
                 {navItems.map((item) => (

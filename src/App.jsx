@@ -7,7 +7,7 @@ import About from "./sections/about/About";
 import Contact from "./sections/contact/Contact";
 import Experience from "./sections/experience/Experience";
 import Home from "./sections/home/Home";
-import Projects from "./sections/projects/Projects";
+import Portfolio from "./sections/projects/Portfolio";
 import Skills from "./sections/skills/Skills";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -38,7 +38,7 @@ function App() {
       <About lang={content} />
       <Experience lang={content} />
       <Skills lang={content} />
-      <Projects lang={content} />
+      <Portfolio lang={content} />
       <Contact lang={content} />
       <Footer lang={content} />
     </>

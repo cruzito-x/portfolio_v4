@@ -42,9 +42,9 @@ const Projects = ({ lang }) => {
   }, [selectedCategory]);
 
   return (
-    <div className="container p-5 h-100" id="projects">
+    <div className="container p-5 h-100" id="portfolio">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">{lang.projects?.text}</h1>
+        <h1 className="fw-semibold">{lang.portfolio?.text}</h1>
         <label className="fw-semibold enphasis-text-dark">
           {lang.projects_subtitle?.text}
         </label>
