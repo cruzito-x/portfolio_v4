@@ -7,7 +7,7 @@ import About from "./sections/about/About";
 import Contact from "./sections/contact/Contact";
 import Experience from "./sections/experience/Experience";
 import Home from "./sections/home/Home";
-import Portfolio from "./sections/projects/Portfolio";
+import Portfolio from "./sections/portfolio/Portfolio";
 import Skills from "./sections/skills/Skills";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
