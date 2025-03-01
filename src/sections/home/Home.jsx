@@ -46,7 +46,7 @@ const Home = ({ lang }) => {
                   title="LinkedIn"
                   rel="noopener noreferrer"
                 >
-                  <i className='bx bxl-linkedin'></i>
+                  <i className="bx bxl-linkedin"></i>
                 </a>
               </li>
               <li>
@@ -79,16 +79,16 @@ const Home = ({ lang }) => {
                 </React.Fragment>
               ))}
             </p>
-            <div className="text-start mb-5">
+            <div className="row text-start">
               <a
                 href={curriculumVitae}
-                className="btn btn-primary mt-2 me-3"
+                className="col-md-4 btn btn-primary m-1"
                 target="_blank"
               >
                 <i className="bx bx-download me-2"></i>
                 {lang.download?.text}
               </a>
-              <a href="#contact" className="btn btn-primary-dark mt-2">
+              <a href="#contact" className="col-md-4 btn btn-primary-dark m-1">
                 <i
                   className="bx bx-send me-2"
                   style={{
