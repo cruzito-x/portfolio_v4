@@ -8,9 +8,9 @@ import eCommerce from "../pictures/Frontend/work7.png";
 import bankCollectionSystem from "../pictures/Frontend/work8.png";
 import bookStoreSalesAPI from "../pictures/Backend/work1.png";
 import bankCollectionAPI from "../pictures/Backend/work2.png";
-import dashboard from "../pictures/Designs/work1.png";
-import neuroDivergentMobileApp from "../pictures/Designs/work2.png";
-import irisCodeScanner from "../pictures/Designs/work3.png";
+import irisCodeScanner from "../pictures/Designs/work1.png";
+import dashboard from "../pictures/Designs/work2.png";
+import neuroDivergentMobileApp from "../pictures/Designs/work3.png";
 
 /* =================== FILTERS =================== */
 
@@ -395,7 +395,7 @@ export const getProjectsData = (lang) => {
       source_url: "https://github.com/cruzito-x/bank-collection-backend",
     },
     {
-      id: 13,
+      id: 11,
       image: irisCodeScanner,
       title: lang.vs_marketplace_extension_title?.text,
       description: lang.vs_marketplace_extension_description?.text,
@@ -413,7 +413,7 @@ export const getProjectsData = (lang) => {
         "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
     },
     {
-      id: 11,
+      id: 12,
       image: dashboard,
       title: lang.vulnerabilities_dashboard_title?.text,
       description: lang.vulnerabilities_dashboard_description?.text,
@@ -431,7 +431,7 @@ export const getProjectsData = (lang) => {
         "https://www.figma.com/design/3mJfa7medrPycTS5RTTefq/Untitled?t=DLPrFoleZ6yIKa2a-1",
     },
     {
-      id: 12,
+      id: 13,
       image: neuroDivergentMobileApp,
       title: lang.neurodivergent_people_mobile_app_title?.text,
       description: lang.neurodivergent_people_mobile_app_description?.text,
