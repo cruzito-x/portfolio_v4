@@ -395,6 +395,24 @@ export const getProjectsData = (lang) => {
       source_url: "https://github.com/cruzito-x/bank-collection-backend",
     },
     {
+      id: 13,
+      image: irisCodeScanner,
+      title: lang.vs_marketplace_extension_title?.text,
+      description: lang.vs_marketplace_extension_description?.text,
+      category: filters[3].name,
+      category_color: filters[3].color,
+      techs: [
+        {
+          id: 1,
+          icon: techStack.figma.icon,
+          color: techStack.figma.color,
+          name: techStack.figma.name,
+        },
+      ],
+      design_url:
+        "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
+    },
+    {
       id: 11,
       image: dashboard,
       title: lang.vulnerabilities_dashboard_title?.text,
@@ -429,24 +447,6 @@ export const getProjectsData = (lang) => {
       ],
       design_url:
         "https://www.figma.com/design/g039NhW9ZAy8NcF2knXqZk/MindMap?m=auto&t=HpVDzN4iSlcsV6dT-6",
-    },
-    {
-      id: 13,
-      image: irisCodeScanner,
-      title: lang.vs_marketplace_extension_title?.text,
-      description: lang.vs_marketplace_extension_description?.text,
-      category: filters[3].name,
-      category_color: filters[3].color,
-      techs: [
-        {
-          id: 1,
-          icon: techStack.figma.icon,
-          color: techStack.figma.color,
-          name: techStack.figma.name,
-        },
-      ],
-      design_url:
-        "https://www.figma.com/design/Bh6zAJMZwH1hPVSKdd7zIV/IRIS-Code-Scanner?node-id=0-1&t=WFgD6oEX4MtUZavF-1",
     },
   ];
 };
