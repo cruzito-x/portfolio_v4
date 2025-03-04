@@ -22,7 +22,7 @@
       "text": "Software Engineer"
     },
     "description": {
-      "text": "I am a graduate of Systems and Computer Engineering, currently I am in the process of pre-specialization in Cybersecurity Engineering.\nI have experience in web development with JavaScript-based technologies such as React.js and Express.js, as well as in relational database management and administration. In addition, I have knowledge in web design and prototyping using tools such as Figma.\n\nI am passionate about continuing to expand my knowledge and strengthen my skills to develop efficient and innovative technological solutions."
+      "text": "I am a graduate of Systems and Computer Engineering, currently I am in the process of pre-specialization in Artificial Intelligence Engineering.\nI have experience in web development with JavaScript-based technologies such as React.js and Express.js, as well as in relational database management and administration. In addition, I have knowledge in web design and prototyping using tools such as Figma.\n\nI am passionate about continuing to expand my knowledge and strengthen my skills to develop efficient and innovative technological solutions."
     },
     "download": {
       "text": "Download CV"
@@ -67,8 +67,8 @@
     "currently_pre_specialty": {
       "text": "I am currently pursuing a pre-specialty in "
     },
-    "cybersecurity_especiality": {
-      "text": "Cybersecurity Engineering"
+    "ai_especiality": {
+      "text": "Artificial Intelligence Engineering"
     },
     "at_the": {
       "text": " at the "
@@ -95,7 +95,7 @@
       "text": "2025 - In Progress"
     },
     "pre_specialty_title": {
-      "text": "Pre-specialty in Cybersecurity Engineering."
+      "text": "Pre-specialty in Artificial Intelligence Engineering."
     },
     "codeEye_time": {
       "text": "April 2023 - June 2024"
