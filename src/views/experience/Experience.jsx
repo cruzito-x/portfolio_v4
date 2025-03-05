@@ -1,8 +1,8 @@
 import Lottie from "react-lottie";
-import owaspLogo from "../../assets/img/icons/dependencycheck.png";
-import frontendIcon from "../../assets/img/icons/frontendmentor.png";
+import pythonLogo from "../../assets/img/icons/python.png";
+import buyMeACoffeeLogo from "../../assets/img/icons/coffee.png";
 import htmxLogo from "../../assets/img/icons/htmx.png";
-import pcLogo from "../../assets/img/icons/pcgamingwiki.png";
+import assistantLogo from "../../assets/img/icons/assistant.png";
 import dataSecurityLottie from "../../assets/img/lottie/data-security";
 import "./styles/experience.css";
 
@@ -20,7 +20,7 @@ const Experience = ({ lang }) => {
           <div className="timeline w-100 mb-5">
             <div className="timeline-item d-flex align-items-center">
               <div className="icon">
-                <img src={owaspLogo} alt="OWASP logo" />
+                <img src={pythonLogo} alt="Python Logo" />
               </div>
               <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
@@ -32,7 +32,7 @@ const Experience = ({ lang }) => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon">
-                <img src={frontendIcon} alt="Frontend Mentor logo" />
+                <img src={buyMeACoffeeLogo} alt="Buy me a Coffee Logo" />
               </div>
               <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
@@ -54,7 +54,7 @@ const Experience = ({ lang }) => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon">
-                <img src={pcLogo} alt="PC Gaming logo" />
+                <img src={assistantLogo} alt="Google Assistant logo" />
               </div>
               <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">

@@ -62,8 +62,8 @@
 
 .timeline-content h3 {
   margin: 0;
-  font-size: 18px;
-  color: #fff;
+  font-size: 17.5px;
+  color: #ffffff;
 }
 
 .timeline-content label {
@@ -73,5 +73,5 @@
 .timeline-content p {
   margin: 5px 0 0;
   font-size: 14px;
-  color: #bbb;
+  color: #bbbbbb;
 }
