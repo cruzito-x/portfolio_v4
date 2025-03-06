@@ -108,9 +108,7 @@ const Skills = ({ lang }) => {
           <img src={skill.icon} alt={`${skill.name} logo`} />
           <label
             className="fw-semibold mt-3 d-block"
-            style={{
-              color: skill.color,
-            }}
+            style={{ color: skill.color }}
           >
             {skill.name}
           </label>
@@ -131,7 +129,7 @@ const Skills = ({ lang }) => {
         </label>
       </div>
       <div className="row mt-5 mb-3">
-        <div className="col-md-6 col-sm-12" style={{ minHeight: "320px" }}>
+        <div className="col-md-6 col-sm-12" style={{ minHeight: "310px" }}>
           <div
             id="skillsCarousel"
             className="carousel slide mt-5"
@@ -146,28 +144,6 @@ const Skills = ({ lang }) => {
               </div>
               <div className="carousel-item">{renderSkillSet(otherSkills)}</div>
             </div>
-            <button
-              className="carousel-control-prev"
-              type="button"
-              data-bs-target="#skillsCarousel"
-              data-bs-slide="prev"
-            >
-              <span
-                className="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-            </button>
-            <button
-              className="carousel-control-next"
-              type="button"
-              data-bs-target="#skillsCarousel"
-              data-bs-slide="next"
-            >
-              <span
-                className="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-            </button>
           </div>
         </div>
         <div className="col-md-6 col-sm-12 d-flex align-items-center">

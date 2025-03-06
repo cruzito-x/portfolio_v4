@@ -19,7 +19,7 @@
   --git-color: #ef503b;
   --figma-color: #fe3900;
   --swagger-color: #6c9b00;
-  --enphasis-color: #007bff;
+  --enphasis-color: #007bff !important;
   --enphasis-hover-color: #006bdd;
   --enphasis-dark-color: #003166;
   --enphasis-hover-dark-color: #00244b;

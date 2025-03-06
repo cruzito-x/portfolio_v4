@@ -15,6 +15,40 @@ const Home = ({ lang }) => {
     >
       <div className="row mt-5 pt-5">
         <div className="d-flex col-lg-6 col-sm-12 p-0">
+          <ul
+            className="mt-3 me-3 text-start p-0"
+            style={{ listStyle: "none" }}
+          >
+            {[
+              {
+                href: "https://www.linkedin.com/in/cruzsv",
+                icon: "bxl-linkedin",
+                label: "LinkedIn",
+              },
+              {
+                href: "https://github.com/cruzito-x",
+                icon: "bxl-github",
+                label: "GitHub",
+              },
+              {
+                href: "https://instagram.com/_cruzito.x",
+                icon: "bxl-instagram",
+                label: "Instagram",
+              },
+            ].map((url, index) => (
+              <li key={index}>
+                <a
+                  href={url.href}
+                  className="fs-3 enphasis-text-dark"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={url.label}
+                >
+                  <i className={`bx ${url.icon}`}></i>
+                </a>
+              </li>
+            ))}
+          </ul>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
               {lang.greeting?.text}
@@ -32,43 +66,6 @@ const Home = ({ lang }) => {
                 </React.Fragment>
               ))}
             </p>
-            <div className="row mb-2">
-              {[
-                {
-                  href: "https://www.linkedin.com/in/cruzsv",
-                  icon: "bxl-linkedin",
-                  label: "LinkedIn",
-                },
-                {
-                  href: "https://github.com/cruzito-x",
-                  icon: "bxl-github",
-                  label: "GitHub",
-                },
-                {
-                  href: "https://instagram.com/_cruzito.x",
-                  icon: "bxl-instagram",
-                  label: "Instagram",
-                },
-              ].map((social, index) => (
-                <div
-                  key={index}
-                  className={`col-1 d-flex w-auto rounded-circle dark-border text-center p-0 ${
-                    index === 1 ? "ms-2 me-2" : ""
-                  }`}
-                >
-                  <a
-                    href={social.href}
-                    className="fs-5 ps-1 pe-1 enphasis-text-dark"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    title={social.label}
-                  >
-                    <i className={`bx ${social.icon}`}></i>
-                  </a>
-                </div>
-              ))}
-            </div>
 
             <div className="row text-start">
               <a

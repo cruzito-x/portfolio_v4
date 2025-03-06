@@ -16,15 +16,6 @@
   animation: typing 3s steps(10, end) forwards, blink 0.8s infinite;
 }
 
-.dark-border {
-  border: 2px solid var(--enphasis-dark-color) !important;
-  transition: 0.3s;
-}
-
-.dark-border:hover {
-  scale: 1.1;
-}
-
 @keyframes typing {
   from {
     width: 0;
