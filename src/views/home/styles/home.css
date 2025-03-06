@@ -18,6 +18,11 @@
 
 .dark-border {
   border: 2px solid var(--enphasis-dark-color) !important;
+  transition: 0.3s;
+}
+
+.dark-border:hover {
+  scale: 1.1;
 }
 
 @keyframes typing {
