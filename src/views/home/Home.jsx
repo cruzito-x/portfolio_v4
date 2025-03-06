@@ -52,13 +52,13 @@ const Home = ({ lang }) => {
               ].map((social, index) => (
                 <div
                   key={index}
-                  className={`col-1 rounded-circle dark-border text-center p-0 ${
+                  className={`col-1 d-flex w-auto rounded-circle dark-border text-center p-0 ${
                     index === 1 ? "ms-2 me-2" : ""
                   }`}
                 >
                   <a
                     href={social.href}
-                    className="fs-3 enphasis-text-dark"
+                    className="fs-5 ps-1 pe-1 enphasis-text-dark"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}

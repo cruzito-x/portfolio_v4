@@ -131,7 +131,7 @@ const Skills = ({ lang }) => {
         </label>
       </div>
       <div className="row mt-5 mb-3">
-        <div className="col-md-6 col-sm-12">
+        <div className="col-md-6 col-sm-12" style={{ minHeight: "320px" }}>
           <div
             id="skillsCarousel"
             className="carousel slide mt-5"

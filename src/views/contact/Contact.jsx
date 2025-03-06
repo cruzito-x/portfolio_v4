@@ -63,16 +63,6 @@ const Contact = ({ lang }) => {
         </label>
       </div>
       <div className="row align-items-center mt-3">
-        <div className="col-lg-6 justify-content-center lottie-container">
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: coffeeLottie,
-            }}
-          />
-          <p className="text-black mt-3">{lang.contact_text?.text}</p>
-        </div>
         <div className="col-lg-6 col-sm-12">
           <form className="card p-5" ref={formRef} onSubmit={sendEmail}>
             <label className="text-black fw-semibold text-center fs-3">
@@ -125,6 +115,20 @@ const Contact = ({ lang }) => {
               {lang.send_message?.text}
             </button>
           </form>
+        </div>
+        <div className="col-lg-6 justify-content-center lottie-container">
+          <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: coffeeLottie,
+            }}
+            style={{
+              width: "500px",
+              height: "500px",
+            }}
+          />
+          <p className="text-black">{lang.contact_text?.text}</p>
         </div>
       </div>
     </div>

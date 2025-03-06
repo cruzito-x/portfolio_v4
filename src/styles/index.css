@@ -53,18 +53,22 @@ h1 {
 }
 
 .btn-primary {
+  border-color: var(--enphasis-color) !important;
   background-color: var(--enphasis-color) !important;
 }
 
 .btn-primary:hover {
+  border-color: var(--enphasis-hover-color) !important;
   background-color: var(--enphasis-hover-color) !important;
 }
 
 .btn-primary-dark {
+  border-color: var(--enphasis-dark-color) !important;
   background-color: var(--enphasis-dark-color) !important;
 }
 
 .btn-primary-dark:hover {
+  border-color: var(--enphasis-hover-dark-color) !important;
   background-color: var(--enphasis-hover-dark-color) !important;
 }
 
