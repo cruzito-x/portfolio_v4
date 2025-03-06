@@ -124,8 +124,7 @@ const Contact = ({ lang }) => {
               animationData: coffeeLottie,
             }}
             style={{
-              width: "500px",
-              height: "500px",
+              width: "85%",
             }}
           />
           <p className="text-black">{lang.contact_text?.text}</p>
