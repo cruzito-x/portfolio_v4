@@ -8,6 +8,7 @@ const Home = ({ lang }) => {
   return (
     <div
       className="container h-100 mb-5 ps-5 pe-5"
+      id="home"
       style={{
         minHeight: "100vh",
       }}
@@ -72,13 +73,16 @@ const Home = ({ lang }) => {
             <div className="row text-start">
               <a
                 href={curriculumVitae}
-                className="col-md-4 btn btn-primary m-1"
+                className="col-md-4 btn btn-primary text-white m-1"
                 target="_blank"
               >
                 <i className="bx bx-download me-2"></i>
                 {lang.download?.text}
               </a>
-              <a href="#contact" className="col-md-4 btn btn-primary-dark m-1">
+              <a
+                href="#contact"
+                className="col-md-4 btn btn-primary-dark text-white m-1"
+              >
                 <i
                   className="bx bx-send me-2"
                   style={{

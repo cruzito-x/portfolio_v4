@@ -7,6 +7,7 @@ import angularLogo from "../../assets/img/svg/angular.svg";
 import expressLogo from "../../assets/img/svg/express.svg";
 import laravelLogo from "../../assets/img/svg/laravel.svg";
 import mysqlLogo from "../../assets/img/svg/mysql.svg";
+import sqlsrvrLogo from "../../assets/img/svg/sqlsrvr.svg";
 import gitLogo from "../../assets/img/svg/git.svg";
 import figmaLogo from "../../assets/img/svg/figma.svg";
 import swaggerLogo from "../../assets/img/svg/swagger.svg";
@@ -69,6 +70,12 @@ const Skills = ({ lang }) => {
       icon: mysqlLogo,
       name: "MySQL",
       color: "var(--mysql-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: sqlsrvrLogo,
+      name: "SQL Server",
+      color: "var(--sqlsrvr-color)",
       level: lang.junior?.text,
     },
   ];
@@ -163,11 +170,8 @@ const Skills = ({ lang }) => {
             </button>
           </div>
         </div>
-        <div className="col-md-6 col-sm-12">
-          <p className="text-black">
-            A list of the technologies I use to develop applications in an agile
-            and efficient way.
-          </p>
+        <div className="col-md-6 col-sm-12 d-flex align-items-center">
+          <p className="text-black">{lang.skills_text?.text}</p>
         </div>
       </div>
     </div>

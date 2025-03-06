@@ -14,12 +14,15 @@
   --express-color: #212020;
   --laravel-color: #f61e0e;
   --mysql-color: #005c89;
+  --sqlsrvr-color: #a81c22;
   --mongodb-color: #12a44e;
   --git-color: #ef503b;
   --figma-color: #fe3900;
   --swagger-color: #6c9b00;
   --enphasis-color: #007bff;
+  --enphasis-hover-color: #006bdd;
   --enphasis-dark-color: #003166;
+  --enphasis-hover-dark-color: #00244b;
 }
 
 ::-webkit-scrollbar {
@@ -50,27 +53,19 @@ h1 {
 }
 
 .btn-primary {
-  color: var(--enphasis-color) !important;
-  background-color: transparent !important;
-  border: 1px solid var(--enphasis-color) !important;
-  border-radius: 10px;
+  background-color: var(--enphasis-color) !important;
 }
 
 .btn-primary:hover {
-  color: #ffffff !important;
-  background-color: #006bdd !important;
+  background-color: var(--enphasis-hover-color) !important;
 }
 
 .btn-primary-dark {
-  color: var(--enphasis-dark-color) !important;
-  background-color: transparent !important;
-  border: 1px solid var(--enphasis-dark-color) !important;
-  border-radius: 10px;
+  background-color: var(--enphasis-dark-color) !important;
 }
 
 .btn-primary-dark:hover {
-  color: #ffffff !important;
-  background-color: #00244b !important;
+  background-color: var(--enphasis-hover-dark-color) !important;
 }
 
 .cursor-pointer {
