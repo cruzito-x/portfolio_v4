@@ -88,11 +88,9 @@ const Navbar = ({ lang }) => {
               <div className="d-flex flex-column flex-lg-row">
                 <a
                   href="#"
-                  onClick={() => selectedLink("#home")}
+                  onClick={() => selectedLink("#")}
                   className={`nav-link text-lg-start ${
-                    activeLink === "#home"
-                      ? "nav_link active_link text-decoration-underline"
-                      : "nav_link"
+                    activeLink === "#" ? "nav_link active_link" : "nav_link"
                   }`}
                 >
                   {lang.home?.text}
@@ -102,7 +100,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#about")}
                   className={`nav-link text-lg-start ms-lg-5 ${
                     activeLink === "#about"
-                      ? "nav_link active_link text-decoration-underline"
+                      ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
@@ -113,7 +111,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#experience")}
                   className={`nav-link text-lg-start ms-lg-5 ${
                     activeLink === "#experience"
-                      ? "nav_link active_link text-decoration-underline"
+                      ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
@@ -128,9 +126,7 @@ const Navbar = ({ lang }) => {
                     selectedLink("#");
                   }}
                   className={`cursor-pointer ${
-                    activeLink === "#"
-                      ? "nav_link active_link text-decoration-underline"
-                      : "nav_link"
+                    activeLink === "#" ? "nav_link active_link" : "nav_link"
                   }`}
                   href="#"
                 >
@@ -149,7 +145,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#skills")}
                   className={`nav-link text-lg-end ${
                     activeLink === "#skills"
-                      ? "nav_link active_link text-decoration-underline"
+                      ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
@@ -160,7 +156,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#portfolio")}
                   className={`nav-link text-lg-end ms-lg-5 ${
                     activeLink === "#portfolio"
-                      ? "nav_link active_link text-decoration-underline"
+                      ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
@@ -171,7 +167,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#contact")}
                   className={`nav-link text-lg-end ms-lg-5 ${
                     activeLink === "#contact"
-                      ? "nav_link active_link text-decoration-underline"
+                      ? "nav_link active_link"
                       : "nav_link"
                   }`}
                 >
