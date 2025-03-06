@@ -4,7 +4,7 @@ import "./styles/navbar.css";
 
 const Navbar = ({ lang }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeLink, setActiveLink] = useState("#home");
+  const [activeLink, setActiveLink] = useState("#");
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -87,11 +87,22 @@ const Navbar = ({ lang }) => {
             <div className="d-flex flex-column flex-lg-row w-100 justify-content-between align-items-center">
               <div className="d-flex flex-column flex-lg-row">
                 <a
+                  href="#"
+                  onClick={() => selectedLink("#home")}
+                  className={`nav-link text-lg-start ${
+                    activeLink === "#home"
+                      ? "nav_link active_link text-decoration-underline"
+                      : "nav_link"
+                  }`}
+                >
+                  {lang.home?.text}
+                </a>
+                <a
                   href="#about"
                   onClick={() => selectedLink("#about")}
-                  className={`nav-link text-lg-start ${
+                  className={`nav-link text-lg-start ms-lg-5 ${
                     activeLink === "#about"
-                      ? "nav_link active_link"
+                      ? "nav_link active_link text-decoration-underline"
                       : "nav_link"
                   }`}
                 >
@@ -102,7 +113,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#experience")}
                   className={`nav-link text-lg-start ms-lg-5 ${
                     activeLink === "#experience"
-                      ? "nav_link active_link"
+                      ? "nav_link active_link text-decoration-underline"
                       : "nav_link"
                   }`}
                 >
@@ -114,10 +125,12 @@ const Navbar = ({ lang }) => {
                 <a
                   onClick={() => {
                     window.scrollTo(0, 0);
-                    selectedLink("#home");
+                    selectedLink("#");
                   }}
                   className={`cursor-pointer ${
-                    activeLink === "#home" ? "nav_link active_link" : "nav_link"
+                    activeLink === "#"
+                      ? "nav_link active_link text-decoration-underline"
+                      : "nav_link"
                   }`}
                   href="#"
                 >
@@ -136,7 +149,7 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#skills")}
                   className={`nav-link text-lg-end ${
                     activeLink === "#skills"
-                      ? "nav_link active_link"
+                      ? "nav_link active_link text-decoration-underline"
                       : "nav_link"
                   }`}
                 >
@@ -147,11 +160,22 @@ const Navbar = ({ lang }) => {
                   onClick={() => selectedLink("#portfolio")}
                   className={`nav-link text-lg-end ms-lg-5 ${
                     activeLink === "#portfolio"
-                      ? "nav_link active_link"
+                      ? "nav_link active_link text-decoration-underline"
                       : "nav_link"
                   }`}
                 >
                   {lang.portfolio?.text}
+                </a>
+                <a
+                  href="#contact"
+                  onClick={() => selectedLink("#contact")}
+                  className={`nav-link text-lg-end ms-lg-5 ${
+                    activeLink === "#contact"
+                      ? "nav_link active_link text-decoration-underline"
+                      : "nav_link"
+                  }`}
+                >
+                  {lang.contact?.text}
                 </a>
               </div>
             </div>
@@ -166,7 +190,9 @@ const Navbar = ({ lang }) => {
         }}
       >
         <button
-          className={`position-fixed bottom-0 end-0 m-2 border-0 bg-white rounded ${!menuOpen ? "shadow" : ""}`}
+          className={`position-fixed bottom-0 end-0 m-2 border-0 bg-white rounded ${
+            !menuOpen ? "shadow" : ""
+          }`}
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ width: "50px", height: "50px", zIndex: 2 }}
         >
@@ -174,9 +200,12 @@ const Navbar = ({ lang }) => {
         </button>
 
         {menuOpen && (
-          <div className="position-fixed top-100 start-50 translate-middle w-100 bg-white text-black d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top" style={{
-            height: "400px"
-          }}>
+          <div
+            className="position-fixed top-100 start-50 translate-middle w-100 bg-white text-black d-flex flex-column justify-content-center align-items-center shadow-lg p-3 rounded-top"
+            style={{
+              height: "400px",
+            }}
+          >
             <div className="container text-center">
               <div className="row row-cols-3 g-3">
                 {navItems.map((item) => (

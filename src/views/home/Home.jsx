@@ -14,54 +14,6 @@ const Home = ({ lang }) => {
     >
       <div className="row mt-5 pt-5">
         <div className="d-flex col-lg-6 col-sm-12 p-0">
-          <div className="me-3 mt-3">
-            <ul style={{ listStyle: "none" }}>
-              <li>
-                <a
-                  href="https://instagram.com/_cruzito.x"
-                  className="fs-3 enphasis-text-dark"
-                  target="_blank"
-                  title="Instagram"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bxl-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/cruzito-x"
-                  className="fs-3 enphasis-text-dark"
-                  target="_blank"
-                  title="GitHub"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bxl-github"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/cruzsv"
-                  className="fs-3 enphasis-text-dark"
-                  target="_blank"
-                  title="LinkedIn"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bxl-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.com/users/644250041594150914"
-                  className="fs-3 enphasis-text-dark"
-                  target="_blank"
-                  title="Discord"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bx bxl-discord-alt"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
               {lang.greeting?.text}
@@ -79,6 +31,44 @@ const Home = ({ lang }) => {
                 </React.Fragment>
               ))}
             </p>
+            <div className="row mb-2">
+              {[
+                {
+                  href: "https://www.linkedin.com/in/cruzsv",
+                  icon: "bxl-linkedin",
+                  label: "LinkedIn",
+                },
+                {
+                  href: "https://github.com/cruzito-x",
+                  icon: "bxl-github",
+                  label: "GitHub",
+                },
+                {
+                  href: "https://instagram.com/_cruzito.x",
+                  icon: "bxl-instagram",
+                  label: "Instagram",
+                },
+              ].map((social, index) => (
+                <div
+                  key={index}
+                  className={`col-1 rounded-circle dark-border text-center p-0 ${
+                    index === 1 ? "ms-2 me-2" : ""
+                  }`}
+                >
+                  <a
+                    href={social.href}
+                    className="fs-3 enphasis-text-dark"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={social.label}
+                    title={social.label}
+                  >
+                    <i className={`bx ${social.icon}`}></i>
+                  </a>
+                </div>
+              ))}
+            </div>
+
             <div className="row text-start">
               <a
                 href={curriculumVitae}
@@ -95,7 +85,7 @@ const Home = ({ lang }) => {
                     rotate: "-30deg",
                   }}
                 ></i>
-                {lang.contact?.text}
+                {lang.contact_me?.text}
               </a>
             </div>
           </div>

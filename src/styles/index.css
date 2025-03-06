@@ -18,6 +18,8 @@
   --git-color: #ef503b;
   --figma-color: #fe3900;
   --swagger-color: #6c9b00;
+  --enphasis-color: #007bff;
+  --enphasis-dark-color: #003166;
 }
 
 ::-webkit-scrollbar {
@@ -40,16 +42,18 @@ h1 {
 }
 
 .enphasis-text {
-  color: #007bff;
+  color: var(--enphasis-color);
 }
 
 .enphasis-text-dark {
-  color: #003166;
+  color: var(--enphasis-dark-color);
 }
 
 .btn-primary {
-  color: #ffffff !important;
-  background-color: #007bff !important;
+  color: var(--enphasis-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--enphasis-color) !important;
+  border-radius: 10px;
 }
 
 .btn-primary:hover {
@@ -58,8 +62,10 @@ h1 {
 }
 
 .btn-primary-dark {
-  color: #ffffff !important;
-  background-color: #003166 !important;
+  color: var(--enphasis-dark-color) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--enphasis-dark-color) !important;
+  border-radius: 10px;
 }
 
 .btn-primary-dark:hover {

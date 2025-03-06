@@ -57,7 +57,7 @@ const Contact = ({ lang }) => {
   return (
     <div className="container p-5 h-100" id="contact">
       <div className="text-black text-center mt-5">
-        <h1 className="fw-semibold">{lang.contact?.text}</h1>
+        <h1 className="fw-semibold">{lang.contact_me?.text}</h1>
         <label className="fw-semibold enphasis-text-dark">
           {lang.contact_subtitle?.text}
         </label>

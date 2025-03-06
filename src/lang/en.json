@@ -4,7 +4,7 @@
       "text": "Home"
     },
     "about": {
-      "text": "About Me"
+      "text": "About"
     },
     "experience": {
       "text": "Experience"
@@ -14,6 +14,9 @@
     },
     "portfolio": {
       "text": "Portfolio"
+    },
+    "contact": {
+      "text": "Contact"
     },
     "greeting": {
       "text": "Hi! I'm"
@@ -27,8 +30,11 @@
     "download": {
       "text": "Download CV"
     },
-    "contact": {
+    "contact_me": {
       "text": "Contact Me"
+    },
+    "about_me": {
+      "text": "About Me"
     },
     "about_subtitle": {
       "text": "Who's David Cruz?"

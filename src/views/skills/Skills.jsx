@@ -13,6 +13,108 @@ import swaggerLogo from "../../assets/img/svg/swagger.svg";
 import "./styles/skills.css";
 
 const Skills = ({ lang }) => {
+  const frontendSkills = [
+    {
+      icon: htmlIcon,
+      name: "HTML",
+      color: "var(--html-color)",
+      level: lang.intermediate?.text,
+    },
+    {
+      icon: cssIcon,
+      name: "CSS",
+      color: "var(--css-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: javaScriptIcon,
+      name: "JavaScript",
+      color: "var(--javascript-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: bootstrapIcon,
+      name: "Bootstrap",
+      color: "var(--bootstrap-color)",
+      level: lang.intermediate?.text,
+    },
+    {
+      icon: reactIcon,
+      name: "React.js",
+      color: "var(--react-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: angularLogo,
+      name: "Angular",
+      color: "var(--angular-color)",
+      level: lang.junior?.text,
+    },
+  ];
+
+  const backendSkills = [
+    {
+      icon: expressLogo,
+      name: "Express.js",
+      color: "var(--express-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: laravelLogo,
+      name: "Laravel",
+      color: "var(--laravel-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: mysqlLogo,
+      name: "MySQL",
+      color: "var(--mysql-color)",
+      level: lang.junior?.text,
+    },
+  ];
+
+  const otherSkills = [
+    {
+      icon: gitLogo,
+      name: "Git",
+      color: "var(--git-color)",
+      level: lang.intermediate?.text,
+    },
+    {
+      icon: figmaLogo,
+      name: "Figma",
+      color: "var(--figma-color)",
+      level: lang.junior?.text,
+    },
+    {
+      icon: swaggerLogo,
+      name: "Swagger",
+      color: "var(--swagger-color)",
+      level: lang.junior?.text,
+    },
+  ];
+
+  const renderSkillSet = (skills) => (
+    <div className="row justify-content-center">
+      {skills.map((skill, index) => (
+        <div key={index} className="col-4 col-md-4 mb-3 text-center">
+          <img src={skill.icon} alt={`${skill.name} logo`} />
+          <label
+            className="fw-semibold mt-3 d-block"
+            style={{
+              color: skill.color,
+            }}
+          >
+            {skill.name}
+          </label>
+          <label className="fw-normal text-secondary skill-subtitle d-block">
+            {skill.level}
+          </label>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <div className="container p-5 h-100" id="skills">
       <div className="text-black text-center mt-5">
@@ -22,139 +124,50 @@ const Skills = ({ lang }) => {
         </label>
       </div>
       <div className="row mt-5 mb-3">
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={htmlIcon} alt="HTML logo" /> <br />
-            <label className="html-text fw-semibold fs-6 mt-3">HTML</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.intermediate?.text}
-            </label>
-          </>
+        <div className="col-md-6 col-sm-12">
+          <div
+            id="skillsCarousel"
+            className="carousel slide mt-5"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                {renderSkillSet(frontendSkills)}
+              </div>
+              <div className="carousel-item">
+                {renderSkillSet(backendSkills)}
+              </div>
+              <div className="carousel-item">{renderSkillSet(otherSkills)}</div>
+            </div>
+            <button
+              className="carousel-control-prev"
+              type="button"
+              data-bs-target="#skillsCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                className="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+            <button
+              className="carousel-control-next"
+              type="button"
+              data-bs-target="#skillsCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                className="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+            </button>
+          </div>
         </div>
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={cssIcon} alt="CSS logo" /> <br />
-            <label className="css-text fw-semibold fs-6 mt-3">CSS</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.intermediate?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={javaScriptIcon} alt="JavaScript logo" /> <br />
-            <label className="javascript-text fw-semibold fs-6 mt-3">
-              JavaScript
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={bootstrapIcon} alt="Bootstrap logo" /> <br />
-            <label className="bootstrap-text fw-semibold fs-6 mt-3">
-              Bootstrap
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.intermediate?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={reactIcon} alt="React.js logo" /> <br />
-            <label className="react-text fw-semibold fs-6 mt-3">React.js</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={angularLogo} alt="Angular logo" /> <br />
-            <label className="angular-text fw-semibold fs-6 mt-3">
-              Angular
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-      </div>
-      <div className="row mb-5">
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={expressLogo} alt="Express.js logo" /> <br />
-            <label className="express-text fw-semibold fs-6 mt-3">
-              Express.js
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={laravelLogo} alt="Laravel logo" /> <br />
-            <label className="laravel-text fw-semibold fs-6 mt-3">
-              Laravel
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 mb-3 text-center">
-          <>
-            <img src={mysqlLogo} alt="MySQL logo" /> <br />
-            <label className="mysql-text fw-semibold fs-6 mt-3">MySQL</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={gitLogo} className="rounded" alt="Git logo" /> <br />
-            <label className="git-text fw-semibold fs-6 mt-3">Git</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.intermediate?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={figmaLogo} alt="Figma logo" /> <br />
-            <label className="figma-text fw-semibold fs-6 mt-3">Figma</label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
-        </div>
-        <div className="col-4 col-md-2 text-center">
-          <>
-            <img src={swaggerLogo} alt="Swagger logo" /> <br />
-            <label className="swagger-text fw-semibold fs-6 mt-3">
-              Swagger
-            </label>
-            <br />
-            <label className="fw-normal text-secondary skill-subtitle">
-              {lang.junior?.text}
-            </label>
-          </>
+        <div className="col-md-6 col-sm-12">
+          <p className="text-black">
+            A list of the technologies I use to develop applications in an agile
+            and efficient way.
+          </p>
         </div>
       </div>
     </div>

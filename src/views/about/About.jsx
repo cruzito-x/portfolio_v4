@@ -5,7 +5,7 @@ const About = ({ lang }) => {
     <div className="container p-5 h-100" id="about">
       <div className="row mt-5 align-items-center">
         <div className="text-black text-center">
-          <h1 className="fw-semibold">{lang.about?.text}</h1>
+          <h1 className="fw-semibold">{lang.about_me?.text}</h1>
           <label className="fw-semibold enphasis-text-dark">
             {lang.about_subtitle?.text}
           </label>
