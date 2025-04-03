@@ -114,7 +114,7 @@ const Skills = ({ lang }) => {
         <div key={index} className="col-4 col-md-4 mb-3 text-center">
           <img src={skill.icon} alt={`${skill.name} logo`} />
           <label
-            className="fw-semibold mt-3 d-block"
+            className="fw-semibold mt-1 mb-2 d-block"
             style={{ color: skill.color }}
           >
             {skill.name}
