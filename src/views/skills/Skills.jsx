@@ -42,7 +42,7 @@ const Skills = ({ lang }) => {
     },
     {
       icon: tailwindIcon,
-      name: "Tailwind",
+      name: "Tailwind CSS",
       color: "var(--tailwind-color)",
       level: lang.junior?.text,
     },
