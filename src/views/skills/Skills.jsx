@@ -2,6 +2,7 @@ import htmlIcon from "../../assets/img/svg/html.svg";
 import cssIcon from "../../assets/img/svg/css.svg";
 import javaScriptIcon from "../../assets/img/svg/javascript.svg";
 import bootstrapIcon from "../../assets/img/svg/bootstrap.svg";
+import tailwindIcon from "../../assets/img/svg/tailwind.svg";
 import reactIcon from "../../assets/img/svg/react.svg";
 import angularLogo from "../../assets/img/svg/angular.svg";
 import expressLogo from "../../assets/img/svg/express.svg";
@@ -38,6 +39,12 @@ const Skills = ({ lang }) => {
       name: "Bootstrap",
       color: "var(--bootstrap-color)",
       level: lang.intermediate?.text,
+    },
+    {
+      icon: tailwindIcon,
+      name: "Tailwind",
+      color: "var(--tailwind-color)",
+      level: lang.junior?.text,
     },
     {
       icon: reactIcon,
@@ -111,9 +118,6 @@ const Skills = ({ lang }) => {
             style={{ color: skill.color }}
           >
             {skill.name}
-          </label>
-          <label className="fw-normal text-secondary skill-subtitle d-block">
-            {skill.level}
           </label>
         </div>
       ))}
