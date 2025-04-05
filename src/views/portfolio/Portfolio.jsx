@@ -178,7 +178,7 @@ const Projects = ({ lang }) => {
                     )}
                     {project.extension_url && (
                       <a
-                        href={project.source_url}
+                        href={project.extension_url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn btn-sm btn-primary me-2"
