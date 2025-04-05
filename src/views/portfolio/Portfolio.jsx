@@ -139,7 +139,7 @@ const Projects = ({ lang }) => {
                 <div className="card-body ps-0 pe-0">
                   <h5 className="card-title text-black">{project.title}</h5>
                   <p className="card-text text-black">{project.description}</p>
-                  <div className="d-flex flex-wrap">
+                  <div className="d-flex">
                     {project.techs.map((tech) => (
                       <span
                         key={tech.id}
