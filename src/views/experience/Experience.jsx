@@ -3,7 +3,7 @@ import pythonLogo from "../../assets/img/icons/python.png";
 import buyMeACoffeeLogo from "../../assets/img/icons/coffee.png";
 import htmxLogo from "../../assets/img/icons/htmx.png";
 import assistantLogo from "../../assets/img/icons/assistant.png";
-import dataSecurityLottie from "../../assets/img/lottie/pre-specialty.json";
+import preSpecialtyLottie from "../../assets/img/lottie/pre-specialty.json";
 import "./styles/experience.css";
 
 const Experience = ({ lang }) => {
@@ -83,7 +83,7 @@ const Experience = ({ lang }) => {
             options={{
               loop: true,
               autoplay: true,
-              animationData: dataSecurityLottie,
+              animationData: preSpecialtyLottie,
             }}
           />
         </div>

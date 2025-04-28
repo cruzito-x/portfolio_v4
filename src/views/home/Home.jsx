@@ -1,6 +1,6 @@
 import Lottie from "react-lottie";
 import coderLottie from "../../assets/img/lottie/coder";
-import curriculumVitae from "../../assets/docs/David Cruz - Currículum Vitae.pdf";
+import curriculumVitae from "../../assets/docs/David Cruz - Curriculum Vitae.pdf";
 import "./styles/home.css";
 import React from "react";
 
