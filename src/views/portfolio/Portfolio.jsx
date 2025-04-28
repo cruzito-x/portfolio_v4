@@ -68,7 +68,7 @@ const Projects = ({ lang }) => {
 
       {selectedCategory === lang.all?.text ? (
         <div
-          className="d-flex overflow-hidden mt-3"
+          className="d-flex justify-content-center overflow-hidden mt-3"
           style={{
             whiteSpace: "nowrap",
             display: "flex",
@@ -129,7 +129,10 @@ const Projects = ({ lang }) => {
       ) : (
         <div className="row mt-3 justify-content-center">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3">
+            <div
+              key={project.id}
+              className="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-3"
+            >
               <div className="card border-0 h-100">
                 <img
                   src={project.image}
