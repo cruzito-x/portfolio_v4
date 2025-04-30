@@ -63,10 +63,10 @@ const Home = ({ lang }) => {
           </ul>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
-              {lang.greeting?.text}
-              <br />
-              <span className="enphasis-text">David Cruz</span>
+              {lang.greeting?.text || "Hi there!"}
+              <span className="d-block enphasis-text">David Cruz</span>
             </h1>
+
             <label className="fw-semibold enphasis-text-dark fs-5">
               {lang.title?.text}
             </label>
