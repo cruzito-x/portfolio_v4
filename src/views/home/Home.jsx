@@ -72,10 +72,7 @@ const Home = ({ lang }) => {
             </label>
             <p className="text-black mt-3 fs-6 mt-4">
               {lang.description?.text.split("\n").map((line, index) => (
-                <React.Fragment key={index}>
-                  {line}
-                  <br />
-                </React.Fragment>
+                <label key={index}>{line}</label>
               ))}
             </p>
 
