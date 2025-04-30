@@ -127,14 +127,26 @@
     "skills_subtitle": {
       "text": "Habilidades que utilizo para realizar tareas eficazmente"
     },
-    "junior": {
-      "text": "Junior"
+    "frontend_skills": {
+      "text": "Habilidades Frontend"
     },
-    "intermediate": {
-      "text": "Intermedio"
+    "backend_skills": {
+      "text": "Habilidades Backend"
+    },
+    "frontend": {
+      "text": "Frontend"
+    },
+    "backend": {
+      "text": "Backend"
+    },
+    "complementary_tools": {
+      "text": " herramientas complementarias"
     },
     "skills_text": {
-      "text": "Lista de habilidades en frontend, backend y herramientas complementarias que me permiten desarrollar aplicaciones web completas, eficientes y escalables. Estas competencias me facilitan la construcción de soluciones funcionales y de alto rendimiento, enfocadas en el cumplimiento de buenas prácticas de programación, el mantenimiento óptimo de los proyectos y la entrega de una excelente experiencia de usuario en cada etapa del desarrollo."
+      "text": "Lista de habilidades en "
+    },
+    "skills_text_backfill": {
+      "text": " que me permiten desarrollar aplicaciones web completas, eficientes y escalables. Estas competencias me facilitan la construcción de soluciones funcionales y de alto rendimiento, enfocadas en el cumplimiento de buenas prácticas de programación, el mantenimiento óptimo de los proyectos y la entrega de una excelente experiencia de usuario en cada etapa del desarrollo."
     },
     "projects_subtitle": {
       "text": "Algunos de los proyectos más destacados en los que he trabajado"

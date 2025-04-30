@@ -20,43 +20,36 @@ const Skills = ({ lang }) => {
       icon: htmlIcon,
       name: "HTML",
       color: "var(--html-color)",
-      level: lang.intermediate?.text,
     },
     {
       icon: cssIcon,
       name: "CSS",
       color: "var(--css-color)",
-      level: lang.junior?.text,
     },
     {
       icon: javaScriptIcon,
       name: "JavaScript",
       color: "var(--javascript-color)",
-      level: lang.junior?.text,
     },
     {
       icon: bootstrapIcon,
       name: "Bootstrap",
       color: "var(--bootstrap-color)",
-      level: lang.intermediate?.text,
     },
     {
       icon: tailwindIcon,
-      name: "Tailwind CSS",
+      name: "Tailwind",
       color: "var(--tailwind-color)",
-      level: lang.junior?.text,
     },
     {
       icon: reactIcon,
       name: "React.js",
       color: "var(--react-color)",
-      level: lang.junior?.text,
     },
     {
       icon: angularLogo,
       name: "Angular",
       color: "var(--angular-color)",
-      level: lang.junior?.text,
     },
   ];
 
@@ -65,25 +58,21 @@ const Skills = ({ lang }) => {
       icon: expressLogo,
       name: "Express.js",
       color: "var(--express-color)",
-      level: lang.junior?.text,
     },
     {
       icon: laravelLogo,
       name: "Laravel",
       color: "var(--laravel-color)",
-      level: lang.junior?.text,
     },
     {
       icon: mysqlLogo,
       name: "MySQL",
       color: "var(--mysql-color)",
-      level: lang.junior?.text,
     },
     {
       icon: sqlsrvrLogo,
       name: "SQL Server",
       color: "var(--sqlsrvr-color)",
-      level: lang.junior?.text,
     },
   ];
 
@@ -92,19 +81,16 @@ const Skills = ({ lang }) => {
       icon: gitLogo,
       name: "Git",
       color: "var(--git-color)",
-      level: lang.intermediate?.text,
     },
     {
       icon: figmaLogo,
       name: "Figma",
       color: "var(--figma-color)",
-      level: lang.junior?.text,
     },
     {
       icon: swaggerLogo,
       name: "Swagger",
       color: "var(--swagger-color)",
-      level: lang.junior?.text,
     },
   ];
 
@@ -141,17 +127,48 @@ const Skills = ({ lang }) => {
           >
             <div className="carousel-inner">
               <div className="carousel-item active">
+                <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
+                  {lang.frontend_skills?.text}
+                </h5>
                 {renderSkillSet(frontendSkills)}
               </div>
               <div className="carousel-item">
+                <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
+                  {lang.backend_skills?.text}
+                </h5>
                 {renderSkillSet(backendSkills)}
               </div>
-              <div className="carousel-item">{renderSkillSet(otherSkills)}</div>
+              <div className="carousel-item">
+                <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
+                  {lang.complementary_tools?.text
+                    .toLowerCase()
+                    .split(" ")
+                    .map(
+                      (tools) => tools.charAt(0).toUpperCase() + tools.slice(1)
+                    )
+                    .join(" ")}
+                </h5>
+                {renderSkillSet(otherSkills)}
+              </div>
             </div>
           </div>
         </div>
         <div className="col-md-6 col-sm-12 d-flex align-items-center">
-          <p className="text-black">{lang.skills_text?.text}</p>
+          <p className="text-black">
+            {lang.skills_text?.text}
+            <span className="fw-semibold enphasis-text">
+              {lang.frontend?.text}
+            </span>
+            {", "}
+            <span className="fw-semibold enphasis-text">
+              {lang.backend?.text}{" "}
+            </span>
+            {lang.and?.text}{" "}
+            <span className="fw-semibold enphasis-text">
+              {lang.complementary_tools?.text}
+            </span>
+            {lang.skills_text_backfill?.text}
+          </p>
         </div>
       </div>
     </div>

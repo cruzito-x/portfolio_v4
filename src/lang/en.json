@@ -127,14 +127,26 @@
     "skills_subtitle": {
       "text": "Skills I use to perform tasks effectively"
     },
-    "junior": {
-      "text": "Junior"
+    "frontend_skills": {
+      "text": "Frontend Skills"
     },
-    "intermediate": {
-      "text": "Intermediate"
+    "backend_skills": {
+      "text": "Backend Skills"
+    },
+    "frontend": {
+      "text": "Frontend"
+    },
+    "backend": {
+      "text": "Backend"
+    },
+    "complementary_tools": {
+      "text": " complementary tools"
     },
     "skills_text": {
-      "text": "List of skills in frontend, backend and complementary tools that allow me to develop complete, efficient and scalable web applications. These skills enable me to build functional and high performance solutions, focused on compliance with good programming practices, optimal maintenance of projects and delivery of an excellent user experience at every stage of development."
+      "text": "List of skills in "
+    },
+    "skills_text_backfill": {
+      "text": " that allow me to develop complete, efficient and scalable web applications. These skills enable me to build functional and high performance solutions, focused on compliance with good programming practices, optimal maintenance of projects and delivery of an excellent user experience at every stage of development."
     },
     "projects_subtitle": {
       "text": "Some of the most outstanding projects I have worked on"
