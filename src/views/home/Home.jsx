@@ -10,11 +10,16 @@ const Home = ({ lang }) => {
   const [showLottie, setShowLottie] = useState(false);
 
   useEffect(() => {
-    if ("requestIdleCallback" in window) {
-      requestIdleCallback(() => setShowLottie(true));
-    } else {
-      setTimeout(() => setShowLottie(true), 2000);
-    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setShowLottie(true);
+        }
+      });
+    });
+    observer.observe(document.getElementById("lottie-container"));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
