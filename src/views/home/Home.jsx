@@ -3,8 +3,20 @@ import coderLottie from "../../assets/img/lottie/coder";
 import curriculumVitae from "../../assets/docs/David Cruz - Curriculum Vitae.pdf";
 import "./styles/home.css";
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Home = ({ lang }) => {
+  const [showLottie, setShowLottie] = useState(false);
+
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => setShowLottie(true));
+    } else {
+      setTimeout(() => setShowLottie(true), 2000);
+    }
+  }, []);
+
   return (
     <div
       className="container h-100 mb-5 ps-5 pe-5"
@@ -92,13 +104,15 @@ const Home = ({ lang }) => {
           </div>
         </div>
         <div className="col-lg-6 justify-content-center lottie-container">
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: coderLottie,
-            }}
-          />
+          {showLottie && (
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: coderLottie,
+              }}
+            />
+          )}
         </div>
       </div>
     </div>
