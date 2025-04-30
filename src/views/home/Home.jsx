@@ -7,7 +7,16 @@ import { useEffect } from "react";
 import { useState } from "react";
 
 const Home = ({ lang }) => {
+  const [showGreeting, setShowGreeting] = useState(false);
   const [showLottie, setShowLottie] = useState(false);
+
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => setShowGreeting(true));
+    } else {
+      setTimeout(() => setShowGreeting(true), 2000);
+    }
+  }, []);
 
   useEffect(() => {
     if ("requestIdleCallback" in window) {
@@ -63,8 +72,9 @@ const Home = ({ lang }) => {
           </ul>
           <div className="w-100">
             <h1 className="text-black fw-bold name">
-              {lang.greeting?.text || "Hi there!"}
-              <span className="d-block enphasis-text">David Cruz</span>
+              {showGreeting ? lang.greeting?.text : "Hi there!"}
+              <br />
+              <span className="enphasis-text">David Cruz</span>
             </h1>
 
             <label className="fw-semibold enphasis-text-dark fs-5">
