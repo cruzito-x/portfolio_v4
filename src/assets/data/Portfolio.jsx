@@ -1,16 +1,16 @@
-import moviesFinder from "../pictures/Frontend/work1.png";
-import weatherVisualizer from "../pictures/Frontend/work2.png";
-import colorScalesGenerator from "../pictures/Frontend/work3.png";
-import translator from "../pictures/Frontend/work4.png";
-import vsMarketplaceExtension from "../pictures/Frontend/work5.png";
-import bookStoreSalesSystem from "../pictures/Frontend/work6.png";
-import eCommerce from "../pictures/Frontend/work7.png";
-import bankCollectionSystem from "../pictures/Frontend/work8.png";
-import bookStoreSalesAPI from "../pictures/Backend/work1.png";
-import bankCollectionAPI from "../pictures/Backend/work2.png";
-import irisCodeScanner from "../pictures/Designs/work1.png";
-import dashboard from "../pictures/Designs/work2.png";
-import neuroDivergentMobileApp from "../pictures/Designs/work3.png";
+import moviesFinder from "../pictures/Frontend/work1.webp";
+import weatherVisualizer from "../pictures/Frontend/work2.webp";
+import colorScalesGenerator from "../pictures/Frontend/work3.webp";
+import translator from "../pictures/Frontend/work4.webp";
+import vsMarketplaceExtension from "../pictures/Frontend/work5.webp";
+import bookStoreSalesSystem from "../pictures/Frontend/work6.webp";
+import eCommerce from "../pictures/Frontend/work7.webp";
+import bankCollectionSystem from "../pictures/Frontend/work8.webp";
+import bookStoreSalesAPI from "../pictures/Backend/work1.webp";
+import bankCollectionAPI from "../pictures/Backend/work2.webp";
+import irisCodeScanner from "../pictures/Designs/work1.webp";
+import dashboard from "../pictures/Designs/work2.webp";
+import neuroDivergentMobileApp from "../pictures/Designs/work3.webp";
 
 /* =================== FILTERS =================== */
 

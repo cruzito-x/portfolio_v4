@@ -1,4 +1,4 @@
-import profilePhoto from "../../assets/img/me.png";
+import profilePhoto from "../../assets/img/me.webp";
 
 const About = ({ lang }) => {
   return (
