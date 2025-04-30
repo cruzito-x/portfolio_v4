@@ -191,6 +191,7 @@ const Navbar = ({ lang }) => {
           }`}
           onClick={() => setMenuOpen(!menuOpen)}
           style={{ width: "50px", height: "50px", zIndex: 2 }}
+          aria-label="Back to top"
         >
           <i className={`bx ${menuOpen ? "bx-x" : "bx bx-cube-alt"}`}></i>
         </button>
