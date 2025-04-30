@@ -5,8 +5,20 @@ import htmxLogo from "../../assets/img/icons/htmx.png";
 import assistantLogo from "../../assets/img/icons/assistant.png";
 import preSpecialtyLottie from "../../assets/img/lottie/pre-specialty.json";
 import "./styles/experience.css";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const Experience = ({ lang }) => {
+  const [showLottie, setShowLottie] = useState(false);
+
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => setShowLottie(true));
+    } else {
+      setTimeout(() => setShowLottie(true), 2000);
+    }
+  }, []);
+
   return (
     <div className="container p-5 h-100" id="experience">
       <div className="text-black text-center mt-5">
@@ -79,13 +91,15 @@ const Experience = ({ lang }) => {
           </div>
         </div>
         <div className="col-lg-6 col-sm-12 d-flex justify-content-center lottie-container">
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: preSpecialtyLottie,
-            }}
-          />
+          {showLottie && (
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: preSpecialtyLottie,
+              }}
+            />
+          )}
         </div>
       </div>
     </div>

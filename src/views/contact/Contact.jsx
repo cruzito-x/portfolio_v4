@@ -3,10 +3,20 @@ import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
 import coffeeLottie from "../../assets/img/lottie/coffee";
+import { useEffect } from "react";
 
 const Contact = ({ lang }) => {
+  const [showLottie, setShowLottie] = useState(false);
   const [sendingEmail, setSendingEmail] = useState(false);
   const formRef = useRef(null);
+
+  useEffect(() => {
+    if ("requestIdleCallback" in window) {
+      requestIdleCallback(() => setShowLottie(true));
+    } else {
+      setTimeout(() => setShowLottie(true), 2000);
+    }
+  }, []);
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -117,16 +127,18 @@ const Contact = ({ lang }) => {
           </form>
         </div>
         <div className="col-lg-6 justify-content-center lottie-container">
-          <Lottie
-            options={{
-              loop: true,
-              autoplay: true,
-              animationData: coffeeLottie,
-            }}
-            style={{
-              width: "85%",
-            }}
-          />
+          {showLottie && (
+            <Lottie
+              options={{
+                loop: true,
+                autoplay: true,
+                animationData: coffeeLottie,
+              }}
+              style={{
+                width: "85%",
+              }}
+            />
+          )}
           <p className="text-black">{lang.contact_text?.text}</p>
         </div>
       </div>
