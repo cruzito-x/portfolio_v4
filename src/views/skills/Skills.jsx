@@ -111,7 +111,7 @@ const Skills = ({ lang }) => {
   const renderSkillSet = (skills) => (
     <div className="row justify-content-center align-items-center">
       {skills.map((skill, index) => (
-        <div key={index} className="col-md-3 col-sm-4 mb-3 text-center">
+        <div key={index} className="col-4 col-md-3 col-sm-4 mb-3 text-center">
           <img src={skill.icon} alt={`${skill.name} logo`} />
           <label
             className="fw-semibold mt-1 mb-2 d-block"
