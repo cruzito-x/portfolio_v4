@@ -4,16 +4,16 @@ import javaScriptIcon from "../../assets/img/svg/javascript.svg";
 import bootstrapIcon from "../../assets/img/svg/bootstrap.svg";
 import tailwindIcon from "../../assets/img/svg/tailwind.svg";
 import reactIcon from "../../assets/img/svg/react.svg";
-import angularLogo from "../../assets/img/svg/angular.svg";
-import expressLogo from "../../assets/img/svg/express.svg";
-import csharpLogo from "../../assets/img/svg/csharp.svg";
-import laravelLogo from "../../assets/img/svg/laravel.svg";
-import mysqlLogo from "../../assets/img/svg/mysql.svg";
-import postgresqlLogo from "../../assets/img/svg/postgresql.svg";
-import sqlsrvrLogo from "../../assets/img/svg/sqlsrvr.svg";
-import gitLogo from "../../assets/img/svg/git.svg";
-import figmaLogo from "../../assets/img/svg/figma.svg";
-import swaggerLogo from "../../assets/img/svg/swagger.svg";
+import angularIcon from "../../assets/img/svg/angular.svg";
+import expressIcon from "../../assets/img/svg/express.svg";
+import csharpIcon from "../../assets/img/svg/csharp.svg";
+import laravelIcon from "../../assets/img/svg/laravel.svg";
+import mysqlIcon from "../../assets/img/svg/mysql.svg";
+import postgresqlIcon from "../../assets/img/svg/postgresql.svg";
+import sqlsrvrIcon from "../../assets/img/svg/sqlsrvr.svg";
+import gitIcon from "../../assets/img/svg/git.svg";
+import figmaIcon from "../../assets/img/svg/figma.svg";
+import swaggerIcon from "../../assets/img/svg/swagger.svg";
 import "./styles/skills.css";
 
 const Skills = ({ lang }) => {
@@ -49,7 +49,7 @@ const Skills = ({ lang }) => {
       color: "var(--react-color)",
     },
     {
-      icon: angularLogo,
+      icon: angularIcon,
       name: "Angular",
       color: "var(--angular-color)",
     },
@@ -57,32 +57,32 @@ const Skills = ({ lang }) => {
 
   const backendSkills = [
     {
-      icon: expressLogo,
+      icon: expressIcon,
       name: "Express.js",
       color: "var(--express-color)",
     },
     {
-      icon: laravelLogo,
+      icon: laravelIcon,
       name: "Laravel",
       color: "var(--laravel-color)",
     },
     {
-      icon: csharpLogo,
+      icon: csharpIcon,
       name: "C Sharp",
       color: "var(--csharp-color)",
     },
     {
-      icon: mysqlLogo,
+      icon: mysqlIcon,
       name: "MySQL",
       color: "var(--mysql-color)",
     },
     {
-      icon: postgresqlLogo,
+      icon: postgresqlIcon,
       name: "PostgreSQL",
       color: "var(--postgresql-color)",
     },
     {
-      icon: sqlsrvrLogo,
+      icon: sqlsrvrIcon,
       name: "SQL Server",
       color: "var(--sqlsrvr-color)",
     },
@@ -90,17 +90,17 @@ const Skills = ({ lang }) => {
 
   const otherSkills = [
     {
-      icon: gitLogo,
+      icon: gitIcon,
       name: "Git",
       color: "var(--git-color)",
     },
     {
-      icon: figmaLogo,
+      icon: figmaIcon,
       name: "Figma",
       color: "var(--figma-color)",
     },
     {
-      icon: swaggerLogo,
+      icon: swaggerIcon,
       name: "Swagger",
       color: "var(--swagger-color)",
     },
@@ -110,7 +110,12 @@ const Skills = ({ lang }) => {
     <div className="row justify-content-center align-items-center">
       {skills.map((skill, index) => (
         <div key={index} className="col-4 col-lg-3 mb-3 text-center">
-          <img src={skill.icon} alt={`${skill.name} logo`} />
+          <img
+            src={skill.icon}
+            alt={`${skill.name} icon`}
+            width={100}
+            style={{ aspectRatio: "1/1" }}
+          />
           <label
             className="fw-semibold mt-1 mb-2 d-block"
             style={{ color: skill.color }}
