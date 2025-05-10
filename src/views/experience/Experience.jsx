@@ -1,9 +1,9 @@
 import Lottie from "react-lottie";
-import pythonLogo from "../../assets/img/icons/python.png";
-import buyMeACoffeeLogo from "../../assets/img/icons/coffee.png";
-import htmxLogo from "../../assets/img/icons/htmx.png";
-import assistantLogo from "../../assets/img/icons/assistant.png";
-import webLogo from "../../assets/img/icons/web.png";
+import pythonLogo from "../../assets/img/icons/python.webp";
+import buyMeACoffeeLogo from "../../assets/img/icons/coffee.webp";
+import htmxLogo from "../../assets/img/icons/htmx.webp";
+import assistantLogo from "../../assets/img/icons/assistant.webp";
+import webLogo from "../../assets/img/icons/web.webp";
 import preSpecialtyLottie from "../../assets/img/lottie/pre-specialty.json";
 import "./styles/experience.css";
 import { use, useEffect } from "react";
