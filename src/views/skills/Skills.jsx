@@ -138,19 +138,19 @@ const Skills = ({ lang }) => {
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
-              <div className="carousel-item active">
+              <div className="carousel-item active mb-4">
                 <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
                   {lang.frontend_skills?.text}
                 </h5>
                 {renderSkillSet(frontendSkills)}
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item mb-4">
                 <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
                   {lang.backend_skills?.text}
                 </h5>
                 {renderSkillSet(backendSkills)}
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item mb-4">
                 <h5 className="fw-semibold enphasis-text mb-4 d-flex w-100 justify-content-center">
                   {lang.complementary_tools?.text
                     .toLowerCase()
@@ -162,6 +162,29 @@ const Skills = ({ lang }) => {
                 </h5>
                 {renderSkillSet(otherSkills)}
               </div>
+            </div>
+
+            <div className="carousel-indicators mt-5">
+              <button
+                type="button"
+                data-bs-target="#skillsCarousel"
+                data-bs-slide-to="0"
+                className="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#skillsCarousel"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#skillsCarousel"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
             </div>
           </div>
         </div>

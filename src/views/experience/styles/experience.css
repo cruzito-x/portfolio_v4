@@ -1,13 +1,3 @@
-.academic_title:hover {
-  cursor: pointer;
-  color: var(--enphasis-color);
-}
-
-.laboral_title:hover {
-  cursor: pointer;
-  color: var(--enphasis-dark-color);
-}
-
 .timeline {
   position: relative;
   max-width: 600px;

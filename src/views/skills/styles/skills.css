@@ -2,62 +2,10 @@ img {
   width: 45px;
 }
 
-.html-text {
-  color: var(--html-color);
-  font-size: 13px;
+.carousel-indicators button {
+  background-color: var(--enphasis-color) !important;
 }
 
-.css-text {
-  color: var(--css-color);
-  font-size: 13px;
-}
-
-.javascript-text {
-  color: var(--javascript-color);
-  font-size: 13px;
-}
-
-.react-text {
-  color: var(--react-color);
-  font-size: 13px;
-}
-
-.express-text {
-  color: var(--express-color);
-  font-size: 13px;
-}
-
-.mysql-text {
-  color: var(--mysql-color);
-  font-size: 13px;
-}
-
-.bootstrap-text {
-  color: var(--bootstrap-color);
-  font-size: 13px;
-}
-
-.laravel-text {
-  color: var(--laravel-color);
-  font-size: 13px;
-}
-
-.git-text {
-  color: var(--git-color);
-  font-size: 13px;
-}
-
-.figma-text {
-  color: var(--figma-color);
-  font-size: 13px;
-}
-
-.swagger-text {
-  color: var(--swagger-color);
-  font-size: 13px;
-}
-
-.angular-text {
-  color: var(--angular-color);
-  font-size: 13px;
+.carousel-indicators .active {
+  opacity: 1;
 }
