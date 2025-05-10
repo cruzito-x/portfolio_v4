@@ -6,8 +6,7 @@ import assistantLogo from "../../assets/img/icons/assistant.webp";
 import webLogo from "../../assets/img/icons/web.webp";
 import preSpecialtyLottie from "../../assets/img/lottie/pre-specialty.json";
 import "./styles/experience.css";
-import { use, useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Experience = ({ lang }) => {
   const [showLottie, setShowLottie] = useState(false);
