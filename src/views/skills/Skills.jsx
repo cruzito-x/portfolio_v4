@@ -14,6 +14,8 @@ import sqlsrvrIcon from "../../assets/img/svg/sqlsrvr.svg";
 import gitIcon from "../../assets/img/svg/git.svg";
 import figmaIcon from "../../assets/img/svg/figma.svg";
 import swaggerIcon from "../../assets/img/svg/swagger.svg";
+import postmanIcon from "../../assets/img/svg/postman.svg";
+import trelloIcon from "../../assets/img/svg/trello.svg";
 import "./styles/skills.css";
 
 const Skills = ({ lang }) => {
@@ -103,6 +105,16 @@ const Skills = ({ lang }) => {
       icon: swaggerIcon,
       name: "Swagger",
       color: "var(--swagger-color)",
+    },
+    {
+      icon: postmanIcon,
+      name: "Postman",
+      color: "var(--postman-color)",
+    },
+    {
+      icon: trelloIcon,
+      name: "Trello",
+      color: "var(--trello-color)",
     },
   ];
 
