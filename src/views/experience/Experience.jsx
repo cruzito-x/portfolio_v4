@@ -3,6 +3,7 @@ import pythonLogo from "../../assets/img/icons/python.png";
 import buyMeACoffeeLogo from "../../assets/img/icons/coffee.png";
 import htmxLogo from "../../assets/img/icons/htmx.png";
 import assistantLogo from "../../assets/img/icons/assistant.png";
+import webLogo from "../../assets/img/icons/web.png";
 import preSpecialtyLottie from "../../assets/img/lottie/pre-specialty.json";
 import "./styles/experience.css";
 import { useEffect } from "react";
@@ -44,7 +45,7 @@ const Experience = ({ lang }) => {
             </div>
             <div className="timeline-item d-flex align-items-center">
               <div className="icon">
-                <img src={buyMeACoffeeLogo} alt="Buy me a Coffee Logo" />
+                <img src={webLogo} alt="Buy me a Coffee Logo" />
               </div>
               <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">

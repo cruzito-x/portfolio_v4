@@ -6,8 +6,10 @@ import tailwindIcon from "../../assets/img/svg/tailwind.svg";
 import reactIcon from "../../assets/img/svg/react.svg";
 import angularLogo from "../../assets/img/svg/angular.svg";
 import expressLogo from "../../assets/img/svg/express.svg";
+import csharpLogo from "../../assets/img/svg/csharp.svg";
 import laravelLogo from "../../assets/img/svg/laravel.svg";
 import mysqlLogo from "../../assets/img/svg/mysql.svg";
+import postgresqlLogo from "../../assets/img/svg/postgresql.svg";
 import sqlsrvrLogo from "../../assets/img/svg/sqlsrvr.svg";
 import gitLogo from "../../assets/img/svg/git.svg";
 import figmaLogo from "../../assets/img/svg/figma.svg";
@@ -65,9 +67,19 @@ const Skills = ({ lang }) => {
       color: "var(--laravel-color)",
     },
     {
+      icon: csharpLogo,
+      name: "C Sharp",
+      color: "var(--csharp-color)",
+    },
+    {
       icon: mysqlLogo,
       name: "MySQL",
       color: "var(--mysql-color)",
+    },
+    {
+      icon: postgresqlLogo,
+      name: "PostgreSQL",
+      color: "var(--postgresql-color)",
     },
     {
       icon: sqlsrvrLogo,
