@@ -134,7 +134,12 @@ const Navbar = ({ lang }) => {
                     src={cruzitoLogo}
                     className="rounded-circle shadow"
                     alt="cruzito's logo"
-                    style={{ width: "60px" }}
+                    width={60}
+                    height={60}
+                    style={{
+                      width: "60px",
+                      aspectRatio: "1 / 1",
+                    }}
                   />
                 </a>
               </div>
