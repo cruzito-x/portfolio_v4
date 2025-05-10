@@ -70,7 +70,7 @@ const Skills = ({ lang }) => {
     },
     {
       icon: csharpIcon,
-      name: "C Sharp",
+      name: "C#",
       color: "var(--csharp-color)",
     },
     {
