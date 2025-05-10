@@ -48,6 +48,18 @@ const Experience = ({ lang }) => {
               </div>
               <div className="timeline-content w-100">
                 <label className="fw-semibold text-white">
+                  {lang.sms_time?.text}
+                </label>
+                <h3>{lang.sms_job?.text}</h3>
+                <p>Software Mobile Solutions S.A de C.V. - El Salvador.</p>
+              </div>
+            </div>
+            <div className="timeline-item d-flex align-items-center">
+              <div className="icon">
+                <img src={buyMeACoffeeLogo} alt="Buy me a Coffee Logo" />
+              </div>
+              <div className="timeline-content w-100">
+                <label className="fw-semibold text-white">
                   {lang.tec101_time?.text}
                 </label>
                 <h3>{lang.tec101_job?.text}</h3>
