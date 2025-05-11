@@ -428,7 +428,7 @@ export const getProjectsData = (lang) => {
         },
       ],
       design_url:
-        "https://www.figma.com/design/3mJfa7medrPycTS5RTTefq/Untitled?t=DLPrFoleZ6yIKa2a-1",
+        "https://www.figma.com/design/KEbpsM6D6wlBzbGeSDJd5l/Vulnerability-Management-Dashboard?node-id=0-1&t=POkUbqBsJ6ZmPSGC-1",
     },
     {
       id: 13,
