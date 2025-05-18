@@ -68,11 +68,11 @@ const Skills = ({ lang }) => {
       name: "Laravel",
       color: "var(--laravel-color)",
     },
-    {
-      icon: csharpIcon,
-      name: "C#",
-      color: "var(--csharp-color)",
-    },
+    // {
+    //   icon: csharpIcon,
+    //   name: "C#",
+    //   color: "var(--csharp-color)",
+    // },
     {
       icon: mysqlIcon,
       name: "MySQL",
